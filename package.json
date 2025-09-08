@@ -1,13 +1,13 @@
 {
-  "name": "bs5-simple-starter",
+  "name": "arc_construct",
   "version": "1.0.0",
-  "description": "Simple workflow for working with and customizing Bootstrap 5",
+  "description": "Presentational website for ARC CONSTRUCT",
   "main": "index.js",
   "scripts": {
     "sass:build": "sass --no-source-map scss:css",
     "sass:watch": "sass --no-source-map --watch scss:css"
   },
-  "author": "Brad Traversy",
+  "author": "Daniel Deaconescu",
   "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
