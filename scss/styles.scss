@@ -1,3 +1,144 @@
+// Navigation start
+.navbar-custom {
+  border-bottom: 4px solid #f5efe6;
+  background: #333333;
+}
+
+// Navigation end
+
+// Header start
+
+.header-home {
+  padding: 5rem;
+  background-image: url("../images/header-home.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.p-header {
+  color: #fff;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.list-element-custom {
+  font-size: 1.2rem;
+}
+
+.header-services {
+  padding: 5rem;
+  background-image: url("../images/header-services.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-portfolio {
+  padding: 5rem;
+  background-image: url("../images/header-portfolio.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-contact {
+  padding: 5rem;
+  background-image: url("../images/header-contact.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+// Header end
+
+// Section Factory start
+
+.img-factory {
+  border-radius: 1rem;
+  max-width: 400px;
+}
+
+// Section Factory end
+
+// Call-To-Action start
+
+.btn-whatsapp {
+  background-color: rgb(7, 94, 84, 1);
+}
+
+.btn-whatsapp:hover {
+  background-color: rgba(7, 94, 84, 0.9);
+}
+
+.cta-home {
+  background-color: #222831;
+}
+
+.cta-services {
+  background-color: #4b4376;
+}
+
+// Call-To-Action end
+
+// Footer start
+
+.footer-about-p {
+  text-align: justify;
+}
+
+// Footer end
+
+
+.modal-dialog {
+  max-width: 90%; /* keep modal wide */
+}
+
+.modal-body {
+  max-height: 80vh;
+  overflow-y: auto; 
+}
+
 .xl-text {
   font-size: 75px;
 }
@@ -36,8 +177,7 @@
 }
 
 .navbar-sticky {
-  background: #fff;
-  opacity: 0.9;
+  // background: #9cafaa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -82,7 +222,9 @@
 }
 
 section {
-  transition: transform 1s, opacity 1s;
+  transition:
+    transform 1s,
+    opacity 1s;
 }
 
 .section-hidden {
@@ -160,7 +302,7 @@ section {
     width: 250px;
   }
 
-  .header .image-container {
+  .header .info-container {
     margin-top: 30px;
   }
 
