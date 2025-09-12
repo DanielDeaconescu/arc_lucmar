@@ -1,3 +1,5 @@
+<?php include "./components/formModal.php" ?>
+
 <?php 
 
   $services = [

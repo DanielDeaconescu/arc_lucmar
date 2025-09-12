@@ -24,20 +24,21 @@
 ?>
 
 <header class="header position-relative overflow-hidden <?php echo $headerBg ?>">
-      <div class="container position-relative z-3">
+    <div class="container position-relative z-3">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="mt-6 <?= $page == 'index.php' ? '' : 'd-flex flex-column align-items-center'; ?>">
-              <h1 class="xl-text">
-                <?php echo $headerText ?? "Default Title"; ?>
-              </h1>
-              <p class="lead mb-4 p-header">
-                <?php echo $headerP; ?>
-              </p>
-              <a href="services.html" class="btn btn-primary btn-lg m-2">
-                Cere ofertă
-              </a>
-              <?php
+            <div class="col-lg-12">
+                <div class="mt-6 <?= $page == 'index.php' ? '' : 'd-flex flex-column align-items-center'; ?>">
+                    <h1 class="xl-text">
+                        <?php echo $headerText ?? "Default Title"; ?>
+                    </h1>
+                    <p class="lead mb-4 p-header">
+                        <?php echo $headerP; ?>
+                    </p>
+                    <button class="btn btn-primary btn-lg m-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#formModal">
+                        Cere ofertă
+                    </button>
+                    <?php
                 if($page == "index.php") {
                   echo '
                     <a href="services.html" class="btn btn-secondary btn-lg m-2">
@@ -46,8 +47,8 @@
                   ';
                 }
               ?>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
+    </div>
+</header>

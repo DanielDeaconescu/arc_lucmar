@@ -39,7 +39,8 @@
                 <p class="text-light">
                     <?php echo $ctaP; ?>
                 </p>
-                <a href="#contact" class="btn btn-secondary btn-lg">Obține ofertă</a>
+                <button data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-secondary btn-lg">Obține
+                    ofertă</button>
                 <a href="tel:+40741297459" class="btn btn-primary btn-lg">
                     <i class="fa-solid fa-phone me-2"></i>
                     0741 297 459

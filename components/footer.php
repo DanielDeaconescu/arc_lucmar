@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="text-decoration-none" href="#">
+                        <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#formModal">
                             <i class="fa-solid fa-check"></i>
                             Cere ofertă
                         </a>

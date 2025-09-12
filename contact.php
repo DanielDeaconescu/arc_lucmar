@@ -1,4 +1,5 @@
 <?php include "navbar.php" ?>
+<?php include "./components/formModal.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">

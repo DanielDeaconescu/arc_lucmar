@@ -1,8 +1,11 @@
+<?php include "./components/formModal.php" ?>
 <?php 
 
 require_once __DIR__ . '/includes/simple_db.php';
 
 ?>
+
+
 
 
 <!DOCTYPE html>
