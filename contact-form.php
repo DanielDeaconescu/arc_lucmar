@@ -1,5 +1,4 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -27,21 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // Initialize response array
 $response = ['success' => false, 'error' => ''];
 
-try {
-    // Validate Turnstile captcha
-    if (empty($_POST['cf-turnstile-response'])) {
-        throw new Exception('CAPTCHA verification required');
-    }
-
-    $turnstileResponse = validateTurnstile($_POST['cf-turnstile-response']);
-
-} catch (Exception $e) {
-    http_response_code(400);
-    $response['error'] = $e->getMessage();
-}
-
-// Validate Cloudflare Turnstile captcha
-
+// Function definitions (moved to top)
 function validateTurnstile($token) {
     $secretKey = $_ENV['TURNSTILE_SECRET_KEY'];
 
@@ -52,21 +37,19 @@ function validateTurnstile($token) {
     ];
 
     $options = [
-            'http' => [
-                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                'method' => 'POST',
-                'content' => http_build_query($data)
-            ]
-        ];
+        'http' => [
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data)
+        ]
+    ];
 
-        $context = stream_context_create($options);
-        $result = file_get_contents($url, false, $context);
-        $outcome = json_decode($result, true);
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    $outcome = json_decode($result, true);
 
-        return $outcome['success'] ?? false;
+    return $outcome['success'] ?? false;
 }
-
-// Process uploaded file with validation
 
 function processUploadedFile($file) {
     // Check for upload errors
@@ -108,8 +91,6 @@ function processUploadedFile($file) {
         'type' => $mimeType
     ];
 }
-
-// Sending email using PHPMailer
 
 function sendEmail($name, $phone, $description, $attachment = null) {
     $mail = new PHPMailer(true);
@@ -157,3 +138,50 @@ function sendEmail($name, $phone, $description, $attachment = null) {
         throw new Exception("Email could not be sent. Error: {$mail->ErrorInfo}");
     }
 }
+
+// Main execution
+try {
+    // Validate Turnstile captcha
+    if (empty($_POST['cf-turnstile-response'])) {
+        throw new Exception('Verificarea CAPTCHA este necesară');
+    }
+
+    $turnstileResponse = validateTurnstile($_POST['cf-turnstile-response']);
+    if (!$turnstileResponse) {
+        throw new Exception('Verificarea CAPTCHA a eșuat');
+    }
+
+    // Get and sanitize form data
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+    $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
+    
+    // Validate required fields
+    if (empty($name) || empty($phone)) {
+        throw new Exception('Numele și telefonul sunt obligatorii');
+    }
+    
+    // Process file upload if exists
+    $attachment = null;
+    if (!empty($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+        $attachment = processUploadedFile($_FILES['image']);
+    }
+    
+    // Send email
+    $mailSent = sendEmail($name, $phone, $description, $attachment);
+    
+    if ($mailSent) {
+        $response['success'] = true;
+        $response['message'] = 'Mesajul a fost trimis cu succes!';
+    } else {
+        throw new Exception('Trimiterea emailului a eșuat');
+    }
+    
+} catch (Exception $e) {
+    http_response_code(400);
+    $response['error'] = $e->getMessage();
+}
+
+// Return JSON response
+echo json_encode($response);
+?>

@@ -214,7 +214,7 @@ const validateForm = (form) => {
     });
 
     // File (image) validation (JPEG, PNG, GIF, WebP, AVIF)
-    const attachment = form.elements.attachment;
+    const attachment = form.elements.image;
     if (attachment && attachment.files.length > 0) {
         const allowedTypes = ["image/jpeg", "image/png", "image/gif", "image/webp", "image/avif", "image/svg+xml"];
         const files = Array.from(attachment.files);
@@ -237,15 +237,15 @@ const form = document.getElementById("formLucmar");
 const attachImageLabel = document.querySelector(".attach-image-label");
 
 attachImageLabel.addEventListener("change", () => {
-    const attachment = form.elements.attachment;
+    const attachment = form.elements.image;
     const attachImageName = document.querySelector(".attach-file-name");
     if (attachment.files.length > 0) {
         attachImageName.textContent = attachment.files[0].name;
     }
 });
 
-// Spinner controller
 
+// Spinner controller
 const showSpinner = (show) => {
     const spinner = document.querySelector(".spinner-border");
     if (show) {

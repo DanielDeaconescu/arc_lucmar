@@ -30,9 +30,12 @@
                         <input type="text" class="form-control" name="phone">
                     </div>
                     <div class="mb-3">
-                        <label for="image" class="form-label attach-image-label">Încarcă o schiță a proiectului
-                            (opțional):</label>
-                        <input type="file" class="form-control image-input" name="image">
+                        <label for="image" class="form-label attach-image-label">
+                            <span class="attach-file-name">
+                                Încarcă o schiță a proiectului (opțional):
+                            </span>
+                            <input type="file" id="image" class="form-control image-input" name="image">
+                        </label>
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrierea proiectului (opțional):</label>
