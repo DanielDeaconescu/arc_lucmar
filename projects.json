@@ -1,0 +1,161 @@
+[
+  {
+    "title": "Montaj ferestre PVC Galati 1",
+    "thumbnail": "./images/project1/thumb.jpg",
+    "gallery": [
+      "./images/project1/img1.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 2",
+    "thumbnail": "./images/project2/thumb.jpg",
+    "gallery": [
+      "images/project2/img1.jpg",
+      "images/project2/img2.jpg",
+      "images/project2/img3.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 3",
+    "thumbnail": "./images/project3/thumb.jpg",
+    "gallery": [
+      "images/project3/img1.jpg",
+      "images/project3/img2.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 4",
+    "thumbnail": "./images/project4/thumb.jpg",
+    "gallery": [
+      "./images/project4/img1.jpg",
+      "./images/project4/img2.jpg",
+      "./images/project4/img3.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 5",
+    "thumbnail": "./images/project5/thumb.jpg",
+    "gallery": [
+      "./images/project5/img1.jpg",
+      "./images/project5/img2.jpg",
+      "./images/project5/img3.jpg",
+      "./images/project5/img4.jpg",
+      "./images/project5/img5.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 6",
+    "thumbnail": "./images/project5/thumb.jpg",
+    "gallery": [
+      "./images/project5/img1.jpg",
+      "./images/project5/img2.jpg",
+      "./images/project5/img3.jpg",
+      "./images/project5/img4.jpg",
+      "./images/project5/img5.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 7",
+    "thumbnail": "./images/project5/thumb.jpg",
+    "gallery": [
+      "./images/project5/img1.jpg",
+      "./images/project5/img2.jpg",
+      "./images/project5/img3.jpg",
+      "./images/project5/img4.jpg",
+      "./images/project5/img5.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 8",
+    "thumbnail": "./images/project5/thumb.jpg",
+    "gallery": [
+      "./images/project5/img1.jpg",
+      "./images/project5/img2.jpg",
+      "./images/project5/img3.jpg",
+      "./images/project5/img4.jpg",
+      "./images/project5/img5.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 9",
+    "thumbnail": "./images/project5/thumb.jpg",
+    "gallery": [
+      "./images/project5/img1.jpg",
+      "./images/project5/img2.jpg",
+      "./images/project5/img3.jpg",
+      "./images/project5/img4.jpg",
+      "./images/project5/img5.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  },
+  {
+    "title": "Montaj ferestre PVC Galati 10",
+    "thumbnail": "./images/project5/thumb.jpg",
+    "gallery": [
+      "./images/project5/img1.jpg",
+      "./images/project5/img2.jpg",
+      "./images/project5/img3.jpg",
+      "./images/project5/img4.jpg",
+      "./images/project5/img5.jpg"
+    ],
+    "specs": [
+      "Profile PVC clasa A",
+      "Sticla termoizolanta 4S",
+      "Montaj realizat in 3 zile",
+      "Garantie 5 ani"
+    ]
+  }
+]

@@ -1,130 +1,8 @@
 <?php 
 
-$projects = [
-  [ 
-    "id" => 1, // unique ID
-    "title" => "Montaj ferestre PVC Galati",
-    "thumbnail" => "./images/project1/thumb.jpg",
-    "gallery" => [
-      "./images/project1/img1.jpg",
-    ],
-    "specs" => [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
-    ],
-    "orientation" => ""
-  ], 
-  [
-    "id" => 2,
-    "title" => "Montaj ferestre PVC Galati 1",
-    "thumbnail" => "./images/project2/thumb.jpg",
-    "gallery" => [
-      "images/project2/img1.jpg",
-      "images/project2/img2.jpg",
-      "images/project2/img3.jpg"
-    ],
-    "specs" => [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
-    ],
-    "orientation" => ""
-  ],
-  [
-    "id" => 3,
-    "title" => "Montaj ferestre PVC Galati 2",
-    "thumbnail" => "./images/project3/thumb.jpg",
-    "gallery" => [
-      "images/project3/img1.jpg",
-      "images/project3/img2.jpg",
-    ],
-    "specs" => [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
-    ],
-    "orientation" => ""
-  ],
-  [ 
-    "id" => 4, 
-    "title" => "Montaj ferestre PVC Galati 3",
-    "thumbnail" => "./images/project4/thumb.jpg",
-    "gallery" => [
-      "./images/project4/img1.jpg",
-      "./images/project4/img2.jpg",
-      "./images/project4/img3.jpg"
-    ],
-    "specs" => [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
-    ],
-    "orientation" => ""
-],
-[ 
-    "id" => 5,
-    "title" => "Montaj ferestre PVC Galati 4",
-    "thumbnail" => "./images/project5/thumb.jpg",
-    "gallery" => [
-      "./images/project5/img1.jpg",
-      "./images/project5/img2.jpg",
-      "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg",
-      "./images/project5/img5.jpg"
-    ],
-    "specs" => [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
-    ],
-    "orientation" => ""
-]
-];
-
-// Detect orientation safely
-function getOrientation($imagePath) {
-    if (!file_exists($imagePath)) return 'landscape'; // fallback
-
-    [$width, $height] = getimagesize($imagePath);
-
-    // Try to read EXIF if available (only works on JPEG/TIFF)
-    if (function_exists('exif_read_data') && exif_imagetype($imagePath) === IMAGETYPE_JPEG) {
-        $exif = @exif_read_data($imagePath);
-        if (!empty($exif['Orientation'])) {
-            $orientation = $exif['Orientation'];
-            // If rotated 90 or 270 degrees, swap width and height
-            if (in_array($orientation, [5, 6, 7, 8])) {
-                [$width, $height] = [$height, $width];
-            }
-        }
-    }
-
-    return $width > $height ? 'landscape' : 'portrait';
-}
-
-
-foreach ($projects as $key => $project) {
-    $projects[$key]['orientation'] = getOrientation($project['thumbnail']);
-}
-
-$landscapeProjects = array_filter($projects, fn($p) => $p['orientation'] === 'landscape');
-$portraitProjects  = array_filter($projects, fn($p) => $p['orientation'] === 'portrait');
+require_once __DIR__ . '/includes/simple_db.php';
 
 ?>
-
-
-<?php
-$img = "./images/project3/img1.jpg";
-
-?>
-
-
 
 
 <!DOCTYPE html>
@@ -206,30 +84,43 @@ $img = "./images/project3/img1.jpg";
 
             <!-- Modals (unchanged) -->
             <?php foreach ($projects as $project): ?>
+
             <div class="modal fade" id="projectModal<?= $project['id']; ?>" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="row">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body <?= $containsVertical ? '' : 'vh-50' ?>">
+                            <div class="container-gallery-specs">
                                 <!-- Gallery left -->
-                                <div class="col-md-6">
+                                <div class="gallery-left">
                                     <!-- Landscape images row -->
-                                    <div class="row g-3 mb-4">
+                                    <div class="modal-images-container">
                                         <?php foreach ($project['gallery'] as $image): ?>
+
                                         <?php if (getOrientation($image) === 'landscape'): ?>
-                                        <div class="col-md-6">
-                                            <img src="<?php echo $image; ?>" class="img-fluid rounded shadow-sm" alt="">
+                                        <div>
+                                            <a href="<?= $image; ?>" data-lightbox="<?= $project["id"]; ?>">
+                                                <img src="<?php echo $image; ?>"
+                                                    class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
+                                                    alt="">
+                                            </a>
                                         </div>
                                         <?php endif; ?>
                                         <?php endforeach; ?>
                                     </div>
 
                                     <!-- Portrait images row -->
-                                    <div class="row g-3">
+                                    <div class="modal-images-container">
                                         <?php foreach ($project['gallery'] as $image): ?>
                                         <?php if (getOrientation($image) === 'portrait'): ?>
-                                        <div class="col-md-6">
-                                            <img src="<?php echo $image; ?>" class="img-fluid rounded shadow-sm" alt="">
+                                        <div class="">
+                                            <a href="<?= $image; ?>" data-lightbox="<?= $project['id']; ?>">
+                                                <img src="<?php echo $image; ?>"
+                                                    class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
+                                                    alt="">
+                                            </a>
                                         </div>
                                         <?php endif; ?>
                                         <?php endforeach; ?>
@@ -238,7 +129,7 @@ $img = "./images/project3/img1.jpg";
 
 
                                 <!-- Specs right -->
-                                <div class="col-md-6">
+                                <div class="specs-right">
                                     <h4 class="text-dark"><?= $project['title']; ?></h4>
                                     <ul>
                                         <?php foreach ($project['specs'] as $spec): ?>

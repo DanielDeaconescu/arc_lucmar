@@ -119,6 +119,18 @@
   background-color: #4b4376;
 }
 
+.cta-portfolio {
+  background-color: #F14A00;
+}
+
+.cta-contact {
+  background-color: #C63C51;
+}
+
+.cta-custom {
+  font-size: 1.4rem;
+}
+
 // Call-To-Action end
 
 // Footer start
@@ -129,15 +141,80 @@
 
 // Footer end
 
+// Main Section on Contact page start
 
-.modal-dialog {
-  max-width: 90%; /* keep modal wide */
+
+@media (min-width: 992px) {
+  .contact-info-link {
+    transition: all 0.3s ease;
+  }
+
+  .contact-info-link:hover {
+    transform: scale(1.05);
+  }
 }
+
+.factory-address {
+  text-wrap: nowrap;
+}
+
+// Main Section on Contact page end
+
+// Modals start
+.modal-dialog {
+  
+}
+
+// .modal-body {
+//   max-height: 80vh;
+//   overflow-y: auto; 
+// }
 
 .modal-body {
-  max-height: 80vh;
-  overflow-y: auto; 
+  // width: 500px;
+  // height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
+
+.container-gallery-specs {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.gallery-left {
+  display: flex;
+  
+  flex-wrap: wrap;
+  max-width: 450px;
+  gap: 0.5rem;
+  border: 4px solid #222831;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.modal-images-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 450px;
+  gap: 0.5rem;
+}
+
+.modal-img-singular {
+  max-width: 400px;
+}
+
+.modal-img-multiple {
+  max-width: 200px;
+  // margin-bottom: 10px;
+}
+
+// Modals end
+
 
 .xl-text {
   font-size: 75px;
@@ -151,6 +228,10 @@
   &:hover {
     color: #fff;
   }
+}
+
+.header {
+  margin-top: 80px;
 }
 
 .header .decoration-star {

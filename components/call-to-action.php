@@ -20,12 +20,16 @@
             $ctaP = 'Dacă proiectele noastre ți-au atras atenția, echipa Arc Construct este pregătită să transforme și ideile tale în realitate. Fie că ai nevoie de ferestre și uși din PVC sau aluminiu, montaj profesionist ori consultanță specializată, îți oferim soluții adaptate exact nevoilor tale. Ia legătura cu noi astăzi și hai să începem colaborarea!';
             $ctaClass = 'cta-services';
         break;
+        case 'contact.php':
+            $ctaTitle = 'Contactați-ne — suntem aici să vă ajutăm!';
+            $ctaP = 'Completați formularul sau contactați-ne direct și vă oferim o evaluare rapidă a proiectului. Echipa Arc Lucmar, cu peste 19 ani de experiență în montaj și furnizare profile PVC și aluminiu, vă stă la dispoziție pentru măsurători, consultanță și ofertă fără obligații.';
+            $ctaClass = 'cta-contact';
     }
         
 
 ?>
 
-<section class="py-6 text-center <?= $ctaClass ?>">
+<section class="py-6 text-center cta-custom <?= $ctaClass ?>">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">

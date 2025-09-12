@@ -16,50 +16,50 @@
 // }
 
 // Use Intersection Observer to make the navigation bar sticky
-const nav = document.querySelector("nav");
-const navHeight = nav.getBoundingClientRect().height;
-const hero = document.querySelector("header");
+// const nav = document.querySelector("nav");
+// const navHeight = nav.getBoundingClientRect().height;
+// const hero = document.querySelector("header");
 
-const makeNavSticky = function (entries, observer) {
-  const [entry] = entries;
-  if (!entry.isIntersecting) {
-    nav.classList.add("sticky-top", "navbar-sticky");
-  } else {
-    nav.classList.remove("sticky-top", "navbar-sticky");
-  }
-};
+// const makeNavSticky = function (entries, observer) {
+//   const [entry] = entries;
+//   if (!entry.isIntersecting) {
+//     nav.classList.add("sticky-top", "navbar-sticky");
+//   } else {
+//     nav.classList.remove("sticky-top", "navbar-sticky");
+//   }
+// };
 
-const options = {
-  root: null,
-  rootMargin: `-${navHeight}px`,
-  threshold: 0,
-};
+// const options = {
+//   root: null,
+//   rootMargin: `-${navHeight}px`,
+//   threshold: 0,
+// };
 
-const observerHero = new IntersectionObserver(makeNavSticky, options);
-observerHero.observe(hero);
+// const observerHero = new IntersectionObserver(makeNavSticky, options);
+// observerHero.observe(hero);
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function scrollToTop() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
 
 // Use Intersection Observer to reveal elements on scroll
 
-const allSections = document.querySelectorAll("section");
+// const allSections = document.querySelectorAll("section");
 
-const slideSection = function (entries, observer) {
-  const [entry] = entries;
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section-hidden");
-  observer.unobserve(entry.target);
-};
+// const slideSection = function (entries, observer) {
+//   const [entry] = entries;
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove("section-hidden");
+//   observer.unobserve(entry.target);
+// };
 
-const options2 = {
-  root: null,
-  threshold: 0.15,
-};
+// const options2 = {
+//   root: null,
+//   threshold: 0.15,
+// };
 
-const sectionObserver = new IntersectionObserver(slideSection, options2);
+// const sectionObserver = new IntersectionObserver(slideSection, options2);
 
 // make all the sections invisible in the beginning
 // allSections.forEach((item) => {
@@ -168,6 +168,9 @@ const sectionObserver = new IntersectionObserver(slideSection, options2);
 // Event Listeners
 // document.addEventListener("DOMContentLoaded", incrementStats);
 
-document.querySelector("#to-top").addEventListener("click", scrollToTop);
+// document.querySelector("#to-top").addEventListener("click", scrollToTop);
 
 // making the carousel work on my own
+
+// const dimensions = document.querySelector(".navbar-custom").getBoundingClientRect();
+// console.log(dimensions.height);

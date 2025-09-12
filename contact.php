@@ -33,68 +33,75 @@
 
     <!-- De ce sa alegeti Arc Construct? -->
     <section id="details" class="details position-relative my-6 overflow-hidden">
-        <img src="images/decoration-star.svg" alt="" class="decoration-star position-absolute" />
+
         <div class="container position-relative z-3">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="image-container d-flex justify-content-center">
-                        <img src="images/details-1.png" alt="" class="img-fluid" />
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h2 class="card-title mb-4 text-dark">Informații de contact</h2>
+                            <p class="fs-5">Ai întrebări sau dorești o ofertă personalizată? Echipa noastră îți stă la
+                                dispoziție
+                                pentru a discuta despre proiectul tău și pentru a găsi soluțiile potrivite. Nu ezita să
+                                ne contactezi!</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex">
+                                    <a href="tel:+40741297459"
+                                        class="text-decoration-none fs-4 text-dark d-flex align-items-center fw-bold contact-info-link gap-2">
+                                        <i class="fa-solid fa-phone fa-2x"></i>
+                                        0741297459
+                                    </a>
+                                </li>
+                                <li class="list-group-item d-flex">
+                                    <a href="mailto:contact@arclucmar.ro"
+                                        class="text-decoration-none fs-4 text-dark d-flex align-items-center fw-bold contact-info-link gap-2">
+                                        <i class="fa-solid fa-envelope fa-2x"></i>
+                                        contact@arclucmar.ro
+                                    </a>
+                                </li>
+                                <li class="list-group-item d-flex">
+
+                                    <a href="https://maps.app.goo.gl/KZHq9m4qUC2WJ2Rq8"
+                                        class="text-decoration-none fs-5 text-dark d-flex flex-column justify-content-center fw-bold contact-info-link gap-2"
+                                        target="_blank">
+
+                                        <p class="text-dark factory-address fs-6 mb-0">Adresa fabricii</p>
+                                        <div class="d-flex justify-content-center gap-2">
+                                            <i class="fa-solid fa-map-location-dot fa-2x"></i>
+                                            Str. Colectiviștilor Nr. 17A Galați, România
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li class="list-group-item d-flex">
+                                    <a href="" target="_blank"
+                                        class="text-decoration-none fs-4 text-dark d-flex align-items-center fw-bold contact-info-link gap-2">
+                                        <i class="fa-brands fa-square-facebook fa-2x"></i>
+                                        Pagina de Facebook
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="mt-4">
-                        <h2 class="mb-4">De ce să alegeți Arc Construct?</h2>
-                        <ul class="list-unstyled">
-                            <li class="d-flex mb-3">
-                                <i class="fas fa-check text-primary fa-2x mx-4"></i>
-                                <p>
-                                    Colaborăm doar cu furnizori de încredere – pentru a garanta
-                                    calitatea produselor.
-                                </p>
-                            </li>
-
-                            <li class="d-flex mb-3">
-                                <i class="fas fa-check text-primary fa-2x mx-4"></i>
-                                <p>
-                                    Montaj rapid și curat – respectăm termenele și spațiul
-                                    clientului.
-                                </p>
-                            </li>
-
-                            <li class="d-flex mb-3">
-                                <i class="fas fa-check text-primary fa-2x mx-4"></i>
-                                <p>
-                                    Soluții personalizate – fiecare proiect este adaptat după
-                                    nevoile și bugetul dumneavoastră.
-                                </p>
-                            </li>
-
-                            <li class="d-flex mb-3">
-                                <i class="fas fa-check text-primary fa-2x mx-4"></i>
-                                <p>Experiență locală – în Galați și împrejurimi.</p>
-                            </li>
-                        </ul>
-                        <a href="article.html" class="btn btn-primary">Cere o ofertă</a>
-                    </div>
+                    <!-- Google Map -->
+                    <h5 class="text-dark">Harta Fabricii</h5>
+                    <p class="fs-5">
+                        Colaborăm cu Sigplast, producător local de tâmplărie PVC, pentru a vă asigura servicii de montaj
+                        profesionist și produse de calitate superioară.
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.0609689625126!2d28.003555396789565!3d45.4484275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6def27c7d78b5%3A0x3ad79942f085a8b3!2sALBARIM%20S.R.L.%20(SIGPlast)!5e0!3m2!1sro!2sro!4v1757656665705!5m2!1sro!2sro"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- TODO: Implement a Call To Action here -->
-    <section class="get-quote bg-light py-6 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h4 class="lh-base">
-                        La Arc Construct Galați, credem că fiecare locuință merită
-                        confort, siguranță și un aspect modern.
-                    </h4>
-                    <a href="#contact" class="btn btn-secondary btn-lg">Obține o ofertă</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include "./components/call-to-action.php"; ?>
 
     <?php include "./components/footer.php" ?>
 
