@@ -174,3 +174,129 @@
 
 // const dimensions = document.querySelector(".navbar-custom").getBoundingClientRect();
 // console.log(dimensions.height);
+
+
+// Toast controller
+const showToast = (message, isError = false) => {
+    const toast = document.getElementById("toast");
+    toast.className = isError ? 'toast-error' : 'toast-success';
+    toast.textContent = message;
+    toast.classList.add("toast-visible");
+
+    setTimeout(() => {
+        toast.classList.remove("toast-visible");
+    }, 3000);
+};
+
+// Function to validate a given form
+const validateForm = (form) => {
+    const errors = [];
+    const fields = [
+        {
+            name: "name",
+            label: "Nume"
+        },
+        {
+            name: "phone",
+            label: "Telefon"
+        },
+        {
+            name: "description",
+            label: "Descriere"
+        }
+    ];
+
+    // If a field is missing, throw a relevant error
+    fields.forEach((field) => {
+        if(!form.elements[field.name].value.trim()) {
+            errors.push(`${field.label} este obligatoriu`);
+        }
+    });
+
+    // File (image) validation (JPEG, PNG, GIF, WebP, AVIF)
+    const attachment = form.elements.attachment;
+    if (attachment && attachment.files.length > 0) {
+        const allowedTypes = ["image/jpeg", "image/png", "image/gif", "image/webp", "image/avif", "image/svg+xml"];
+        const files = Array.from(attachment.files);
+
+        files.forEach((file) => {
+            if (!allowedTypes.includes(file.type)) {
+                errors.push(`Imagine invalida: ${file.name}. Formatele aceptate sunt: JPEG, PNG, GIF, WebP, AVIF si SVG.`);
+            }
+        });
+    }
+
+    return errors;
+}
+
+// Form submission
+const form = document.getElementById("formLucmar");
+
+// Display the name of the file the user uploads
+
+const attachImageLabel = document.querySelector(".attach-image-label");
+
+attachImageLabel.addEventListener("change", () => {
+    const attachment = form.elements.attachment;
+    const attachImageName = document.querySelector(".attach-file-name");
+    if (attachment.files.length > 0) {
+        attachImageName.textContent = attachment.files[0].name;
+    }
+});
+
+// Spinner controller
+
+const showSpinner = (show) => {
+    const spinner = document.querySelector(".spinner-border");
+    if (show) {
+        spinner.classList.remove("d-none");
+    } else {
+        spinner.classList.add("d-none");
+    }
+};
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    showSpinner(true);
+    const formData = new FormData(form);
+
+    // Check if the Turnstile token exists
+    const turnstileToken = document.querySelector('[name="cf-turnstile-response"]')?.value;
+
+    if (!turnstileToken) {
+        showToast("Please complete the CAPTCHA verification!", true);
+        showSpinner(false);
+        return;
+    }
+
+    // Validation
+    const errors = validateForm(form);
+    if (errors.length > 0) {
+        showToast(errors.join(", "), true);
+        showSpinner(false);
+        return;
+    }
+
+    try {
+        const response = await fetch("contact-form.php", {
+            method: "POST",
+            body: formData
+        });
+
+        if (!response.ok) {
+            const result = await response.json();
+            throw new Error(result.error || "Cererea a esuat!");
+        }
+
+        showToast("Mesajul a fost trimis cu succes!");
+        form.reset();
+        showSpinner(false);
+        setTimeout(() => {
+            window.location.href = "thank-you.php";
+        }, 1500);
+    } catch (error) {
+        showToast(error.message || 'Eroare la trimiterea mesajului!', true);
+        showSpinner(false);
+    }
+});

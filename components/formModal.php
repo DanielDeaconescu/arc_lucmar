@@ -30,18 +30,27 @@
                         <input type="text" class="form-control" name="phone">
                     </div>
                     <div class="mb-3">
-                        <label for="image" class="form-label">Încarcă o schiță a proiectului (opțional):</label>
-                        <input type="file" class="form-control" name="image">
+                        <label for="image" class="form-label attach-image-label">Încarcă o schiță a proiectului
+                            (opțional):</label>
+                        <input type="file" class="form-control image-input" name="image">
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrierea proiectului (opțional):</label>
                         <textarea name="description" id="description" class="form-control"></textarea>
                     </div>
                     <!-- TODO: add a Cloudflare Captcha -->
+                    <div class="mb-3 d-flex justify-content-center">
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yJdAtvLgpwHwA"></div>
+                    </div>
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary">Trimite</button>
+                        <button type="submit" class="btn btn-primary">
+                            <div class="spinner-border spinner-border-sm d-none" role="status"></div>
+                            Trimite
+                        </button>
                     </div>
                 </form>
+
+                <div id="toast" class="toast-hidden"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anulează</button>
