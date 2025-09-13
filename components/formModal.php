@@ -41,7 +41,6 @@
                         <label for="description" class="form-label">Descrierea proiectului (opțional):</label>
                         <textarea name="description" id="description" class="form-control"></textarea>
                     </div>
-                    <!-- TODO: add a Cloudflare Captcha -->
                     <div class="mb-3 d-flex justify-content-center">
                         <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yJdAtvLgpwHwA"></div>
                     </div>

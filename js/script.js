@@ -278,6 +278,9 @@ form.addEventListener('submit', async (e) => {
         return;
     }
 
+    // Adding the token to formData
+    formData.append('cf-turnstile-response', turnstileToken);
+
     try {
         const response = await fetch("contact-form.php", {
             method: "POST",

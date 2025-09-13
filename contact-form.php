@@ -9,9 +9,14 @@ require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// Enable error reporting for debugging (to be disabled in production)
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// Error reporting - only show errors in development
+if ($_ENV['APP_ENV'] === 'development') {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+} else {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+}
 
 // Set content type to JSON
 header('Content-Type: application/json');
@@ -26,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // Initialize response array
 $response = ['success' => false, 'error' => ''];
 
-// Function definitions (moved to top)
+// Function definitions
 function validateTurnstile($token) {
     $secretKey = $_ENV['TURNSTILE_SECRET_KEY'];
 
@@ -46,12 +51,21 @@ function validateTurnstile($token) {
 
     $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
+    
+    if ($result === false) {
+        return false;
+    }
+    
     $outcome = json_decode($result, true);
-
     return $outcome['success'] ?? false;
 }
 
 function processUploadedFile($file) {
+    // Check if file was actually uploaded
+    if (!isset($file['error']) || $file['error'] === UPLOAD_ERR_NO_FILE) {
+        return null;
+    }
+
     // Check for upload errors
     if ($file['error'] !== UPLOAD_ERR_OK) {
         throw new Exception('File upload failed with error code: ' . $file['error']);
@@ -116,8 +130,8 @@ function sendEmail($name, $phone, $description, $attachment = null) {
         // Email body
         $body = "
             <h2>New Project Inquiry</h2>
-            <p><strong>Nume:</strong> {$name}</p>
-            <p><strong>Telefon:</strong> {$phone}</p>
+            <p><strong>Nume:</strong> " . htmlspecialchars($name) . "</p>
+            <p><strong>Telefon:</strong> " . htmlspecialchars($phone) . "</p>
             <p><strong>Descriere:</strong><br>" . nl2br(htmlspecialchars($description)) . "</p>";
 
         $mail->Body = $body;
@@ -151,10 +165,10 @@ try {
         throw new Exception('Verificarea CAPTCHA a eșuat');
     }
 
-    // Get and sanitize form data
-    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
-    $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
+    // Get and sanitize form data (replaced deprecated FILTER_SANITIZE_STRING)
+    $name = isset($_POST['name']) ? htmlspecialchars(trim($_POST['name'])) : '';
+    $phone = isset($_POST['phone']) ? htmlspecialchars(trim($_POST['phone'])) : '';
+    $description = isset($_POST['description']) ? htmlspecialchars(trim($_POST['description'])) : '';
     
     // Validate required fields
     if (empty($name) || empty($phone)) {
@@ -163,7 +177,7 @@ try {
     
     // Process file upload if exists
     $attachment = null;
-    if (!empty($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+    if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
         $attachment = processUploadedFile($_FILES['image']);
     }
     
