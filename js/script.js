@@ -293,8 +293,6 @@ form.addEventListener('submit', async (e) => {
             throw new Error(result.error || "Cererea a esuat!");
         }
 
-        
-
         showToast("Mesajul a fost trimis cu succes!");
         form.reset();
         showSpinner(false);
