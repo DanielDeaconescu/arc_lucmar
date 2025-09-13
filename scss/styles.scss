@@ -278,6 +278,63 @@
 
 // Thank you page end
 
+// Landing page start
+
+.header-landing {
+  background-image: url("../images/header-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-landing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-landing .text-content {
+  position: relative;
+  z-index: 100;
+}
+
+.p-header-landing {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.formLandingPage {
+  width: 350px;
+}
+
+.why-choose-our-services {
+  background-color: #2a9d8f;
+}
+
+.additional-cta {
+  background-color: #EA580C;
+}
+
+.award-custom {
+  color: #ffd700;
+}
+
+.color-grey {
+  color: #f0f0f0;
+}
+
+// Landing page end
+
 
 .xl-text {
   font-size: 75px;
