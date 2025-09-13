@@ -287,10 +287,13 @@ form.addEventListener('submit', async (e) => {
             body: formData
         });
 
+        let result = await response.json();
+
         if (!response.ok) {
-            const result = await response.json();
             throw new Error(result.error || "Cererea a esuat!");
         }
+
+        
 
         showToast("Mesajul a fost trimis cu succes!");
         form.reset();

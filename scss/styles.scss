@@ -264,8 +264,19 @@
   display: none;
 }
 
-
 // Form modal end
+
+// Thank you page start
+
+.thank-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+// Thank you page end
 
 
 .xl-text {

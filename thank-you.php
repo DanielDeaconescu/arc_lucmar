@@ -1,0 +1,58 @@
+<?php
+
+session_start();
+
+// Check if the user came from a successful form submission
+
+if (!isset($_SESSION['form_submitted']) || $_SESSION['form_submitted'] !== true) {
+    header('Location: index.php');
+    exit;
+}
+
+// Clear the session flag to prevent refreshing the page
+unset($_SESSION['form_submitted']);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>Cerere trimisă! | Mulțumim!</title>
+</head>
+
+<body>
+
+    <!-- De ce sa alegeti Arc Construct? -->
+    <section id="thank-you-section" class="thank-you">
+        <div class="logo"></div>
+        <h1 class="text-dark">Mulțumim pentru completarea formularului!</h1>
+        <p class="fs-5">Un specialist Arc Lucmar Termopane vă va contacta în cel mai scurt timp pentru mai multe
+            informații și
+            detalii.</p>
+        <a href="index.php" class="btn btn-secondary">Înapoi la pagina principală</a>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

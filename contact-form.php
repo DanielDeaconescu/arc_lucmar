@@ -1,5 +1,8 @@
 <?php
 
+// session
+session_start();
+
 date_default_timezone_set('Europe/Bucharest');
 
 // calculate the date
@@ -132,8 +135,12 @@ try {
     }
 
     // Send email
-    $mail->send();
-    echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+    if ($mail->send()) {
+        // Set a session flag
+        $_SESSION['form_submitted'] = true;
+
+        echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+    }
 
 } catch (Exception $e) {
     http_response_code(500);
