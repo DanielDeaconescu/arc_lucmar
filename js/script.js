@@ -176,6 +176,17 @@
 // console.log(dimensions.height);
 
 
+
+// Reset the form when the modal is closed
+const form = document.getElementById("formLucmar");
+const formModal = document.getElementById("formModal");
+
+// Detecting when modal is closed
+formModal.addEventListener('hidden.bs.modal', function() {
+    form.reset();
+});
+
+
 // Toast controller
 const showToast = (message, isError = false) => {
     const toast = document.getElementById("toast");
@@ -230,7 +241,7 @@ const validateForm = (form) => {
 }
 
 // Form submission
-const form = document.getElementById("formLucmar");
+
 
 // Display the name of the file the user uploads
 
@@ -304,3 +315,4 @@ form.addEventListener('submit', async (e) => {
         showSpinner(false);
     }
 });
+

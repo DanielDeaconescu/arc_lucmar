@@ -42,7 +42,7 @@
                         <textarea name="description" id="description" class="form-control"></textarea>
                     </div>
                     <div class="mb-3 d-flex justify-content-center">
-                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yJdAtvLgpwHwA"></div>
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yJdAtvLgpwHwA" data-theme="light"></div>
                     </div>
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary">
