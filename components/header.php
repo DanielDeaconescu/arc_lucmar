@@ -20,6 +20,9 @@
       $headerBg = 'header-contact';
       $headerP = 'Suntem aici pentru a vă răspunde rapid la orice întrebare și pentru a vă oferi consultanță personalizată pentru ferestrele și ușile dumneavoastră din PVC și aluminiu. Completați formularul de mai jos, sunați-ne sau scrieți-ne pe email și echipa noastră cu peste 19 ani de experiență vă va ajuta să găsiți cea mai bună soluție pentru căminul dumneavoastră. Așteptăm cu interes să colaborăm!';
       break;
+    case "cookies.php":
+      $headerBg = 'header-cookies';
+      $headerP = 'Această pagină are scopul de a vă oferi informații clare și transparente cu privire la modul în care website-ul nostru utilizează fișierele de tip cookie.';
   }
 ?>
 
@@ -34,10 +37,17 @@
                     <p class="lead mb-4 p-header">
                         <?php echo $headerP; ?>
                     </p>
-                    <button class="btn btn-primary btn-lg m-2" type="button" data-bs-toggle="modal"
+                    <?php 
+                      if ($page != "cookies.php") {
+                        echo '
+                          <button class="btn btn-primary btn-lg m-2" type="button" data-bs-toggle="modal"
                         data-bs-target="#formModal">
-                        Cere ofertă
-                    </button>
+                            Cere ofertă
+                          </button>
+                        ';
+                      }
+                    ?>
+
                     <?php
                 if($page == "index.php") {
                   echo '
