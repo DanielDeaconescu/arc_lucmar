@@ -51,7 +51,7 @@
                     <?php
                 if($page == "index.php") {
                   echo '
-                    <a href="services.html" class="btn btn-secondary btn-lg m-2">
+                    <a href="services.php" class="btn btn-secondary btn-lg m-2">
                       Vezi serviciile noastre
                     </a>
                   ';

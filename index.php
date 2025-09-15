@@ -88,6 +88,9 @@
         </div>
     </section>
 
+    <!-- Cookies -->
+    <?php include "cookiesPopup.php" ?>
+
     <!-- TODO: Implement a Call To Action here -->
     <?php include "./components/call-to-action.php" ?>
 

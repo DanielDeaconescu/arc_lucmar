@@ -148,7 +148,7 @@ require_once __DIR__ . '/includes/simple_db.php';
             <?php endforeach; ?>
         </div>
     </section>
-
+    <?php include "cookiesPopup.php" ?>
     <!-- CTA -->
     <?php include "./components/call-to-action.php" ?>
 

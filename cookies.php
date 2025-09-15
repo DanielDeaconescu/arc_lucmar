@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" />
-    <title>Arc Construct | Acasă</title>
+    <title>Arc Lucmar | Cookies</title>
 </head>
 
 <body>
@@ -100,8 +100,9 @@
         </div>
     </section>
 
+    <?php include "cookiesPopup.php"; ?>
 
-    <?php include "./components/footer.php" ?>
+    <?php include "./components/footer.php"; ?>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>

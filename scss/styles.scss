@@ -353,7 +353,14 @@
 // Landing page end
 
 // Cookies page start
-
+.cookies-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #44444E;
+  padding: 1.5rem;
+}
 
 
 // Cookies page end

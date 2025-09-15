@@ -182,9 +182,12 @@ const form = document.getElementById("formLucmar");
 const formModal = document.getElementById("formModal");
 
 // Detecting when modal is closed
-formModal.addEventListener('hidden.bs.modal', function() {
+if (formModal) {
+    formModal.addEventListener('hidden.bs.modal', function() {
     form.reset();
-});
+    });
+}
+
 
 
 // Toast controller
@@ -247,13 +250,17 @@ const validateForm = (form) => {
 
 const attachImageLabel = document.querySelector(".attach-image-label");
 
-attachImageLabel.addEventListener("change", () => {
+if (attachImageLabel) {
+    attachImageLabel.addEventListener("change", () => {
     const attachment = form.elements.image;
     const attachImageName = document.querySelector(".attach-file-name");
     if (attachment.files.length > 0) {
         attachImageName.textContent = attachment.files[0].name;
-    }
-});
+     }
+    });
+}
+
+
 
 
 // Spinner controller
@@ -266,7 +273,9 @@ const showSpinner = (show) => {
     }
 };
 
-form.addEventListener('submit', async (e) => {
+if (form) {
+    
+    form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const form = e.target;
     showSpinner(true);
@@ -314,5 +323,24 @@ form.addEventListener('submit', async (e) => {
         showToast(error.message || 'Eroare la trimiterea mesajului!', true);
         showSpinner(false);
     }
+    });
+}
+
+
+
+// Cookies popup functionality
+
+const cookiesPopup = document.querySelector(".cookies-popup");
+const okBtnCookies = document.querySelector(".ok-cookies-button");
+
+if(!localStorage.getItem('arclucmar_cookie')) {
+        cookiesPopup.classList.remove("d-none");
+    } 
+
+okBtnCookies.addEventListener('click', function() {
+    cookiesPopup.classList.add("d-none");
+    localStorage.setItem('arclucmar_cookie', 'true');
 });
+
+
 
