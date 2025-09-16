@@ -254,24 +254,6 @@ const attachedImagesContainer = document.querySelector('.attached-images-contain
 
 
 if (attachImageLabel) {
-    // attachImageLabel.addEventListener("change", () => {
-    // const attachments = Array.from(form.elements.image.files);
-    // const attachedImg = document.querySelectorAll(".attached-img");
-    // // console.log(attachments);
-    // attachments.forEach((attachment, index) => {
-    //     const newDiv = document.createElement('div');
-    //     newDiv.classList.add("attachment-item");
-    //     const deleteBtn = document.createElement('button');
-
-    //     const textNode = document.createTextNode(attachment.name);
-    //     newDiv.appendChild(textNode);
-
-    //     deleteBtn.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
-    //     newDiv.appendChild(deleteBtn);
-
-    //     attachedImagesContainer.appendChild(newDiv);
-    // })
-    // });
     const fileInput = form.elements.image;
     let attachmentsArray = [];
 
@@ -284,11 +266,13 @@ if (attachImageLabel) {
     function renderAttachments() {
         attachedImagesContainer.innerHTML = "";
 
-        attachmentsArray.forEach((file, index) => {
+        if(attachmentsArray.length <=5) {
+            attachmentsArray.forEach((file, index) => {
             const newDiv = document.createElement("div");
-
+                newDiv.classList.add("image-item");
             const deleteBtn = document.createElement("button");
-            deleteBtn.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
+            deleteBtn.classList.add("delete-btn");
+            deleteBtn.innerHTML = '<i class="fa-solid fa-circle-xmark fa-circle-custom"></i>';
 
             deleteBtn.addEventListener("click", () => {
                 // remove the file from our array and re-render
@@ -301,11 +285,15 @@ if (attachImageLabel) {
                 fileInput.files = dataTransfer.files;
             });
 
-            newDiv.appendChild(deleteBtn);
             newDiv.appendChild(document.createTextNode(file.name));
+            newDiv.appendChild(deleteBtn);
 
             attachedImagesContainer.appendChild(newDiv);
         })
+        } else {
+            showToast("Maximum 5 imagini!", true);
+        }
+        
     }
 }
 
@@ -369,7 +357,11 @@ if (form) {
             window.location.href = "thank-you.php";
         }, 1500);
     } catch (error) {
-        showToast(error.message || 'Eroare la trimiterea mesajului!', true);
+        if (error instanceof SyntaxError) {
+            showToast('Server returned an invalid response. Please try again.', true);
+        } else {
+            showToast(error.message || 'Eroare la trimiterea mesajului!', true);
+        }
         showSpinner(false);
     }
     });

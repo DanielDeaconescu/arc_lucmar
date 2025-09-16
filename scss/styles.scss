@@ -506,6 +506,20 @@
   }
 }
 
+.image-item {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.fa-circle-custom {
+  font-size: 1.25rem;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+}
+
 // navbar end
 
 .attachment-item {

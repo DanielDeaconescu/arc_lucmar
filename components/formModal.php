@@ -32,9 +32,9 @@
                     <div class="mb-3">
                         <label for="image" class="form-label attach-image-label">
                             <span class="attach-file-name">
-                                Încarcă o schiță a proiectului (opțional):
+                                Adaugă imagini (maxim 5)
                             </span>
-                            <input type="file" multiple id="image" class="form-control image-input" name="image">
+                            <input type="file" multiple id="image" class="form-control image-input" name="image[]">
                         </label>
                         <div class="attached-images-container"></div>
                     </div>

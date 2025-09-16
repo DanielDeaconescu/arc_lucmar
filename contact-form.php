@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(0);
+ini_set('display_errors', 0);
+
 // session
 session_start();
 
@@ -78,30 +81,40 @@ if (empty($name) || empty($phone) || empty($description)) {
     exit;
 }
 
-// Process the file upload if it exists
-$attachment = null;
-if (!empty($_FILES['image']['name']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-    $file = $_FILES['image'];
+// Process the file uploads if they exist
+$attachments = [];
 
-    // Basic file validation
+if (!empty($_FILES['image']['name'][0])) {
     $maxSize = $_ENV['MAX_FILE_SIZE'] ?? (5 * 1024 * 1024);
-    if ($file['size'] > $maxSize) {
-        http_response_code(400);
-        echo json_encode(['success' => false, 'error' => 'File is too large']);
-        exit;
-    }
-
     $allowedTypes = ["image/jpeg", "image/png", "image/gif", "image/webp", "image/avif", "image/svg+xml"];
 
-    $fileType = mime_content_type($file['tmp_name']);
+    foreach ($_FILES['image']['name'] as $index => $name) {
+        if ($_FILES['image']['error'][$index] !== UPLOAD_ERR_OK) {
+            continue;
+        }
 
-    if (!in_array($fileType, $allowedTypes)) {
-        http_response_code(400);
-        echo json_encode(['success' => false, 'error' => 'Invalid file type']);
-        exit;
+        $tmpName = $_FILES['image']['tmp_name'][$index];
+        $size = $_FILES['image']['size'][$index];
+        $type = mime_content_type($tmpName);
+
+        if ($size > $maxSize) {
+            http_response_code(400);
+            echo json_encode(['success' => false, 'error' => 'One of the files is too large']);
+            exit;
+        }
+
+        if (!in_array($type, $allowedTypes)) {
+            http_response_code(400);
+            echo json_encode(['success' => false, 'error' => 'Invalid file type: ' . $name]);
+            exit;
+        }
+
+        // Collet attachments for PHPMailer
+        $attachments[] = [
+            'tmp_name' => $tmpName,
+            'name' => $name
+        ];
     }
-
-    $attachment = $file;
 }
 
 // Send the email with PHPMailer
@@ -116,6 +129,13 @@ try {
     $mail->Password = $_ENV['SMTP_PASSWORD'];
     $mail->SMTPSecure = $_ENV['SMTP_ENCRYPTION'];
     $mail->Port = $_ENV['SMTP_PORT'];
+    $mail->Timeout = 15;
+
+    // Enable debugging
+    $mail->SMTPDebug = 2;
+    $mail->Debugoutput = function($str, $level) {
+        error_log("PHPMailer: $str");
+    };
 
     // Email content
     $mail->setFrom($_ENV['EMAIL_FROM'], $_ENV['EMAIL_FROM_NAME']);
@@ -130,21 +150,26 @@ try {
         <p><strong>Descrierea proiectului:</strong><br>" .nl2br(htmlspecialchars($description)) . "</p> ";
 
     // Add attachment if it exists
-    if ($attachment) {
-        $mail->addAttachment($attachment['tmp_name'], $attachment['name']);
+    if (count($attachments) > 0) {
+        foreach($attachments as $file) {
+            $mail->addAttachment($file['tmp_name'], $file['name']);
+        }
     }
 
     // Send email
     if ($mail->send()) {
         // Set a session flag
         $_SESSION['form_submitted'] = true;
-
         echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        exit;
     }
 
 } catch (Exception $e) {
+    error_log("PHPMailer Error: ", $e->getMessage());
     http_response_code(500);
     echo json_encode(['success' => false, 'error' => 'Failed to send email']);
+    exit;
 }
 
+exit;
 ?>
