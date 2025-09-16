@@ -80,14 +80,17 @@ require_once __DIR__ . '/includes/simple_db.php';
                 <?php foreach ($portraitProjects as $project): ?>
                 <div class="col-md-4">
                     <!-- also 3 per row -->
-                    <div class="card h-100">
-                        <img src="<?= $project['thumbnail']; ?>" class="card-img-top" alt="<?= $project['title']; ?>" />
+                    <div class="card stretched-link card-custom" data-bs-toggle="modal"
+                        data-bs-target="#projectModal<?= $project['id']; ?>">
+                        <img src="<?= $project['thumbnail']; ?>" class="card-img-top card-img-custom"
+                            alt="<?= $project['title']; ?>" />
                         <div class="card-body">
-                            <h5 class="card-title text-dark"><?= $project['title']; ?></h5>
-                            <button class="btn btn-primary stretched-link" data-bs-toggle="modal"
-                                data-bs-target="#projectModal<?= $project['id']; ?>">
-                                Vezi detalii
-                            </button>
+                            <h5 class="card-title text-dark montserrat-text text-center fs-4 card-title-custom">
+                                <?= $project['title'] ?>
+                            </h5>
+                        </div>
+                        <div class="card-overlay">
+                            <h5>Vezi mai mult</h5>
                         </div>
                     </div>
                 </div>
