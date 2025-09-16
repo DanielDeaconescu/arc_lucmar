@@ -89,7 +89,7 @@
     </section>
 
     <!-- Cookies -->
-    <?php include "cookiesPopup.php" ?>
+    <?php include "./components/cookiesPopup.php" ?>
 
     <!-- Side-buttons -->
     <?php include "./components/side-buttons.php" ?>

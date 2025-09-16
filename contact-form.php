@@ -88,7 +88,7 @@ if (!empty($_FILES['image']['name'][0])) {
     $maxSize = $_ENV['MAX_FILE_SIZE'] ?? (5 * 1024 * 1024);
     $allowedTypes = ["image/jpeg", "image/png", "image/gif", "image/webp", "image/avif", "image/svg+xml"];
 
-    foreach ($_FILES['image']['name'] as $index => $name) {
+    foreach ($_FILES['image']['name'] as $index => $nameFile) {
         if ($_FILES['image']['error'][$index] !== UPLOAD_ERR_OK) {
             continue;
         }
@@ -105,14 +105,14 @@ if (!empty($_FILES['image']['name'][0])) {
 
         if (!in_array($type, $allowedTypes)) {
             http_response_code(400);
-            echo json_encode(['success' => false, 'error' => 'Invalid file type: ' . $name]);
+            echo json_encode(['success' => false, 'error' => 'Invalid file type: ' . $nameFile]);
             exit;
         }
 
         // Collet attachments for PHPMailer
         $attachments[] = [
             'tmp_name' => $tmpName,
-            'name' => $name
+            'name' => $nameFile
         ];
     }
 }

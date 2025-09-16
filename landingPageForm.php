@@ -112,7 +112,7 @@
                     <!-- Form -->
                     <div class="mt-3">
                         <h3 class="text-dark">Solicită oferta ta gratuită</h3>
-                        <form id="formLucmar" class="formLandingPage">
+                        <form id="formLucmar" method="post" class="formLandingPage">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nume:</label>
                                 <input type="text" class="form-control" name="name">
@@ -124,27 +124,30 @@
                             <div class="mb-3">
                                 <label for="image" class="form-label attach-image-label">
                                     <span class="attach-file-name">
-                                        Încarcă o schiță a proiectului (opțional):
+                                        Adaugă imagini (maxim 5)
                                     </span>
-                                    <input type="file" id="image" class="form-control image-input" name="image">
+                                    <input type="file" multiple id="image" class="form-control image-input"
+                                        name="image[]">
                                 </label>
+                                <div class="attached-images-container"></div>
                             </div>
                             <div class="mb-3">
                                 <label for="description" class="form-label">Descrierea proiectului (opțional):</label>
-                                <textarea name="description" id="description" class="form-control"
-                                    placeholder="Ex: Închidere balcon, Ușă intrare la casă"></textarea>
+                                <textarea name="description" id="description" class="form-control"></textarea>
                             </div>
                             <div class="mb-3 d-flex justify-content-center">
                                 <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yJdAtvLgpwHwA" data-theme="light">
                                 </div>
                             </div>
-                            <div class="mb-3 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary w-75 fs-5">
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">
                                     <div class="spinner-border spinner-border-sm d-none" role="status"></div>
-                                    Solicită oferta ta
+                                    Trimite
                                 </button>
                             </div>
                         </form>
+
+                        <div id="toast" class="toast-hidden"></div>
                     </div>
 
                 </div>
@@ -193,6 +196,8 @@
             </div>
         </div>
     </section>
+
+    <?php include "./components/cookiesPopup.php" ?>
 
     <!-- Minimal footer -->
     <footer class="py-3 bg-dark">

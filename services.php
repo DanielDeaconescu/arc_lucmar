@@ -103,7 +103,7 @@
                     </div>
     </section>
     <?php include "./components/side-buttons.php" ?>
-    <?php include "cookiesPopup.php" ?>
+    <?php include "./components/cookiesPopup.php" ?>
 
     <!-- TODO: Add a clear CTA here -->
     <?php include "./components/call-to-action.php" ?>
