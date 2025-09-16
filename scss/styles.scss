@@ -2,6 +2,8 @@
 .navbar-custom {
   border-bottom: 4px solid #f5efe6;
   background: #333333;
+  padding: 0 !important;
+  height: 80px;
 }
 
 // Navigation end
@@ -412,7 +414,7 @@
 
 
 // Common elements
-// side buttons
+// side buttons start
 .side-buttons {
   display: flex;
   flex-direction: column;
@@ -482,6 +484,29 @@
   border-radius: 0.4rem;
   cursor: pointer;
 }
+// side buttons end
+
+// navbar start
+
+.active-custom {
+  background-color: #fff;
+  color: black !important;
+}
+
+.active-custom:last-child{
+  color: #fff !important;
+  background-color: #1F7D53;
+  border: none !important;
+}
+
+.nav-item:not(:last-child):hover{
+  background-color: #fff;
+  .nav-link {
+    color: black !important;
+  }
+}
+
+// navbar end
 
 .xl-text {
   font-size: 75px;
