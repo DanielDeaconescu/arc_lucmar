@@ -99,10 +99,6 @@
 
     <?php include "./components/footer.php" ?>
 
-    <button id="to-top" class="to-top-btn">
-        <img src="images/up-arrow.png" alt="" />
-    </button>
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>

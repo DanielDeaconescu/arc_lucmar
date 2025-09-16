@@ -508,6 +508,15 @@
 
 // navbar end
 
+.attachment-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 .xl-text {
   font-size: 75px;
 }

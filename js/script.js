@@ -249,15 +249,64 @@ const validateForm = (form) => {
 // Display the name of the file the user uploads
 
 const attachImageLabel = document.querySelector(".attach-image-label");
+const attachImgDeleteBtns = document.querySelectorAll('.attached-img-delete');
+const attachedImagesContainer = document.querySelector('.attached-images-container');
+
 
 if (attachImageLabel) {
+    // attachImageLabel.addEventListener("change", () => {
+    // const attachments = Array.from(form.elements.image.files);
+    // const attachedImg = document.querySelectorAll(".attached-img");
+    // // console.log(attachments);
+    // attachments.forEach((attachment, index) => {
+    //     const newDiv = document.createElement('div');
+    //     newDiv.classList.add("attachment-item");
+    //     const deleteBtn = document.createElement('button');
+
+    //     const textNode = document.createTextNode(attachment.name);
+    //     newDiv.appendChild(textNode);
+
+    //     deleteBtn.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
+    //     newDiv.appendChild(deleteBtn);
+
+    //     attachedImagesContainer.appendChild(newDiv);
+    // })
+    // });
+    const fileInput = form.elements.image;
+    let attachmentsArray = [];
+
+    // when files are selected we copy to our array
     attachImageLabel.addEventListener("change", () => {
-    const attachment = form.elements.image;
-    const attachImageName = document.querySelector(".attach-file-name");
-    if (attachment.files.length > 0) {
-        attachImageName.textContent = attachment.files[0].name;
-     }
-    });
+        attachmentsArray = [...fileInput.files];
+        renderAttachments();
+    })
+
+    function renderAttachments() {
+        attachedImagesContainer.innerHTML = "";
+
+        attachmentsArray.forEach((file, index) => {
+            const newDiv = document.createElement("div");
+
+            const deleteBtn = document.createElement("button");
+            deleteBtn.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
+
+            deleteBtn.addEventListener("click", () => {
+                // remove the file from our array and re-render
+                attachmentsArray.splice(index, 1);
+                renderAttachments();
+
+                // update the input's FileList
+                const dataTransfer = new DataTransfer();
+                attachmentsArray.forEach(f => dataTransfer.items.add(f));
+                fileInput.files = dataTransfer.files;
+            });
+
+            newDiv.appendChild(deleteBtn);
+            newDiv.appendChild(document.createTextNode(file.name));
+
+            attachedImagesContainer.appendChild(newDiv);
+        })
+    }
 }
 
 

@@ -34,8 +34,9 @@
                             <span class="attach-file-name">
                                 Încarcă o schiță a proiectului (opțional):
                             </span>
-                            <input type="file" id="image" class="form-control image-input" name="image">
+                            <input type="file" multiple id="image" class="form-control image-input" name="image">
                         </label>
+                        <div class="attached-images-container"></div>
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrierea proiectului (opțional):</label>
