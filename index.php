@@ -91,6 +91,9 @@
     <!-- Cookies -->
     <?php include "cookiesPopup.php" ?>
 
+    <!-- Side-buttons -->
+    <?php include "./components/side-buttons.php" ?>
+
     <!-- TODO: Implement a Call To Action here -->
     <?php include "./components/call-to-action.php" ?>
 

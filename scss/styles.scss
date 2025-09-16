@@ -411,6 +411,78 @@
 // Cookies page end
 
 
+// Common elements
+// side buttons
+.side-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 45%;
+}
+
+.side-buttons-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.side-buttons-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.side-buttons-whatsapp-text{
+  opacity: 0;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.side-buttons-whatsapp-text .show {
+  opacity: 1;
+}
+
+.side-buttons-message-text {
+  opacity: 0;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease;
+}
+
+.side-buttons-message-text .show {
+  opacity: 1;
+}
+
+.fa-form-custom {
+  color: #EB5B00;
+  font-size: 2.25rem;
+}
+
+.fa-whatsapp-custom {
+  color: #075E54;
+  font-size: 2.25rem;
+}
+
+.side-buttons-message-icon {
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.side-buttons-whatsapp-icon {
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
 .xl-text {
   font-size: 75px;
 }

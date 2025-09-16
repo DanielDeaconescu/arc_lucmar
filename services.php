@@ -101,6 +101,7 @@
                         <?php endforeach; ?>
                     </div>
     </section>
+    <?php include "./components/side-buttons.php" ?>
     <?php include "cookiesPopup.php" ?>
 
     <!-- TODO: Add a clear CTA here -->

@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-
+    <?php include "./components/side-buttons.php" ?>
     <?php include "cookiesPopup.php"; ?>
 
     <?php include "./components/footer.php"; ?>

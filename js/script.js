@@ -370,7 +370,52 @@ function cardEffectAdd() {
 
 cardEffectAdd();
 
+
+
+// Side buttons effect
+
+function sideButtonsEffectAdd() {
+    const messageIcon = document.querySelector('.side-buttons-message-icon');
+    const messageText = document.querySelector('.side-buttons-message-text');
+
+    const whatsappIcon = document.querySelector('.side-buttons-whatsapp-icon');
+    const whatsappText = document.querySelector('.side-buttons-whatsapp-text');
+
+if (messageIcon && whatsappIcon) {
+
+    messageIcon.addEventListener('mouseover', function() {
+        if (window.innerWidth > 992) {
+            messageText.classList.add('show');
+        }
+    });
+
+    messageIcon.addEventListener('mouseout', function() {
+        if (window.innerWidth > 992) {
+            messageText.classList.remove('show');
+        }
+    });
+
+    whatsappIcon.addEventListener('mouseover', function() {
+        if (window.innerWidth > 992) {
+            whatsappText.classList.add('show');
+        }
+    })
+
+    whatsappIcon.addEventListener('mouseout', function() {
+        if (window.innerWidth > 992) {
+            whatsappText.classList.remove('show');
+        }
+    })
+}
+}
+
+sideButtonsEffectAdd();
+
 window.addEventListener("resize", () => {});
+
+
+
+
 
 
 

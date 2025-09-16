@@ -100,7 +100,7 @@
             </div>
         </div>
     </section>
-
+    <?php include "./components/side-buttons.php" ?>
     <?php include "cookiesPopup.php" ?>
 
     <!-- TODO: Implement a Call To Action here -->
