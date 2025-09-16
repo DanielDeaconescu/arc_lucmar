@@ -177,6 +177,51 @@
 
 // Main Section on Contact page end
 
+
+// Cards on portfolio page start
+.montserrat-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.card-custom {
+  cursor: pointer;
+}
+
+.card-overlay {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+}
+
+.text-white-custom {
+  color: white !important;
+  position: relative;
+  z-index: 1000;
+}
+
+.card-blur {
+  filter: blur(2px);
+}
+
+.card-overlay .show{
+  opacity: 1;
+}
+
+// Cards on portfolio page end
+
 // Modals start
 .modal-dialog {
   

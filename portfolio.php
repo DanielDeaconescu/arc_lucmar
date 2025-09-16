@@ -21,6 +21,12 @@ require_once __DIR__ . '/includes/simple_db.php';
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
         <!-- Fontawesome -->
         <link rel="stylesheet" href="css/font-awesome.css" />
         <!-- Bootstrap -->
@@ -52,14 +58,17 @@ require_once __DIR__ . '/includes/simple_db.php';
                 <?php foreach ($landscapeProjects as $project): ?>
                 <div class="col-md-4">
                     <!-- 3 per row -->
-                    <div class="card h-100">
-                        <img src="<?= $project["thumbnail"]; ?>" class="card-img-top" alt="<?= $project['title']; ?>" />
+                    <div class="card stretched-link card-custom" data-bs-toggle="modal"
+                        data-bs-target="#projectModal<?= $project['id']; ?>">
+                        <img src="<?= $project["thumbnail"]; ?>" class="card-img-top card-img-custom"
+                            alt="<?= $project['title']; ?>" />
                         <div class="card-body">
-                            <h5 class="card-title text-dark"><?= $project['title'] ?></h5>
-                            <button class="btn btn-primary stretched-link" data-bs-toggle="modal"
-                                data-bs-target="#projectModal<?= $project['id']; ?>">
-                                Vezi detalii
-                            </button>
+                            <h5 class="card-title text-dark montserrat-text text-center fs-4 card-title-custom">
+                                <?= $project['title'] ?>
+                            </h5>
+                        </div>
+                        <div class="card-overlay">
+                            <h5>Vezi mai mult</h5>
                         </div>
                     </div>
                 </div>

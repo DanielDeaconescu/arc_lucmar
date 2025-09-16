@@ -342,5 +342,39 @@ okBtnCookies.addEventListener('click', function() {
     localStorage.setItem('arclucmar_cookie', 'true');
 });
 
+// Portfolio: projects hover functionality
+function cardEffectAdd() {
+    const cards = document.querySelectorAll(".card-custom");
+    const cardOverlays = document.querySelectorAll(".card-overlay");
+    const cardTitles = document.querySelectorAll(".card-title-custom");
+    const cardImgsCustom = document.querySelectorAll(".card-img-custom");
+
+    cards.forEach((card, index) => {
+        card.addEventListener('mouseover', function() {
+            if (window.innerWidth > 992) {
+                cardOverlays[index].classList.add("show");
+                cardTitles[index].classList.add("text-white-custom");
+                cardImgsCustom[index].classList.add("card-blur");
+            } 
+        })
+
+        card.addEventListener('mouseout', function() {
+            if (window.innerWidth > 992) {
+                cardOverlays[index].classList.remove("show");
+                cardTitles[index].classList.remove("text-white-custom");
+                cardImgsCustom[index].classList.remove("card-blur");
+            }
+        })
+    })
+}
+
+cardEffectAdd();
+
+window.addEventListener("resize", () => {});
+
+
+
+
+
 
 
