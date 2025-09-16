@@ -74,7 +74,7 @@ require_once __DIR__ . '/includes/simple_db.php';
                     <div class="card h-100">
                         <img src="<?= $project['thumbnail']; ?>" class="card-img-top" alt="<?= $project['title']; ?>" />
                         <div class="card-body">
-                            <h5 class="card-title"><?= $project['title']; ?></h5>
+                            <h5 class="card-title text-dark"><?= $project['title']; ?></h5>
                             <button class="btn btn-primary stretched-link" data-bs-toggle="modal"
                                 data-bs-target="#projectModal<?= $project['id']; ?>">
                                 Vezi detalii

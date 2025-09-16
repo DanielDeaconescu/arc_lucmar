@@ -1,19 +1,20 @@
 [
   {
-    "title": "Montaj ferestre PVC Galati 1",
+    "title": "Ușă de intrare",
     "thumbnail": "./images/project1/thumb.jpg",
     "gallery": [
       "./images/project1/img1.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Tâmplărie PVC Sigplast",
+      "6 cemere de izolare cu aer",
+      "Feronerie Roto (calitate germană)",
+      "Pachet sticlă 30 mm (Control Solar + Low-E)",
+      "Culoare Gri Antracit"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 2",
+    "title": "Închidere balcon",
     "thumbnail": "./images/project2/thumb.jpg",
     "gallery": [
       "images/project2/img1.jpg",
@@ -21,28 +22,27 @@
       "images/project2/img3.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Profil KMG alb",
+      "6 camere de izolare cu aer",
+      "Feronerie oscilo-culisantă",
+      "Pachet sticlă 30 mm (Control Solar + Low-E)"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 3",
+    "title": "Plasă de insecte tip plisse",
     "thumbnail": "./images/project3/thumb.jpg",
     "gallery": [
       "images/project3/img1.jpg",
       "images/project3/img2.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
-    ]
+      "Design modern și elegant",
+      "Materiale de calitate pentru o utilizare îndelungată",
+      "Pot fi montate la uși și la ferestre"
+        ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 4",
+    "title": "Închidere balcon",
     "thumbnail": "./images/project4/thumb.jpg",
     "gallery": [
       "./images/project4/img1.jpg",
@@ -50,14 +50,15 @@
       "./images/project4/img3.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Profil Sigplast",
+      "4 camere de izolare cu aer",
+      "Feronerie Vorne",
+      "Pachet sticlă 24 mm (Control Solar + Low-E)",
+      "Culoare Gri Antracit"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 5",
+    "title": "Ușă de intrare",
     "thumbnail": "./images/project5/thumb.jpg",
     "gallery": [
       "./images/project5/img1.jpg",
@@ -67,95 +68,232 @@
       "./images/project5/img5.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Tâmplărie PVC Sigplast",
+      "4 camere de izolare cu aer",
+      "Feronerie Vorne",
+      "Colțari de greutate",
+      "Sticlă sablată pe comandă specială"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 6",
-    "thumbnail": "./images/project5/thumb.jpg",
+    "title": "Tâmplărie PVC Sigplast",
+    "thumbnail": "./images/project6/thumb.jpg",
     "gallery": [
-      "./images/project5/img1.jpg",
-      "./images/project5/img2.jpg",
-      "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg",
-      "./images/project5/img5.jpg"
+      "./images/project6/img1.jpg",
+      "./images/project6/img2.jpg",
+      "./images/project6/img3.jpg",
+      "./images/project6/img4.jpg",
+      "./images/project6/img5.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Profil Sigplast",
+      "4 camere de izolare cu aer",
+      "Feronerie Vorne",
+      "Pachet de sticlă Low-e + geam reflexiv"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 7",
-    "thumbnail": "./images/project5/thumb.jpg",
+    "title": "Ușă de intrare",
+    "thumbnail": "./images/project7/thumb.jpg",
     "gallery": [
-      "./images/project5/img1.jpg",
-      "./images/project5/img2.jpg",
-      "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg",
-      "./images/project5/img5.jpg"
+      "./images/project7/img1.jpg",
+      "./images/project7/img2.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Profil PVC Sigplast 6 camere",
+      "Feronerie Roto (calitate germană)",
+      "Mâner cu Child Hope",
+      "Sticlă sablată pe comandă",
+      "Panel ornamental"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 8",
-    "thumbnail": "./images/project5/thumb.jpg",
+    "title": "Închidere balcon",
+    "thumbnail": "./images/project8/thumb.jpg",
     "gallery": [
-      "./images/project5/img1.jpg",
-      "./images/project5/img2.jpg",
-      "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg",
-      "./images/project5/img5.jpg"
+      "./images/project8/img1.jpg",
+      "./images/project8/img2.jpg",
+      "./images/project8/img3.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Tâmplărie PVC Sigplast",
+      "4 camere de izolare cu aer",
+      "Culoare Mahon",
+      "Sticlă pachet 24 mm (Low-E + Float 4 mm)"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 9",
-    "thumbnail": "./images/project5/thumb.jpg",
+    "title": "Ușă de interior",
+    "thumbnail": "./images/project9/thumb.jpg",
     "gallery": [
-      "./images/project5/img1.jpg",
-      "./images/project5/img2.jpg",
-      "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg",
-      "./images/project5/img5.jpg"
+      "./images/project9/img1.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Profile PVC Sigplast",
+      "4 camere de izolare cu aer",
+      "Geam simplu fumuriu 4 mm",
+      "Culoare Stejar Auriu"
     ]
   },
   {
-    "title": "Montaj ferestre PVC Galati 10",
-    "thumbnail": "./images/project5/thumb.jpg",
+    "title": "Ușă de intrare",
+    "thumbnail": "./images/project10/thumb.jpg",
     "gallery": [
-      "./images/project5/img1.jpg",
-      "./images/project5/img2.jpg",
-      "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg",
-      "./images/project5/img5.jpg"
+      "./images/project10/img1.jpg",
+      "./images/project10/img2.jpg"
     ],
     "specs": [
-      "Profile PVC clasa A",
-      "Sticla termoizolanta 4S",
-      "Montaj realizat in 3 zile",
-      "Garantie 5 ani"
+      "Profile PVC Sigplast",
+      "4 camere de izolare cu aer",
+      "Feronerie Vorne cu arcade",
+      "Pachet sticlă 24 mm (Float + Reflexiv)"
+    ]
+  },
+  {
+    "title": "Uși culisante",
+    "thumbnail": "./images/project11/thumb.jpg",
+    "gallery": [
+      "./images/project11/img1.jpg",
+      "./images/project11/img2.jpg"
+    ],
+    "specs": [
+      "Uși culisante din aluminiu",
+      "2 deschideri",
+      "Pachet sticlă 24 mm: Float + Low-E"
+    ]
+  },
+  {
+    "title": "Ușă de exterior",
+    "thumbnail": "./images/project12/thumb.jpg",
+    "gallery": [
+      "./images/project12/img1.jpg"
+    ],
+    "specs": [
+      "Ușă dublă PVC Sigplast",
+      "6 camere de izolare cu aer",
+      "Feronerie Roto (calitate germană)",
+      "Mâner cu Shield Hope",
+      "Stică sablată pe comandă"
+    ]
+  },
+  {
+    "title": "Tâmplărie Sigplast 4 camere",
+    "thumbnail": "./images/project13/thumb.jpg",
+    "gallery": [
+      "./images/project13/img1.jpg",
+      "./images/project13/img2.jpg",
+      "./images/project13/img3.jpg"
+    ],
+    "specs": [
+      "Tâmplărie Sigplast 4 camere",
+      "Feronerie Vorne",
+      "Sticlă executată pe comandă: pachet 24 mm (Float + Geam Reflexiv)"
+    ]
+  },
+  {
+    "title": "Tâmplărie Sigplast 4 camere",
+    "thumbnail": "./images/project14/thumb.jpg",
+    "gallery": [
+      "./images/project14/img1.jpg"
+    ],
+    "specs": [
+      "Profil Sigplst",
+      "4 camere de izolare cu aer",
+      "Feronerie Vorne", 
+      "Pachet geam 24 mm: Float + Low-E"
+    ]
+  },
+  {
+    "title": "Închidere balcon Salamander",
+    "thumbnail": "./images/project15/thumb.jpg",
+    "gallery": [
+      "./images/project15/img1.jpg",
+      "./images/project15/img2.jpg"
+    ],
+    "specs": [
+      "Profil Salamander",
+      "6 camere de izolare cu aer",
+      "Feronerie Roto (calitate germană)", 
+      "Mânere Secustik Roto",
+      "Sticlă tripan pachet 44 mm (Low-E + Float + Control Solar)",
+      "Ulterior s-au montat și plase de insecte plisse"
+    ]
+  },
+  {
+    "title": "Închidere balcon Salamander",
+    "thumbnail": "./images/project15/thumb.jpg",
+    "gallery": [
+      "./images/project15/img1.jpg",
+      "./images/project15/img2.jpg"
+    ],
+    "specs": [
+      "Profil Salamander",
+      "6 camere de izolare cu aer",
+      "Feronerie Roto (calitate germană)", 
+      "Mânere Secustik Roto",
+      "Sticlă tripan pachet 44 mm (Low-E + Float + Control Solar)",
+      "Ulterior s-au montat și plase de insecte plisse"
+    ]
+  },
+  {
+    "title": "Închidere balcon Salamander",
+    "thumbnail": "./images/project16/thumb.jpg",
+    "gallery": [
+      "./images/project16/img1.jpg",
+      "./images/project16/img2.jpg",
+      "./images/project16/img3.jpg"
+    ],
+    "specs": [
+      "Tâmplărie PVC Sigplast",
+      "6 camere de izolare cu aer",
+      "Feronerie Roto (calitate germană)",
+      "Pachet sticlă 36 mm (Low-E + Float)"
+    ]
+  },
+  {
+    "title": "Tâmplărie PVC casă",
+    "thumbnail": "./images/project17/thumb.jpg",
+    "gallery": [
+      "./images/project17/img1.jpg",
+      "./images/project17/img2.jpg"
+    ],
+    "specs": [
+      "Tâmplărie PVC Sigplast",
+      "4 camere cu arcade",
+      "Feronerie Vorne",
+      "Pachet sticlă 24 mm (Float + Geam Reflexiv) - geam bombat"
+    ]
+  },
+  {
+    "title": "Seră de flori Tâmplărie PVC",
+    "thumbnail": "./images/project18/thumb.jpg",
+    "gallery": [
+      "./images/project18/img1.jpg",
+      "./images/project18/img2.jpg",
+      "./images/project18/img3.jpg",
+      "./images/project18/img4.jpg",
+      "./images/project18/img5.jpg",
+      "./images/project18/img6.jpg",
+      "./images/project18/img7.jpg"
+    ],
+    "specs": [
+      "Tâmplărie PVC Uniplast",
+      "Feronerie Vorne",
+      "Pachet sticlă 24 mm (Float + Low-E)"
+    ]
+  },
+  {
+    "title": "Culisante PVC Plaspen",
+    "thumbnail": "./images/project19/thumb.jpg",
+    "gallery": [
+      "./images/project19/img1.jpg",
+      "./images/project19/img2.jpg",
+      "./images/project19/img3.jpg",
+      "./images/project19/img4.jpg"
+    ],
+    "specs": [
+      "Culisante PVC Plaspen",
+      "Pachet sticlă 24 mm (Float + Low-E)"
     ]
   }
 ]
