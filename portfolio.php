@@ -43,7 +43,7 @@ require_once __DIR__ . '/includes/simple_db.php';
 </head>
 
 <body>
-    <?php include "navbar.php" ?>
+    <?php include "./components/navbar.php" ?>
 
     <?php 
       $headerText = "Portofoliu";

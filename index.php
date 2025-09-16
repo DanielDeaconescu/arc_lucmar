@@ -1,4 +1,4 @@
-<?php include "navbar.php" ?>
+<?php include "./components/navbar.php" ?>
 <?php include "./components/formModal.php" ?>
 
 <!DOCTYPE html>

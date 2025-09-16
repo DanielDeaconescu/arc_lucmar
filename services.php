@@ -1,5 +1,6 @@
 <?php include "./components/formModal.php" ?>
 
+
 <?php 
 
   $services = [
@@ -62,7 +63,7 @@
 </head>
 
 <body>
-    <?php include "navbar.php" ?>
+    <?php include "./components/navbar.php" ?>
 
     <!-- Header -->
     <?php 

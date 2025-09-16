@@ -1,4 +1,3 @@
-<?php include "navbar.php" ?>
 <?php include "./components/formModal.php" ?>
 
 <!DOCTYPE html>
@@ -24,7 +23,7 @@
 </head>
 
 <body>
-
+    <?php include "./components/navbar.php" ?>
 
     <!-- Header -->
     <?php 
