@@ -341,8 +341,18 @@ if (form) {
     try {
         const response = await fetch("contact-form.php", {
             method: "POST",
-            body: formData
+            body: formData,
+            redirect: 'manual'
         });
+
+        // Check if we got a redirect response
+        if (response.type === 'opaqueredirect' || response.status === 302 || response.status === 301) {
+            // Redirect to the tooManyRequests page
+            window.location.href = "tooManyRequests.php";
+            return;
+        }
+
+        // If not a redirect, parse as a JSON
 
         let result = await response.json();
 
@@ -378,10 +388,15 @@ if(!localStorage.getItem('arclucmar_cookie')) {
         cookiesPopup.classList.remove("d-none");
     } 
 
-okBtnCookies.addEventListener('click', function() {
+if (okBtnCookies) {
+    
+    okBtnCookies.addEventListener('click', function() {
     cookiesPopup.classList.add("d-none");
     localStorage.setItem('arclucmar_cookie', 'true');
-});
+    });
+}
+
+
 
 // Portfolio: projects hover functionality
 function cardEffectAdd() {

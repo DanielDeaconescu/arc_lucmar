@@ -342,6 +342,18 @@
 
 // Thank you page end
 
+// tooManyRequests start
+
+.too-many-requests-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// tooManyRequests end
+
 // Landing page start
 
 .header-landing {

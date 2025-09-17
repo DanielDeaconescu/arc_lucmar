@@ -1,9 +1,13 @@
 <?php
 
-error_reporting(0);
+// session
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/php_errors.log');
+error_reporting(E_ALL);
 ini_set('display_errors', 0);
 
-// session
+ob_start();
+
 session_start();
 
 
@@ -28,6 +32,7 @@ try {
 // Rate limiting
 if ($db) {
     $ip_address = $_SERVER['REMOTE_ADDR'];
+    error_log("Checking rate limit for IP: " . $ip_address);
 
     try {
         // Check submissions in the last 24 hours
@@ -37,7 +42,15 @@ if ($db) {
         $result = $stmt->execute();
         $count = $result->fetchArray(SQLITE3_NUM);
 
+        error_log("Current submission count: " . ($count ? $count[0] : '0'));
+
         if ($count && $count[0] >= 2) {
+            error_log("Rate limit exceeded, redirecting to tooManyRequests.php");
+
+            // Set a session flag to allow access to the tooManyRequests page
+            $_SESSION['rate_limit_exceeded'] = true;
+            $_SESSION['rate_limit_time'] = time();
+
             // Redirect to tooManyRequests.php
             header('Location: tooManyRequests.php');
             exit;
@@ -66,7 +79,7 @@ $current_time = date("H:i");
 
 
 
-header('Content-Type: application/json');
+
 
 // load dependecies
 require 'vendor/autoload.php';
@@ -77,6 +90,7 @@ $dotenv->load();
 
 // only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Content-Type: application/json');
     http_response_code(405);
     echo json_encode(['success' => false, 'error' => 'Method not allowed']);
     exit;
@@ -84,6 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 // Validate CAPTCHA
 if (empty($_POST['cf-turnstile-response'])) {
+    header('Content-Type: application/json');
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Verificarea CAPTCHA este obligatorie!']);
     exit;
@@ -108,6 +123,7 @@ $result = file_get_contents($url, false, $context);
 $captchaResult = json_decode($result, true);
 
 if (!$captchaResult['success']) {
+    header('Content-Type: application/json');
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Verificarea CAPTCHA a esuat!']);
     exit;
@@ -119,6 +135,7 @@ $phone = trim($_POST['phone'] ?? '');
 $description = trim($_POST['description'] ?? '');
 
 if (empty($name) || empty($phone) || empty($description)) {
+    header('Content-Type: application/json');
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Nume, telefon si descriere sunt obligatorii!']);
     exit;
@@ -141,12 +158,14 @@ if (!empty($_FILES['image']['name'][0])) {
         $type = mime_content_type($tmpName);
 
         if ($size > $maxSize) {
+            header('Content-Type: application/json');
             http_response_code(400);
             echo json_encode(['success' => false, 'error' => 'One of the files is too large']);
             exit;
         }
 
         if (!in_array($type, $allowedTypes)) {
+            header('Content-Type: application/json');
             http_response_code(400);
             echo json_encode(['success' => false, 'error' => 'Invalid file type: ' . $nameFile]);
             exit;
@@ -204,27 +223,43 @@ try {
         // Record the submission for rate limiting
         if ($db) {
             try {
-                $stmt = $db->prepare("INSERT INTO from_submissions (ip_address) VALUES (:ip)");
+                $stmt = $db->prepare("INSERT INTO form_submissions (ip_address) VALUES (:ip)");
                 $stmt->bindValue(':ip', $ip_address, SQLITE3_TEXT);
                 $stmt->execute();
             } catch (Exception $e) {
                 error_log("Failed to record submission: " . $e->getMessage());
+
+                if ($db) {
+                    error_log("SQLite error: " . $db->lastErrorMsg());
+                }
             }
         }
 
         // Set a session flag
         $_SESSION['form_submitted'] = true;
 
+        header('Content-Type: application/json');
+        
         echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
         exit;
     }
 
 } catch (Exception $e) {
+    header('Content-Type: application/json');
     error_log("PHPMailer Error: ", $e->getMessage());
     http_response_code(500);
     echo json_encode(['success' => false, 'error' => 'Failed to send email']);
     exit;
 }
 
+$output = ob_get_clean();
+
+if (!headers_sent()) {
+    if ($output && substr($output, 0, 1) === '{') {
+        header('Content-Type: application/json');
+    }
+}
+
+echo $output;
 exit;
 ?>
