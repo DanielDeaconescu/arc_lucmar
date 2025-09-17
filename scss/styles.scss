@@ -488,11 +488,6 @@
 
 // navbar start
 
-.active-custom {
-  background-color: #fff;
-  color: black !important;
-}
-
 .active-custom:last-child{
   color: #fff !important;
   background-color: #1F7D53;
@@ -500,9 +495,9 @@
 }
 
 .nav-item:not(:last-child):hover{
-  background-color: #fff;
+  background-color: #1F7D53;
   .nav-link {
-    color: black !important;
+    color: #fff !important;
   }
 }
 

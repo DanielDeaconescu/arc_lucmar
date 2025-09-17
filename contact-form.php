@@ -6,6 +6,49 @@ ini_set('display_errors', 0);
 // session
 session_start();
 
+
+// Database connection for SQLite
+$db_path = __DIR__ . '/database/projects.db';
+
+try {
+    // Connect to the SQLite database
+    $db = new SQLite3($db_path);
+
+    // Make sure the db file is readable and writeable
+    if (!file_exists($db_path)) {
+        error_log("Database file not found: ", $db_path);
+        $db = null;
+    }
+
+} catch (Exception $e) {
+    error_log("Database connection error: " . $e->getMessage());
+    $db = null;
+}
+
+// Rate limiting
+if ($db) {
+    $ip_address = $_SERVER['REMOTE_ADDR'];
+
+    try {
+        // Check submissions in the last 24 hours
+        $stmt = $db->prepare("SELECT COUNT(*) as count FROM form_submissions WHERE ip_address = :ip AND submission_time > datetime('now', '-24 hours')");
+
+        $stmt->bindValue(':ip', $ip_address, SQLITE3_TEXT);
+        $result = $stmt->execute();
+        $count = $result->fetchArray(SQLITE3_NUM);
+
+        if ($count && $count[0] >= 2) {
+            // Redirect to tooManyRequests.php
+            header('Location: tooManyRequests.php');
+            exit;
+        }
+
+    } catch (Exception $e) {
+        // If query fails, log but allow the form to proceed
+        error_log("Rate limiting query error: " . $e->getMessage());
+    }
+}
+
 date_default_timezone_set('Europe/Bucharest');
 
 // calculate the date
@@ -132,10 +175,10 @@ try {
     $mail->Timeout = 15;
 
     // Enable debugging
-    $mail->SMTPDebug = 2;
-    $mail->Debugoutput = function($str, $level) {
-        error_log("PHPMailer: $str");
-    };
+    // $mail->SMTPDebug = 2;
+    // $mail->Debugoutput = function($str, $level) {
+    //     error_log("PHPMailer: $str");
+    // };
 
     // Email content
     $mail->setFrom($_ENV['EMAIL_FROM'], $_ENV['EMAIL_FROM_NAME']);
@@ -158,8 +201,20 @@ try {
 
     // Send email
     if ($mail->send()) {
+        // Record the submission for rate limiting
+        if ($db) {
+            try {
+                $stmt = $db->prepare("INSERT INTO from_submissions (ip_address) VALUES (:ip)");
+                $stmt->bindValue(':ip', $ip_address, SQLITE3_TEXT);
+                $stmt->execute();
+            } catch (Exception $e) {
+                error_log("Failed to record submission: " . $e->getMessage());
+            }
+        }
+
         // Set a session flag
         $_SESSION['form_submitted'] = true;
+
         echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
         exit;
     }
