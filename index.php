@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" />
-    <title>Arc Construct | Acasă</title>
+    <title>Arc Lucmar | Acasă</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
     ?>
 
     <!-- De ce sa alegeti Arc Construct? -->
-    <section id="details" class="details position-relative my-6 overflow-hidden">
+    <section id="details" class="details position-relative my-4 my-md-6 overflow-hidden">
         <div class="container position-relative z-3">
             <div class="row">
                 <div class="col-lg-6">
@@ -43,7 +43,7 @@
                         <img src="images/image-factory.jpg" alt="" class="img-fluid img-factory" />
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 why-choose-us-list">
                     <div class="mt-4">
                         <h3 class="mb-4 text-dark">De ce să alegeți termopanele Arc Lucmar?</h3>
                         <ul class="text-dark list-unstyled">
@@ -80,7 +80,7 @@
                                 </strong>
                             </li>
                         </ul>
-                        <button data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-primary">Cere
+                        <button data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-lg btn-primary">Cere
                             ofertă</button>
                     </div>
                 </div>

@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="mt-6 <?= $page == 'index.php' ? '' : 'd-flex flex-column align-items-center'; ?>">
-                    <h1 class="xl-text">
+                    <h1 class="xl-md-text">
                         <?php echo $headerText ?? "Default Title"; ?>
                     </h1>
                     <p class="lead mb-4 p-header">

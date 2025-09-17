@@ -29,19 +29,19 @@
 
 ?>
 
-<section class="py-6 text-center cta-custom <?= $ctaClass ?>">
+<section class="py-5 py-md-6 text-center cta-custom <?= $ctaClass ?>">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <h4 class="text-light">
                     <?php echo $ctaTitle; ?>
                 </h4>
-                <p class="text-light">
+                <p class="text-light fs-5">
                     <?php echo $ctaP; ?>
                 </p>
                 <button data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-secondary btn-lg">Obține
                     ofertă</button>
-                <a href="tel:+40741297459" class="btn btn-primary btn-lg">
+                <a href="tel:+40741297459" class="btn btn-primary btn-lg cta-middle-btn">
                     <i class="fa-solid fa-phone me-2"></i>
                     0741 297 459
                 </a>

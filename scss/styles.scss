@@ -222,11 +222,6 @@
   opacity: 1;
 }
 
-// Custom CSS for Lightbox
-
-
-// Cards on portfolio page end
-
 // Modals start
 // .modal-dialog {
   
@@ -724,4 +719,36 @@ section {
   .details-2 .decoration-star {
     top: 300px;
   }
+}
+
+// Media Queries
+
+@media (max-width: 576px) {
+  .header-home {
+  padding: 1rem;
+}
+
+.p-header {
+  text-align: center;
+}
+
+.img-factory {
+  width: 350px;
+}
+
+.why-choose-us-list {
+  padding: 2rem;
+}
+
+.cta-middle-btn {
+  margin: 10px 0;
+}
+
+.footer-about-p {
+  font-size: 20px;
+}
+
+.li-styled {
+  font-size: 20px;
+}
 }
