@@ -1,13 +1,3 @@
-<?php include "./components/formModal.php" ?>
-<?php 
-
-require_once __DIR__ . '/includes/simple_db.php';
-
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,17 +22,19 @@ require_once __DIR__ . '/includes/simple_db.php';
         <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.css" />
         <!-- Lightbox 2 -->
-        <link href="./lightbox/dist/css/lightbox.css" rel="stylesheet" />
+        <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
         <!-- Custom style -->
         <link rel="stylesheet" href="css/styles.css" />
         <!-- Favicon -->
         <link rel="icon" href="images/favicon.png" />
 
-        <title>Arc Construct | Acasă</title>
+        <title>Arc Lucmar | Acasă</title>
     </head>
 </head>
 
 <body>
+    <?php include "./components/formModal.php" ?>
+    <?php require_once __DIR__ . '/includes/simple_db.php'?>
     <?php include "./components/navbar.php" ?>
 
     <?php 
@@ -106,7 +98,7 @@ require_once __DIR__ . '/includes/simple_db.php';
                         <div class="modal-header">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body <?= $containsVertical ? '' : 'vh-50' ?>">
+                        <div class="modal-body">
                             <div class="container-gallery-specs">
                                 <!-- Gallery left -->
                                 <div class="gallery-left">
@@ -119,7 +111,7 @@ require_once __DIR__ . '/includes/simple_db.php';
                                             <a href="<?= $image; ?>" data-lightbox="<?= $project["id"]; ?>">
                                                 <img src="<?php echo $image; ?>"
                                                     class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
-                                                    alt="">
+                                                    alt="test">
                                             </a>
                                         </div>
                                         <?php endif; ?>
@@ -165,17 +157,11 @@ require_once __DIR__ . '/includes/simple_db.php';
     <!-- CTA -->
     <?php include "./components/call-to-action.php" ?>
 
-    <?php include "./components/footer.php"; ?>
-
-    <button id="to-top" class="to-top-btn">
-        <img src="images/up-arrow.png" alt="" />
-    </button>
+    <?php include "./components/footer.php" ?>
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Lightbox JS + jQuery -->
-    <script src="./lightbox/dist/js/lightbox-plus-jquery.js">
-
-    </script>
+    <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
 </body>

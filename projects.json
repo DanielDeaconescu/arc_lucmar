@@ -64,8 +64,7 @@
       "./images/project5/img1.jpg",
       "./images/project5/img2.jpg",
       "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg",
-      "./images/project5/img5.jpg"
+      "./images/project5/img4.jpg"
     ],
     "specs": [
       "Tâmplărie PVC Sigplast",
@@ -80,10 +79,7 @@
     "thumbnail": "./images/project6/thumb.jpg",
     "gallery": [
       "./images/project6/img1.jpg",
-      "./images/project6/img2.jpg",
-      "./images/project6/img3.jpg",
-      "./images/project6/img4.jpg",
-      "./images/project6/img5.jpg"
+      "./images/project6/img2.jpg"
     ],
     "specs": [
       "Profil Sigplast",

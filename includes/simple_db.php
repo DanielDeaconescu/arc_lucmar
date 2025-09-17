@@ -42,18 +42,24 @@ try {
 
 // Detect orientation safely
 
-function getOrientation($imagePath) {
-    if (!file_exists($imagePath)) return 'landscape';
+function getOrientation($imageUrl) {
+    // Convert URL path to server file path
+    $imagePath = __DIR__ . '/../' . $imageUrl;
+    
+    if (!file_exists($imagePath)) {
+        // Fallback: try to determine from URL or return default
+        return 'landscape';
+    }
 
     [$width, $height] = getimagesize($imagePath);
 
-    // Try to read EXIF if available (only works on JPEG/TIFF)
+    // Try to read EXIF if available
     if (function_exists('exif_read_data') && exif_imagetype($imagePath) === IMAGETYPE_JPEG) {
         $exif = @exif_read_data($imagePath);
         if (!empty($exif['Orientation'])) {
             $orientation = $exif['Orientation'];
-
-            // If rotated 90 or 270 degrees, swap width and height
+            
+            // Correct for EXIF orientation
             if (in_array($orientation, [5, 6, 7, 8])) {
                 [$width, $height] = [$height, $width];
             }
