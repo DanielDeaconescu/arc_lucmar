@@ -32,7 +32,7 @@
     ?>
 
     <!-- De ce sa alegeti Arc Construct? -->
-    <section id="details" class="details position-relative my-6 overflow-hidden">
+    <section id="details" class="details position-relative overflow-hidden py-4 py-md-6">
 
         <div class="container position-relative z-3">
             <div class="row">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 mt-4 mt-md-0">
                     <!-- Google Map -->
                     <h5 class="text-dark">Harta Fabricii</h5>
                     <p class="fs-5">

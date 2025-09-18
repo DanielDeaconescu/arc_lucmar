@@ -72,7 +72,7 @@
      ?>
 
     <!-- Services -->
-    <section id="services" class="services bg-light py-6">
+    <section id="services" class="services bg-light py-4 py-md-6">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
@@ -80,7 +80,7 @@
                         <h2 class="text-dark">
                             <span class="text-secondary">Serviciile</span> noastre
                         </h2>
-                        <p>
+                        <p class="fs-5">
                             Oferim servicii complete pentru ferestre și uși din PVC și aluminiu, de la consultanță și
                             măsurători, până la furnizare și montaj profesionist. Ne adaptăm nevoilor fiecărui client și
                             ne perfecționăm constant pe baza feedback-ului primit.
@@ -94,8 +94,8 @@
                             <div class="card h-100 text-center">
                                 <div class="card-body">
                                     <i class="fas <?= $service['icon'] ?> fa-2x mb-3"></i>
-                                    <h5 class="card-title text-dark"> <?=  $service['title'] ?></h5>
-                                    <p class="card-text"><?= $service['description'] ?></p>
+                                    <h4 class="card-title text-dark"> <?=  $service['title'] ?></h4>
+                                    <p class="card-text fs-5"><?= $service['description'] ?></p>
                                 </div>
                             </div>
                         </div>

@@ -34,8 +34,45 @@
     include "./components/header.php" 
     ?>
 
+    <!-- Partener Sigplast -->
+    <section class="partener-sigplast py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h4 class="text-dark d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-award fa-award-custom fa-2x"></i>
+                        Partener Sigplast România
+                    </h4>
+                    <h5 class="text-dark d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-trophy fa-trophy-custom"></i>
+                        Profil produs 100% în România
+                    </h5>
+                    <p class="fs-5">Pentru a vă oferi tâmplărie PVC de înaltă calitate, colaborăm îndeaproape cu
+                        funizorul
+                        local
+                        Sigplast.</p>
+                    <p class="fs-5">Profilul PVC Sigplast este produs integral la fabria Sigplast, în Galați, România.
+                    </p>
+                    <p>
+                        <small>
+                            Pentru mai multe detalii, puteți vizita website-ul Sigplast România aici: <a
+                                href="https://sigplast.ro/" target="_blank">Website Sigplast</a>
+                        </small>
+                    </p>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-center">
+                    <a class="sigplast-logo-link" href="https://sigplast.ro/" target="_blank">
+                        <img class="img-fluid sigplast-partner-img" src="./images/logo-sigplast.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- De ce sa alegeti Arc Construct? -->
-    <section id="details" class="details position-relative my-4 my-md-6 overflow-hidden">
+    <section id="details" class="details position-relative py-4 py-md-6 overflow-hidden">
         <div class="container position-relative z-3">
             <div class="row">
                 <div class="col-lg-6">
@@ -87,6 +124,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Cookies -->
     <?php include "./components/cookiesPopup.php" ?>

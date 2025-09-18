@@ -26,7 +26,7 @@
         <!-- Custom style -->
         <link rel="stylesheet" href="css/styles.css" />
         <!-- Favicon -->
-        <link rel="icon" href="images/favicon.png" />
+        <!-- <link rel="icon" href="images/favicon.png" /> -->
 
         <title>Arc Lucmar | Acasă</title>
     </head>
@@ -45,6 +45,11 @@
     <!-- Projects -->
     <section id="projects" class="projects bg-light py-6">
         <div class="container">
+            <h1 class="text-dark text-center mb-4">Proiecte Arc Lucmar</h1>
+            <p class="fs-5 text-center">Descoperiți o parte dintre proiectele noastre mai jos și aflați informațiile
+                tehnice
+                relevante despre
+                fiecare proiect.</p>
             <!-- Landscape Projects -->
             <div class="row g-4">
                 <?php foreach ($landscapeProjects as $project): ?>

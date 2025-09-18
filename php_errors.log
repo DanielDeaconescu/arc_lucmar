@@ -23,3 +23,5 @@
 [17-Sep-2025 07:34:25 Europe/Berlin] Checking rate limit for IP: ::1
 [17-Sep-2025 07:34:25 Europe/Berlin] Current submission count: 2
 [17-Sep-2025 07:34:25 Europe/Berlin] Rate limit exceeded, redirecting to tooManyRequests.php
+[18-Sep-2025 07:55:06 Europe/Berlin] Checking rate limit for IP: ::1
+[18-Sep-2025 07:55:06 Europe/Berlin] Current submission count: 0

@@ -33,9 +33,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <h4 class="text-light">
+                <h2 class="text-light">
                     <?php echo $ctaTitle; ?>
-                </h4>
+                </h2>
                 <p class="text-light fs-5">
                     <?php echo $ctaP; ?>
                 </p>

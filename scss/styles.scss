@@ -115,6 +115,36 @@
 
 // Header end
 
+// Partner section start
+
+.partener-sigplast {
+  background-color: #D3DAD9;
+}
+
+.sigplast-partner-img {
+  width: 250px;
+}
+
+.sigplast-logo-link {
+  transition: all 0.3s ease;
+}
+
+.fa-award-custom {
+  color: #E9A319;
+}
+
+.fa-trophy-custom {
+  color: #454545;
+}
+
+@media (min-width: 992px) {
+  .sigplast-logo-link:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Partner section end
+
 // Section Factory start
 
 .img-factory {
@@ -728,6 +758,7 @@ section {
 // Media Queries
 
 @media (max-width: 576px) {
+  // index page
   .header-home {
   padding: 1rem;
 }
@@ -775,10 +806,26 @@ section {
 
 .btn-contact-navbar {
   margin: 0 !important;
+  margin-top: 0.5rem !important;
 }
 
 .navbar-custom {
   height: auto !important;
   padding: 1rem !important;
+}
+
+// services page
+.header-services {
+  padding: 1rem;
+}
+
+// portfolio page
+.header-portfolio {
+  padding: 1rem;
+}
+
+// contact page
+.header-contact {
+  padding: 1rem;
 }
 }
