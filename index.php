@@ -43,10 +43,19 @@
                         <i class="fa-solid fa-award fa-award-custom fa-2x"></i>
                         Partener Sigplast România
                     </h4>
-                    <h5 class="text-dark d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-trophy fa-trophy-custom"></i>
-                        Profil produs 100% în România
+                    <h5 class="text-dark d-flex align-items-center gap-3">
+                        <div class="produced-100-romania">
+                            <i class="fa-solid fa-trophy fa-trophy-custom"></i>
+                            Profil produs 100% în România
+                        </div>
+                        <div class="factory-prices">
+                            <i class="fa-solid fa-sack-dollar fa-sack-dollar-custom"></i>
+                            Prețuri de fabrică
+                        </div>
                     </h5>
+                    <!-- <h6 class="text-dark d-flex align-items-center gap-2">
+
+                    </h6> -->
                     <p class="fs-5">Pentru a vă oferi tâmplărie PVC de înaltă calitate, colaborăm îndeaproape cu
                         funizorul
                         local
@@ -63,7 +72,10 @@
 
                 <div class="col-md-3 d-flex align-items-center">
                     <a class="sigplast-logo-link" href="https://sigplast.ro/" target="_blank">
-                        <img class="img-fluid sigplast-partner-img" src="./images/logo-sigplast.png" alt="">
+                        <div class="d-flex flex-column gap-2 align-items-center">
+                            <img class="img-fluid sigplast-partner-img" src="./images/logo-sigplast.png" alt="">
+                            <h6 class="text-dark">Fabrică profil PVC Galați, România</h6>
+                        </div>
                     </a>
                 </div>
             </div>

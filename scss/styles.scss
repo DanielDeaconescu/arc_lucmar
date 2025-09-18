@@ -127,6 +127,7 @@
 
 .sigplast-logo-link {
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .fa-award-custom {
@@ -136,6 +137,19 @@
 .fa-trophy-custom {
   color: #454545;
 }
+
+.fa-sack-dollar-custom {
+  color: #556B2F;
+}
+
+.produced-100-romania {
+  border-right: 4px solid #37353E;
+  padding-right: 0.5rem;
+}
+
+// .factory-prices {
+
+// }
 
 @media (min-width: 992px) {
   .sigplast-logo-link:hover {
