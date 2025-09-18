@@ -6,6 +6,10 @@
   height: 80px;
 }
 
+// .navbar-collapse-custom {
+//   height: 100vh;
+// }
+
 // Navigation end
 
 // Header start
@@ -750,5 +754,31 @@ section {
 
 .li-styled {
   font-size: 20px;
+}
+
+// Making the navbar work on mobile
+.container-navbar-custom,
+.navbar-collapse-custom,
+.navbar-nav-custom,
+.nav-item-custom,
+.nav-link-custom {
+  height: auto !important;
+}
+
+.container-navbar-custom {
+  padding: 0 !important;
+}
+
+.navbar-collapse-custom {
+  padding-top: 1rem !important;
+}
+
+.btn-contact-navbar {
+  margin: 0 !important;
+}
+
+.navbar-custom {
+  height: auto !important;
+  padding: 1rem !important;
 }
 }
