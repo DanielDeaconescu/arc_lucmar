@@ -53,7 +53,7 @@
                     </div>
                 </form>
 
-                <div id="toast" class="toast-hidden"></div>
+                <div id="toast" class="toast-hidden fs-5 text-white"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anulează</button>

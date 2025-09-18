@@ -7,7 +7,10 @@ const formModal = document.getElementById("formModal");
 // Detecting when modal is closed
 if (formModal) {
     formModal.addEventListener('hidden.bs.modal', function() {
+    // reset the form
     form.reset();
+    // clear the files (the divs containing the file names)
+    attachedImagesContainer.innerHTML = ""; 
     });
 }
 
@@ -68,6 +71,32 @@ const validateForm = (form) => {
 
 // Form submission
 
+// Adding attachments one-by-one functionality
+
+const addAttachmentsOneByOne = function () {
+    const attachment = form.elements.image;
+    const label = document.querySelector(".attach-file-name");
+    
+    // Set initial label text
+    updateLabelText(0);
+}
+
+addAttachmentsOneByOne();
+
+// Function to update the label text based on attachment count
+function updateLabelText(count) {
+    const label = document.querySelector(".attach-file-name");
+    
+    if (count === 0) {
+        label.textContent = "Adaugă imagini (maxim 5)";
+    } else if (count >= 1 && count <= 4) {
+        label.textContent = "Mai adaugă (maxim 5)";
+    } else if (count === 5) {
+        label.textContent = "Limita de 5 imagini atinsă";
+    }
+}
+
+
 
 // Display the name of the file the user uploads
 
@@ -82,17 +111,39 @@ if (attachImageLabel) {
 
     // when files are selected we copy to our array
     attachImageLabel.addEventListener("change", () => {
-        attachmentsArray = [...fileInput.files];
+        // Check if we can add more files
+        
+        const availableSlots = 5 - attachmentsArray.length;
+        // if (availableSlots <= 0) return;
+
+        if (availableSlots <= 0) {
+            showToast("Maximum 5 imagini!", true);
+            // Reset everything
+            attachmentsArray = [];
+            updateLabelText(attachmentsArray.length);
+            renderAttachments();
+            
+            // Clear the file input
+            fileInput.value = "";
+            return;
+        }
+
+        // Add only as many files as we have available slots
+        const filesToAdd = Array.from(fileInput.files).slice(0, availableSlots);
+        attachmentsArray.push(...filesToAdd);
+        
+        // Update the label
+        updateLabelText(attachmentsArray.length);
+        
         renderAttachments();
-    })
+    });
 
     function renderAttachments() {
         attachedImagesContainer.innerHTML = "";
 
-        if(attachmentsArray.length <=5) {
-            attachmentsArray.forEach((file, index) => {
+        attachmentsArray.forEach((file, index) => {
             const newDiv = document.createElement("div");
-                newDiv.classList.add("image-item");
+            newDiv.classList.add("image-item");
             const deleteBtn = document.createElement("button");
             deleteBtn.classList.add("delete-btn");
             deleteBtn.innerHTML = '<i class="fa-solid fa-circle-xmark fa-circle-custom"></i>';
@@ -100,6 +151,10 @@ if (attachImageLabel) {
             deleteBtn.addEventListener("click", () => {
                 // remove the file from our array and re-render
                 attachmentsArray.splice(index, 1);
+                
+                // Update the label
+                updateLabelText(attachmentsArray.length);
+                
                 renderAttachments();
 
                 // update the input's FileList
@@ -112,10 +167,12 @@ if (attachImageLabel) {
             newDiv.appendChild(deleteBtn);
 
             attachedImagesContainer.appendChild(newDiv);
-        })
-        } else {
-            showToast("Maximum 5 imagini!", true);
-        }
+        });
+
+        // Update the input's FileList to match our array
+        const dataTransfer = new DataTransfer();
+        attachmentsArray.forEach(f => dataTransfer.items.add(f));
+        fileInput.files = dataTransfer.files;
         
     }
 }
@@ -171,6 +228,7 @@ if (form) {
         // Check if we got a redirect response
         if (response.type === 'opaqueredirect' || response.status === 302 || response.status === 301) {
             // Redirect to the tooManyRequests page
+            form.reset();
             window.location.href = "tooManyRequests.php";
             return;
         }
