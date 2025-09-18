@@ -147,6 +147,50 @@
   padding-right: 0.5rem;
 }
 
+// Partner section end
+
+// Technical details start
+
+.profile-technical-details {
+  background-color: #D3DAD9;
+  padding: 5rem 0;
+}
+
+.link-section-60 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-section-70 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-section-60:hover {
+  transform: scale(1.05);
+}
+
+.link-section-70:hover {
+  transform: scale(1.05);
+}
+
+.borderd-img {
+  border-radius: 1.2rem;
+}
+
+.table {
+  cursor: default;
+  border: 3px solid #191e47 !important;
+}
+
+// Technical details end
+
 // .factory-prices {
 
 // }
