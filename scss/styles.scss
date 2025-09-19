@@ -619,6 +619,13 @@
   border: none;
 }
 
+// .navbar-collapse-custom {
+//   // display: flex;
+//   // justify-content: center;
+// }
+
+
+
 // navbar end
 
 .attachment-item {
@@ -864,10 +871,7 @@ section {
   padding-top: 1rem !important;
 }
 
-.btn-contact-navbar {
-  margin: 0 !important;
-  margin-top: 0.5rem !important;
-}
+
 
 .navbar-custom {
   height: auto !important;
@@ -887,5 +891,28 @@ section {
 // contact page
 .header-contact {
   padding: 1rem;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.active-custom:last-child {
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-contact-navbar {
+  margin: 0 !important;
+  margin-top: 0.5rem !important;
+  width: 100%;
 }
 }

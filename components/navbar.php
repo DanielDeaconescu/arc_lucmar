@@ -10,11 +10,11 @@
             Arc Lucmar
         </a>
 
-        <button type="button" data-bs-toggle="collapse" data-bs-target="#menuLinks" aria-controls="navbarNavDropdown"
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDropdown"
             aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse navbar-collapse-custom h-100" id="menuLinks">
+        <div class="collapse navbar-collapse navbar-collapse-custom h-100" id="navbarNav">
             <ul class="navbar-nav ms-auto navbar-nav-custom h-100">
                 <li class="nav-item nav-item-custom h-100">
                     <a href="index.php"
@@ -53,10 +53,10 @@
                     <a href="#" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Details</a>
+                    <a href="services.php" class="nav-link">Details</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
+                    <a href="portfolio.php" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Projects</a>

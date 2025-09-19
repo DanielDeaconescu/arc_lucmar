@@ -349,6 +349,21 @@ sideButtonsEffectAdd();
 
 window.addEventListener("resize", () => {});
 
+// Closing the navbar when clicking outside of it
+const navbar = document.querySelector(".navbar-custom");
+const navbarCollapse = document.querySelector(".navbar-collapse");
+
+
+document.addEventListener('click', function(e) {
+    const clicked = e.target;
+    if(!navbar.contains(clicked)) {
+        navbarCollapse.classList.remove('show');
+    }
+})
+
+
+
+
 
 
 
