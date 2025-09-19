@@ -21,6 +21,8 @@
         integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom style -->
+    <!-- Lightbox 2 -->
+    <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" />
@@ -213,11 +215,8 @@
         </div>
     </footer>
 
-
-
-
-
-
+    <!-- Lightbox JS + jQuery -->
+    <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->

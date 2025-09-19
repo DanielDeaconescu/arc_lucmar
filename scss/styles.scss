@@ -513,6 +513,16 @@
   font-size: 4rem;
 }
 
+.landing-page-factory-image {
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 1400px) {
+  .landing-page-factory-image:hover {
+  transform: scale(1.05);
+}
+}
+
 // Landing page end
 
 // Cookies page start
