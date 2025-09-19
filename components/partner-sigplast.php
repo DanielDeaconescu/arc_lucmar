@@ -1,7 +1,7 @@
 <?php $currentPage = basename($_SERVER['PHP_SELF']) ?>
 
 <!-- Partener Sigplast -->
-<section class="partener-sigplast py-4">
+<section class="partener-sigplast py-2 py-sm-4">
     <div class="container">
         <div class="row">
             <div class="col-md-9">
@@ -38,7 +38,7 @@
                 <?php endif; ?>
             </div>
 
-            <div class="col-md-3 d-flex align-items-center">
+            <div class="col-md-3 d-flex align-items-center d-none d-sm-flex">
                 <a class="sigplast-logo-link" href="https://sigplast.ro/" target="_blank">
                     <div class="d-flex flex-column gap-2 align-items-center">
                         <img class="img-fluid sigplast-partner-img" src="./images/logo-sigplast.png" alt="">

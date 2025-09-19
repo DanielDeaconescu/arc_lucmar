@@ -36,15 +36,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="mt-5 text-content">
+                    <div class="mt-2 mt-md-5 text-content d-flex flex-column align-items-center">
                         <h1 class="text-center landing-page-h1">
                             Vrei o casă mai liniștită și facturi la energie mai mici?
                         </h1>
-                        <p class="fs-5 lead mb-4 p-header-landing">
+                        <p class="fs-5 lead mb-4 p-header-landing d-none d-sm-block">
                             Înlocuiește vechile tale geamuri cu soluțiile noastre premium de termopane și bucură-te de
                             confort și economii pe termen lung. Oferim consultanță gratuită și montaj profesionistă.
                         </p>
+                        <p class="p-header-mobile d-sm-none fs-5">
+                            Înlocuiește vechile tale geamuri cu soluțiile noastre premium de termopane.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg d-block d-sm-none" data-bs-toggle="modal"
+                            data-bs-target="#formModal">Obține ofertă
+                            gratuită</button>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -53,7 +60,7 @@
     <?php include "./components/partner-sigplast.php" ?>
 
     <!-- Process steps + Form -->
-    <section id="process-steps-form" class="process-steps-form py-5">
+    <section id="process-steps-form" class="process-steps-form py-2 py-sm-5">
         <div class="container position-relative z-3">
             <div class="row">
                 <div class="col-lg-6">
@@ -63,12 +70,12 @@
                         <h3 class="text-dark">Cum funcționează?</h3>
                         <li class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
-                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                <h4 class="fs-4 mb-1 text-dark d-flex align-items-center gap-2">
                                     <i class="bi bi-1-circle-fill fs-1"></i>
                                     Solicită oferta ta gratuită
                                 </h4>
                             </div>
-                            <p class="mb-1 text-justify">
+                            <p class="mb-1 text-justify info-paragraph">
                                 Completează formularul de mai jos sau apelează-ne direct. Vei discuta cu un specialist
                                 de-al nostru pentru a stabili detaliile și a programa o vizită la domiciliu.
                             </p>
@@ -81,7 +88,7 @@
                                     Consultanță și măsurători gratuite la fața locului
                                 </h4>
                             </div>
-                            <p class="mb-1 text-justify">
+                            <p class="mb-1 text-justify info-paragraph">
                                 Un specialist va veni la tine acasă, va evalua necesitățile
                                 proiectului și va efectua măsurători exacte. Pe baza acestora, vei primi o ofertă de
                                 preț detaliată și corectă, care nu presupune nicio obligativitate.
@@ -94,7 +101,7 @@
                                     Montaj profesionist și fără griji
                                 </h4>
                             </div>
-                            <p class="mb-1 text-justify">
+                            <p class="mb-1 text-justify info-paragraph">
                                 Echipa noastră de montaj va instala tâmplăria cu precizie și grijă,
                                 respectându-ți casa și programul stabilit.
                             </p>
@@ -106,7 +113,7 @@
                                     Bucură-te de confortul noului tău cămin
                                 </h4>
                             </div>
-                            <p class="mb-1 text-justify">
+                            <p class="mb-1 text-justify info-paragraph">
                                 Aproape fără efort din partea ta, te poți bucura imediat de un cămin mai eficient
                                 energetic, mai liniștit și mai sigur. Garantăm o execuție impecabilă a lucrării și
                                 asistență post-vânzare.
@@ -116,19 +123,19 @@
                 </div>
                 <div class="col-lg-6">
                     <!-- Form -->
-                    <div class="mt-3">
-                        <h3 class="text-dark">Solicită oferta ta gratuită</h3>
+                    <div class="mt-3 ">
+                        <h3 class="text-dark text-center">Solicită oferta ta gratuită</h3>
                         <form id="formLucmar" method="post" class="formLandingPage">
                             <div class="mb-3">
-                                <label for="name" class="form-label">Nume:</label>
+                                <label for="name" class="form-label label-phone">Nume:</label>
                                 <input type="text" class="form-control" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="phone" class="form-label">Numar de telefon:</label>
+                                <label for="phone" class="form-label label-phone">Numar de telefon:</label>
                                 <input type="text" class="form-control" name="phone">
                             </div>
                             <div class="mb-3">
-                                <label for="image" class="form-label attach-image-label">
+                                <label for="image" class="form-label attach-image-label label-phone">
                                     <span class="attach-file-name">
                                         Adaugă imagini (maxim 5)
                                     </span>
@@ -138,17 +145,18 @@
                                 <div class="attached-images-container"></div>
                             </div>
                             <div class="mb-3">
-                                <label for="description" class="form-label">Descrierea proiectului (opțional):</label>
+                                <label for="description" class="form-label label-phone">Descrierea proiectului
+                                    (opțional):</label>
                                 <textarea name="description" id="description" class="form-control"></textarea>
                             </div>
                             <div class="mb-3 d-flex justify-content-center">
                                 <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yJdAtvLgpwHwA" data-theme="light">
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="mb-3 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary btn-lg send-button-phone">
                                     <div class="spinner-border spinner-border-sm d-none" role="status"></div>
-                                    Trimite
+                                    Obține oferta
                                 </button>
                             </div>
                         </form>
@@ -164,7 +172,7 @@
     <?php include "./components/factory-images.php" ?>
 
     <!-- Why choose our services -->
-    <section class="why-choose-our-services p-5">
+    <section class="why-choose-our-services py-4 p-sm-5">
         <div class="container-fluid">
             <div class="container">
                 <h2 class="text-light text-center mb-4">De ce să alegi serviciile noastre?</h2>
@@ -182,11 +190,6 @@
                         Profile de înaltă calitate
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
     </section>
@@ -195,19 +198,19 @@
     <?php include "./components/formModal.php" ?>
 
     <!-- CTA -->
-    <section class="additional-cta p-5">
+    <section class="additional-cta py-5 p-sm-5">
         <div class="container">
             <div class="col-12">
                 <h3 class="text-center text-light">Ești gata pentru o casă mai eficientă energetic?</h3>
                 <p class="text-center fs-3 color-grey">Contactează-ne și descoperă <strong>ofertele lunii
                         Septembrie!</strong></p>
-                <div class="buttons text-center d-flex justify-content-center gap-3">
-                    <div>
-                        <a href="tel:+40741297459" class="btn btn-primary fs-6">Apelează-ne acum!</a>
+                <div class="buttons text-center d-flex cta-buttons-container justify-content-center gap-3">
+                    <div class="">
+                        <a href="tel:+40741297459" class="btn btn-primary btn-lg cta-button-phone">Apelează-ne acum!</a>
                     </div>
-                    <div>
-                        <a href="#process-steps-form" class="btn btn-primary fs-6" data-bs-toggle="modal"
-                            data-bs-target="#formModal">
+                    <div class="">
+                        <a href="#process-steps-form" class="btn btn-primary btn-lg cta-button-phone"
+                            data-bs-toggle="modal" data-bs-target="#formModal">
                             Completează formularul!
                         </a>
                     </div>
@@ -224,6 +227,7 @@
             <div class="d-flex gap-2 justify-content-end">
                 <i class="fa-solid fa-copyright fa-2x text-light"></i>
                 <div class="text-light">Arc Lucmar</div>
+                <div class="text-light">2025</div>
             </div>
         </div>
     </footer>

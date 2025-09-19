@@ -6,19 +6,21 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex flex-column">
-                <div class="d-flex align-items-center gap-3 p-3">
-
-                    <div class="flex-1">
-                        <span><i class="fa-solid fa-circle-info fa-2x"></i></span>
+                <div class="d-flex align-items-start justify-content-center gap-3 p-0 pb-3 p-sm-3">
+                    <div class="">
+                        <span><i class="fa-solid fa-circle-info fa-circle-info-custom fa-2x"></i></span>
                     </div>
-                    <div class="flex-5">
+                    <div class="">
                         <p class="form-p">
-                            Completați formularul de mai jos, iar un membru al echipei ARC Lucmar va analiza solicitarea
-                            dumneavoastră și vă va contacta în cel mai scurt timp posibil cu un răspuns sau detalii
-                            suplimentare.
+                            Datele commpletate <strong>NU</strong> vor fi introduse într-o bază de date sau folosite în
+                            scopuri de
+                            marketing.
                         </p>
+                        <a href="cookies.php#gdprinfo" target="_blank">Află mai multe
+                            despre protecția
+                            datelor
+                        </a>
                     </div>
-
                 </div>
                 <form id="formLucmar" method="post">
                     <div class="mb-3">
@@ -45,10 +47,10 @@
                     <div class="mb-3 d-flex justify-content-center">
                         <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yJdAtvLgpwHwA" data-theme="light"></div>
                     </div>
-                    <div class="mb-3">
-                        <button type="submit" class="btn btn-primary">
+                    <div class="mb-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary btn-form-send">
                             <div class="spinner-border spinner-border-sm d-none" role="status"></div>
-                            Trimite
+                            Obține oferta
                         </button>
                     </div>
                 </form>

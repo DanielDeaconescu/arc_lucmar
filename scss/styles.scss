@@ -535,6 +535,10 @@
   padding: 1.5rem;
 }
 
+#gdprinfo {
+  scroll-margin-top: 100px;
+}
+
 
 // Cookies page end
 
@@ -590,6 +594,10 @@
 .fa-form-custom {
   color: #EB5B00;
   font-size: 2.25rem;
+}
+
+.fa-circle-info-custom {
+  color: #3A6F43;
 }
 
 .fa-whatsapp-custom {
@@ -940,4 +948,56 @@ section {
   margin-top: 0.5rem !important;
   width: 100%;
 }
+
+// landing page start
+.header-landing {
+  height: 340px;
 }
+
+.landing-page-h1 {
+  font-size: 2.2rem;
+}
+
+.p-header-mobile {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.info-paragraph {
+  font-size: 20px;
+}
+
+.label-phone {
+  font-size: 18px;
+}
+
+.send-button-phone {
+  margin: auto;
+  width: 60%;
+}
+
+.formLandingPage {
+  padding: 1rem;
+}
+
+.cta-button-phone {
+  width: 100%;
+}
+
+.cta-buttons-container {
+  flex-direction: column;
+}
+
+.btn-form-send {
+  text-wrap: nowrap;
+  font-size: 20px;
+  width: 70%;
+}
+
+
+
+// landing page end
+}
+
+

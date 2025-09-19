@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
+    <!-- Turnstile script -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/font-awesome.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- Custom style -->
     <link rel="stylesheet" href="css/styles.css" />
+
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" />
     <title>Arc Lucmar | Cookies</title>
@@ -94,11 +97,34 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="mb-3 my-4">
+                            <h4 class="text-dark" id="gdprinfo">5. Cum folosim datele colectate prin formular?</h4>
+                            <p class="text-justify fs-5">
+                                Atunci când completați formularul de cerere ofertă de pe website, vă solicităm
+                                următoarele informații: nume, număr de telefon și, opțional, imagini sau o descriere a
+                                proiectului. Aceste date sunt colectate exclusiv cu scopul de a vă putea contacta și de
+                                a vă oferi un deviz cât mai exact în funcție de specificațiile proiectului
+                                dumneavoastră.
+
+                                Datele nu sunt stocate într-o bază de date și nu sunt utilizate în scopuri de marketing
+                                sau transmise către terți. Ele sunt transmise doar către reprezentantul firmei, care vă
+                                va contacta telefonic pentru a solicita, dacă este necesar, informații suplimentare în
+                                vederea întocmirii ofertei.
+
+                                Odată procesată solicitarea și oferită oferta, datele nu vor mai fi păstrate de către
+                                firmă. Aveți dreptul să solicitați oricând accesul la datele dumneavoastră, rectificarea
+                                acestora sau ștergerea lor, conform legislației în vigoare (Regulamentul (UE) 2016/679 –
+                                GDPR). Pentru astfel de solicitări (acces, rectificare, ștergere), ne puteți contacta
+                                oricând prin email la adresa <a
+                                    href="mailto:contact@tamplariearcus.ro">gdpr@tamplariearcus.ro</a>.
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <?php include "./components/formModal.php" ?>
     <?php include "./components/side-buttons.php" ?>
     <?php include "./components/cookiesPopup.php" ?>
 
