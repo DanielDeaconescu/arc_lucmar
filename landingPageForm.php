@@ -191,7 +191,8 @@
         </div>
     </section>
 
-
+    <!-- Include the form -->
+    <?php include "./components/formModal.php" ?>
 
     <!-- CTA -->
     <section class="additional-cta p-5">
@@ -205,7 +206,10 @@
                         <a href="tel:+40741297459" class="btn btn-primary fs-6">Apelează-ne acum!</a>
                     </div>
                     <div>
-                        <a href="#process-steps-form" class="btn btn-primary fs-6">Completează formularul!</a>
+                        <a href="#process-steps-form" class="btn btn-primary fs-6" data-bs-toggle="modal"
+                            data-bs-target="#formModal">
+                            Completează formularul!
+                        </a>
                     </div>
                 </div>
             </div>
