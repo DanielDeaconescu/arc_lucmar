@@ -92,6 +92,7 @@
 
     <?php include "./components/profile-tech-details.php" ?>
 
+    <?php include "./components/factory-images.php" ?>
 
 
     <!-- Cookies -->

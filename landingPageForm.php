@@ -161,12 +161,14 @@
         </div>
     </section>
 
+    <?php include "./components/factory-images.php" ?>
+
     <!-- Why choose our services -->
     <section class="why-choose-our-services p-5">
         <div class="container-fluid">
             <div class="container">
                 <h2 class="text-light text-center mb-4">De ce să alegi serviciile noastre?</h2>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mb-4">
                     <div class="col-md-4 mb-3 mb-md-0 fs-4 d-flex align-items-center gap-2 text-light">
                         <i class="fa-solid fa-award fa-2x award-custom"></i>
                         Garantie 10 ani
@@ -180,9 +182,16 @@
                         Profile de înaltă calitate
                     </div>
                 </div>
+
+
+
+
+
             </div>
         </div>
     </section>
+
+
 
     <!-- CTA -->
     <section class="additional-cta p-5">

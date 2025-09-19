@@ -35,47 +35,6 @@
                             href="https://sigplast.ro/" target="_blank">Website Sigplast</a>
                     </small>
                 </p>
-                <?php elseif ($currentPage == 'landingPageForm.php'): ?>
-                <h4 class="text-dark">Imagini din fabrică:</h4>
-                <div class="row">
-                    <div class="col-md-2">
-                        <a href="./images/factory/factory1.jpg" data-lightbox="factory1">
-                            <img src="./images/factory/factory1.jpg"
-                                class="img-fluid landing-page-factory-image rounded" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="./images/factory/factory2.jpg" data-lightbox="factory1">
-                            <img src="./images/factory/factory2.jpg"
-                                class="img-fluid rounded landing-page-factory-image" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="./images/factory/factory3.jpg" data-lightbox="factory1">
-                            <img src="./images/factory/factory3.jpg"
-                                class="img-fluid rounded landing-page-factory-image" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="./images/factory/factory4.jpg" data-lightbox="factory1">
-                            <img src="./images/factory/factory4.jpg"
-                                class="img-fluid rounded landing-page-factory-image" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="./images/factory/factory5.jpg" data-lightbox="factory1">
-                            <img src="./images/factory/factory5.jpg"
-                                class="img-fluid rounded landing-page-factory-image" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="./images/factory/factory9.jpg" data-lightbox="factory1">
-                            <img src="./images/factory/factory9.jpg"
-                                class="img-fluid rounded landing-page-factory-image" alt="">
-                        </a>
-                    </div>
-
-                </div>
                 <?php endif; ?>
             </div>
 
