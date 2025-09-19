@@ -35,10 +35,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="mt-5 text-content">
-                        <h1 class="xl-text text-center">
+                        <h1 class="text-center landing-page-h1">
                             Vrei o casă mai liniștită și facturi la energie mai mici?
                         </h1>
-                        <p class="fs-4 lead mb-4 p-header-landing">
+                        <p class="fs-5 lead mb-4 p-header-landing">
                             Înlocuiește vechile tale geamuri cu soluțiile noastre premium de termopane și bucură-te de
                             confort și economii pe termen lung. Oferim consultanță gratuită și montaj profesionistă.
                         </p>
@@ -48,19 +48,23 @@
         </div>
     </header>
 
+    <?php include "./components/partner-sigplast.php" ?>
+
     <!-- Process steps + Form -->
-    <section id="process-steps-form" class="process-steps-form">
+    <section id="process-steps-form" class="process-steps-form py-5">
         <div class="container position-relative z-3">
             <div class="row">
                 <div class="col-lg-6">
+
                     <!-- Process steps -->
                     <div class="list-group mt-3">
+                        <h3 class="text-dark">Cum funcționează?</h3>
                         <li class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
                                     <i class="bi bi-1-circle-fill fs-1"></i>
                                     Solicită oferta ta gratuită
-                                </h5>
+                                </h4>
                             </div>
                             <p class="mb-1 text-justify">
                                 Completează formularul de mai jos sau apelează-ne direct. Vei discuta cu un specialist
@@ -70,10 +74,10 @@
                         <li class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
 
-                                <h5 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
                                     <i class="bi bi-2-circle-fill fs-1"></i>
                                     Consultanță și măsurători gratuite la fața locului
-                                </h5>
+                                </h4>
                             </div>
                             <p class="mb-1 text-justify">
                                 Un specialist va veni la tine acasă, va evalua necesitățile
@@ -83,10 +87,10 @@
                         </li>
                         <li class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
                                     <i class="bi bi-3-circle-fill fs-1"></i>
                                     Montaj profesionist și fără griji
-                                </h5>
+                                </h4>
                             </div>
                             <p class="mb-1 text-justify">
                                 Echipa noastră de montaj va instala tâmplăria cu precizie și grijă,
@@ -95,10 +99,10 @@
                         </li>
                         <li class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
                                     <i class="bi bi-4-circle-fill fs-1"></i>
                                     Bucură-te de confortul noului tău cămin
-                                </h5>
+                                </h4>
                             </div>
                             <p class="mb-1 text-justify">
                                 Aproape fără efort din partea ta, te poți bucura imediat de un cămin mai eficient

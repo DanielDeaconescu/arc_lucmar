@@ -102,6 +102,11 @@
                         <?php endforeach; ?>
                     </div>
     </section>
+
+
+    <!-- Profile Tech Details -->
+    <?php include "./components/profile-tech-details.php" ?>
+
     <?php include "./components/side-buttons.php" ?>
     <?php include "./components/cookiesPopup.php" ?>
 
