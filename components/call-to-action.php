@@ -29,7 +29,7 @@
 
 ?>
 
-<section class="py-5 py-md-6 text-center cta-custom <?= $ctaClass ?>">
+<section class="text-center cta-custom <?= $ctaClass ?> py-5 py-md-5 py-lg-6">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">

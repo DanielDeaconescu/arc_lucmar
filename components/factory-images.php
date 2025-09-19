@@ -1,4 +1,4 @@
-<section class="factory-images-section py-4 py-md-5">
+<section class="factory-images-section py-4 py-md-4 py-lg-6">
     <div class="container">
         <h3 class="text-dark mb-4 text-center">Imagini din fabrică</h3>
         <p class="fs-5 d-none d-sm-block">Procesul de extrudare al profilului Sigplast în imagini. Precizie, tehnologie

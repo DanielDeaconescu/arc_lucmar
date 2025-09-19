@@ -3,7 +3,7 @@
 
 
 <section id="technical-details"
-    class="profile-technical-details <?= $page == 'services.php' ? 'services-tech-details' : ''; ?>">
+    class="profile-technical-details <?= $page == 'services.php' ? 'services-tech-details' : ''; ?> py-5 py-md-5 py-lg-6">
     <div class="container">
         <div class="row">
             <div class="text-section mb-5">

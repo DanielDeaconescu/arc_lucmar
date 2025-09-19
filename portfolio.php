@@ -101,53 +101,69 @@
                 <div class="modal-dialog modal-xl modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
+                            <h5 class="modal-title text-dark">
+                                <?= $project['title'] ?>
+                            </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="container-gallery-specs">
-                                <!-- Gallery left -->
-                                <div class="gallery-left">
-                                    <!-- Landscape images row -->
-                                    <div class="modal-images-container">
-                                        <?php foreach ($project['gallery'] as $image): ?>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="container">
+                                            <div class="row">
+                                                <!-- Landscape -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <?php foreach ($project['gallery'] as $image): ?>
 
-                                        <?php if (getOrientation($image) === 'landscape'): ?>
-                                        <div>
-                                            <a href="<?= $image; ?>" data-lightbox="<?= $project["id"]; ?>">
-                                                <img src="<?php echo $image; ?>"
-                                                    class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
-                                                    alt="test">
-                                            </a>
+                                                        <?php if (getOrientation($image) === 'landscape'): ?>
+                                                        <div class="col-md-6 mb-3">
+                                                            <a href="<?= $image; ?>"
+                                                                data-lightbox="<?= $project["id"]; ?>">
+                                                                <img src="<?php echo $image; ?>"
+                                                                    class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
+                                                                    alt="test">
+                                                            </a>
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!-- Portrait -->
+                                                        <?php foreach ($project['gallery'] as $image): ?>
+                                                        <?php if (getOrientation($image) === 'portrait'): ?>
+                                                        <div class="col-md-6 mb-3">
+                                                            <a href="<?= $image; ?>"
+                                                                data-lightbox="<?= $project['id']; ?>">
+                                                                <img src="<?php echo $image; ?>"
+                                                                    class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
                                         </div>
-                                        <?php endif; ?>
-                                        <?php endforeach; ?>
                                     </div>
-
-                                    <!-- Portrait images row -->
-                                    <div class="modal-images-container">
-                                        <?php foreach ($project['gallery'] as $image): ?>
-                                        <?php if (getOrientation($image) === 'portrait'): ?>
-                                        <div class="">
-                                            <a href="<?= $image; ?>" data-lightbox="<?= $project['id']; ?>">
-                                                <img src="<?php echo $image; ?>"
-                                                    class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
-                                                    alt="">
-                                            </a>
-                                        </div>
-                                        <?php endif; ?>
-                                        <?php endforeach; ?>
+                                    <div class="col-md-6">
+                                        <h4 class="text-dark"><?= $project['title']; ?></h4>
+                                        <ul class="list-unstyled">
+                                            <?php foreach ($project['specs'] as $spec): ?>
+                                            <li>
+                                                <i class="fa-solid fa-circle-check"></i>
+                                                <?= $spec; ?>
+                                            </li>
+                                            <?php endforeach; ?>
+                                        </ul>
                                     </div>
-                                </div>
-
-
-                                <!-- Specs right -->
-                                <div class="specs-right">
-                                    <h4 class="text-dark"><?= $project['title']; ?></h4>
-                                    <ul>
-                                        <?php foreach ($project['specs'] as $spec): ?>
-                                        <li><?= $spec; ?></li>
-                                        <?php endforeach; ?>
-                                    </ul>
                                 </div>
                             </div>
                         </div>

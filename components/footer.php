@@ -1,9 +1,9 @@
-<footer class="footer bg-light py-4 py-md-6 px-3">
+<footer class="footer bg-light py-5 py-md-5 py-lg-6 px-3">
     <div class="container">
         <div class="row">
             <div class="col-md-4 my-3">
                 <h4 class="fw-bold text-dark">Despre Arc Construct</h4>
-                <p class="fs-5 text-justify">
+                <p class="fs-5 text-justify footer-about-paragraph">
                     Arc Lucmar este o firmă locală din Galați, specializată în montajul și furnizarea de ferestre și uși
                     din PVC și aluminiu. Cu o echipă cu peste 19 ani de experiență, ne dedicăm fiecărui proiect pentru a
                     oferi soluții adaptate nevoilor fiecărui client.

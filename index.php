@@ -37,7 +37,7 @@
     <?php include './components/partner-sigplast.php' ?>
 
     <!-- De ce sa alegeti Arc Construct? -->
-    <section id="details" class="details position-relative py-4 py-md-6 overflow-hidden">
+    <section id="details" class="details position-relative py-4 py-md-4 py-lg-6 overflow-hidden">
         <div class="container position-relative z-3">
             <div class="row">
                 <div class="col-lg-6">
