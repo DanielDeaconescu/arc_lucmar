@@ -910,11 +910,6 @@ section {
 
 
 
-.navbar-custom {
-  height: auto !important;
-  padding: 1rem !important;
-}
-
 // services page
 .header-services {
   padding: 1rem;
@@ -928,6 +923,13 @@ section {
 // contact page
 .header-contact {
   padding: 1rem;
+}
+
+// Making the navbar work
+
+.navbar-custom {
+  height: auto !important;
+  padding: 1rem !important;
 }
 
 .nav-item {
@@ -1005,6 +1007,75 @@ section {
   .footer-about-paragraph {
     font-size: 16px !important;
   }
+
+  // Making the navbar work
+  .navbar-custom {
+    height: auto !important;
+    padding: 1rem !important;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  // landingPageForm
+  .info-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem !important;
+  }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  // landingPageForm
+  .info-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem !important;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  // landingPageForm
+  .info-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 

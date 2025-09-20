@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
+    <!-- Turnstile script -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/font-awesome.css" />
     <!-- Bootstrap -->
@@ -32,7 +34,7 @@
     ?>
 
     <!-- De ce sa alegeti Arc Construct? -->
-    <section id="details" class="details position-relative overflow-hidden py-4 py-md-6">
+    <section id="details" class="details position-relative overflow-hidden py-5 py-md-5 py-lg-6">
 
         <div class="container position-relative z-3">
             <div class="row">
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-4 mt-md-0">
+                <div class="col-lg-6 mt-5 mt-lg-0">
                     <!-- Google Map -->
                     <h5 class="text-dark">Harta Fabricii</h5>
                     <p class="fs-5">

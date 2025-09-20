@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <!-- Turnstile script -->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/font-awesome.css" />
     <!-- Bootstrap -->
@@ -123,7 +123,7 @@
                 </div>
                 <div class="col-lg-6">
                     <!-- Form -->
-                    <div class="mt-3 ">
+                    <div class="mt-3 form-container">
                         <h3 class="text-dark text-center">Solicită oferta ta gratuită</h3>
                         <form id="formLucmar" method="post" class="formLandingPage">
                             <div class="mb-3">
@@ -177,15 +177,15 @@
             <div class="container">
                 <h2 class="text-light text-center mb-4">De ce să alegi serviciile noastre?</h2>
                 <div class="row justify-content-center mb-4">
-                    <div class="col-md-4 mb-3 mb-md-0 fs-4 d-flex align-items-center gap-2 text-light">
+                    <div class="col-md-4 mb-3 mb-md-0 fs-4 text-light d-flex align-items-center gap-2">
                         <i class="fa-solid fa-award fa-2x award-custom"></i>
                         Garantie 10 ani
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0 fs-4 d-flex align-items-center gap-2 text-light">
+                    <div class="col-md-4 mb-3 mb-md-0 fs-4 text-light d-flex align-items-center gap-2">
                         <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
                         Montaj impecabil
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0 fs-4 d-flex align-items-center gap-2 text-light">
+                    <div class="col-md-4 mb-3 mb-md-0 fs-4 text-light d-flex align-items-center gap-2">
                         <i class="fa-solid fa-gem fa-2x"></i>
                         Profile de înaltă calitate
                     </div>

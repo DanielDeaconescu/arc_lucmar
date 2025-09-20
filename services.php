@@ -74,7 +74,7 @@
      ?>
 
     <!-- Services -->
-    <section id="services" class="services bg-light py-4 py-md-6">
+    <section id="services" class="services bg-light py-5 py-md-5 py-lg-6">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">

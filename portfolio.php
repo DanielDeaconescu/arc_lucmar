@@ -16,7 +16,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
-
+        <!-- Turnstile script -->
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
         <!-- Fontawesome -->
         <link rel="stylesheet" href="css/font-awesome.css" />
         <!-- Bootstrap -->
@@ -43,7 +44,7 @@
     ?>
 
     <!-- Projects -->
-    <section id="projects" class="projects bg-light py-6">
+    <section id="projects" class="projects bg-light py-5 py-md-5 py-lg-6">
         <div class="container">
             <h1 class="text-dark text-center mb-4">Proiecte Arc Lucmar</h1>
             <p class="fs-5 text-center">Descoperiți o parte dintre proiectele noastre mai jos și aflați informațiile
