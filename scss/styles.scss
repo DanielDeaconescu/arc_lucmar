@@ -595,6 +595,25 @@
   opacity: 1;
 }
 
+// The message should not interfere with other buttons on the screen
+@media (max-width: 992px) {
+  .side-buttons-message-text {
+    display: none;
+  }
+
+  .side-buttons-message-icon {
+    display: flex;
+  }
+
+  .side-buttons-whatsapp-icon {
+    display: flex;
+  }
+
+  .side-buttons-whatsapp-text {
+    display: none;
+  }
+}
+
 .fa-form-custom {
   color: #EB5B00;
   font-size: 2.25rem;
@@ -1050,6 +1069,24 @@ section {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem !important;
+  }
+  
+  // Making the navbar work
+  .navbar-custom {
+    height: auto !important;
+    padding: 1rem !important;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 

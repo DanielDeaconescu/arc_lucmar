@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
         <!-- Turnstile script -->
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+        <!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
         <!-- Fontawesome -->
         <link rel="stylesheet" href="css/font-awesome.css" />
         <!-- Bootstrap -->
