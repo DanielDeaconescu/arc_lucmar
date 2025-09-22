@@ -2,14 +2,29 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 my-3">
-                <h4 class="fw-bold text-dark">Despre Arc Construct</h4>
+                <!-- <h4 class="fw-bold text-dark">Despre Arc Lucmar</h4> -->
+
+                <div class="logo-footer d-flex align-items-center gap-2">
+                    <img class="img-fluid navbar-logo-custom" src="./images/final_logo_dark_remade.png" alt="">
+                    <div class="business-info d-flex flex-column justify-content-center">
+                        <div class="business-name">
+                            Arc Lucmar
+                        </div>
+                        <div class="business-short-description">
+                            Tâmplărie PVC și Aluminiu
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <p class="fs-5 text-justify footer-about-paragraph">
                     Arc Lucmar este o firmă locală din Galați, specializată în montajul și furnizarea de ferestre și uși
                     din PVC și aluminiu. Cu o echipă cu peste 19 ani de experiență, ne dedicăm fiecărui proiect pentru a
                     oferi soluții adaptate nevoilor fiecărui client.
                 </p>
             </div>
-            <div class="col-md-4 my-3">
+            <div class="col-md-4 my-3 d-flex flex-column align-items-center">
                 <h5 class="text-dark">Link-uri utile</h5>
                 <ul class="list-unstyled">
                     <li class="li-styled">

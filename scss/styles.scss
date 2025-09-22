@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 // Navigation start
 .navbar-custom {
-  border-bottom: 4px solid #f5efe6;
-  background: #333333;
+  border-bottom: 4px solid #1F7D53;
+  background: #040D12;
   padding: 0 !important;
   height: 80px;
 }
@@ -12,6 +19,21 @@
 
 .navbar-logo-custom {
   width: 60px;
+}
+
+.business-info {
+  font-family: "Montserrat", sans-serif;
+}
+
+.business-name {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.business-short-description {
+  margin-top: -0.75rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 // Navigation end
@@ -259,8 +281,14 @@
 }
 
 
+.logo-footer {
+  color: black;
+  margin-bottom: 0.5rem;
+}
 
-
+.footer {
+  border-top: 4px solid #1F7D53;
+}
 
 // Footer end
 
