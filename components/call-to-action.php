@@ -12,7 +12,7 @@
         break;
         case 'services.php':
             $ctaTitle = 'Servicii complete pentru ferestre și uși personalizate!';
-            $ctaP = 'De la măsurători precise până la montaj profesionist, echipa noastră cu peste 19 ani de experiență vă oferă soluții sigure și durabile pentru căminul dumneavoastră.';
+            $ctaP = 'Cu peste 19 ani de experiență în montajul ferestrelor și ușilor, echipa Arc Lucmar transformă fiecare proiect într-o soluție funcțională, sigură și durabilă. Beneficiază și tu de montaj profesionist și atenție la detalii, astfel încât ferestrele și ușile tale să aducă confort, siguranță și eficiență energetică locuinței tale!';
             $ctaClass = 'cta-services';
         break;
         case 'portfolio.php':

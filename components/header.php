@@ -11,7 +11,8 @@
       break;
     case 'services.php':
       $headerBg = 'header-services';
-      $headerP = 'La Arc Lucmar oferim soluții complete pentru ferestre și uși din PVC și aluminiu, adaptate nevoilor dumneavoastră. De la consultanță și măsurători precise, până la montaj profesionist și suport post-instalare, echipa noastră cu peste 19 ani de experiență se asigură că fiecare proiect este executat cu atenție la detalii și produse de calitate. Colaborăm cu furnizori de încredere precum Sigplast, KMG și Salamander, pentru a vă garanta durabilitate, confort și siguranță în căminul dumneavoastră.';
+      $headerText = "Servicii complete de ferestre și uși din PVC și aluminiu – Arc Lucmar Galați";
+      $headerP = 'La Arc Lucmar oferim soluții complete pentru ferestre și uși din PVC și aluminiu, adaptate nevoilor tale. Echipa noastră, cu peste 19 ani de experiență, se ocupă de consultanță, măsurători precise, furnizare de profiluri de calitate și montaj profesionist. Colaborăm cu furnizori de încredere precum Sigplast, KMG și Salamander, pentru a asigura durabilitate, confort și siguranță locuinței tale.';
       break;
     case 'portfolio.php':
       $headerBg = 'header-portfolio';
