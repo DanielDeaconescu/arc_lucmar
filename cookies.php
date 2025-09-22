@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <!-- Turnstile script -->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/font-awesome.css" />
     <!-- Bootstrap -->
@@ -29,7 +29,6 @@
 
     <!-- Header -->
     <?php 
-      $headerText = "Politica de cookies";
       include "./components/header.php"
      ?>
 
@@ -42,43 +41,44 @@
                         <li class="mb-3">
                             <h4 class="text-dark">1. Ce sunt cookie-urile?</h4>
                             <p class="text-justify fs-5">
-                                Cookie-urile sunt fișiere de mici dimensiuni, formate din litere și numere, care sunt
-                                stocate pe dispozitivul dumneavoastră (computer, tabletă, telefon mobil) atunci când
-                                vizitați un website. Ele permit recunoașterea dispozitivului și ajută la o navigare mai
-                                eficientă.
+                                Cookie-urile sunt fișiere de mici dimensiuni, formate din litere și numere, care se
+                                salvează pe dispozitivul tău (computer, tabletă, telefon mobil) atunci când accesezi un
+                                website. Acestea ajută la recunoașterea dispozitivului și pot face navigarea pe internet
+                                mai rapidă și mai eficientă.
 
-                                Cookie-urile nu conțin date personale și nu pot accesa documente sau fișiere de pe
-                                dispozitivul dumneavoastră.
+                                Cookie-urile nu conțin date personale și nu pot accesa fișiere sau documente de pe
+                                dispozitivul tău.
                             </p>
                         </li>
                         <li class="mb-3">
                             <h4 class="text-dark">2. Folosim cookie-uri pe acest website?</h4>
                             <p class="text-justify fs-5">
-                                În prezent, website-ul nostru nu utilizează cookie-uri care să colecteze sau să stocheze
-                                datele vizitatorilor.
-                                Dacă în viitor vom implementa cookie-uri pentru îmbunătățirea experienței online (de
-                                exemplu: pentru analiza traficului, pentru optimizarea conținutului sau pentru campanii
-                                de promovare), vom actualiza această pagină și vă vom informa în mod clar înainte de a
-                                le activa.
+                                În prezent, website-ul Arc Lucmar <strong>NU utilizează cookie-uri care colectează sau
+                                    stochează
+                                    date personale despre vizitatori</strong>.
+                                Dacă, pe viitor, vom implementa cookie-uri pentru îmbunătățirea experienței online (ex.
+                                analiză de trafic, optimizarea conținutului sau campanii publicitare), această pagină va
+                                fi actualizată, iar tu vei fi informat în mod clar și transparent înainte de activarea
+                                lor.
                             </p>
                         </li>
                         <li class="mb-3">
-                            <h4 class="text-dark">3. De ce sunt folosite cookie-urile în general?</h4>
+                            <h4 class="text-dark">3. La ce sunt folosite cookie-urile în general?</h4>
                             <p class="text-justify fs-5">
-                                La modul general, cookie-urile pot fi utilizate pentru:
+                                În mod obișnuit, cookie-urile sunt utilizate pentru:
                             </p>
                             <ul class="ms-4">
                                 <li class="fs-5">îmbunătățirea funcționării website-urilor</li>
-                                <li class="fs-5">măsurarea traficului și a performanței</li>
-                                <li class="fs-5">personalizarea conținutului</li>
-                                <li class="fs-5">livrarea de publicitate relevantă utilizatorilor</li>
+                                <li class="fs-5">analizarea traficului și a performanței paginilor</li>
+                                <li class="fs-5">personalizarea conținutului afișat utilizatorilor</li>
+                                <li class="fs-5">afișarea de publicitate relevantă</li>
                             </ul>
                         </li>
                         <li class="mb-3">
                             <h4 class="text-dark">4. Surse de informare utile</h4>
                             <p class="text-justify fs-5">
-                                Dacă doriți să aflați mai multe detalii despre cookie-uri, puteți consulta următoarele
-                                resurse:
+                                Dacă dorești să afli mai multe detalii despre cookie-uri și modul în care funcționează,
+                                îți recomandăm următoarele resurse:
                             </p>
                             <ul>
                                 <li>
@@ -99,25 +99,29 @@
                             </ul>
                         </li>
                         <li class="mb-3 my-4">
-                            <h4 class="text-dark" id="gdprinfo">5. Cum folosim datele colectate prin formular?</h4>
+                            <h4 class="text-dark" id="gdprinfo">5. Cum folosim datele colectate prin formularul de
+                                ofertă?</h4>
                             <p class="text-justify fs-5">
-                                Atunci când completați formularul de cerere ofertă de pe website, vă solicităm
-                                următoarele informații: nume, număr de telefon și, opțional, imagini sau o descriere a
-                                proiectului. Aceste date sunt colectate exclusiv cu scopul de a vă putea contacta și de
-                                a vă oferi un deviz cât mai exact în funcție de specificațiile proiectului
-                                dumneavoastră.
+                                Când completezi formularul de pe site-ul nostru pentru a solicita o ofertă, îți cerem
+                                doar informațiile strict necesare: nume, număr de telefon și, opțional, imagini sau o
+                                descriere a proiectului.
 
-                                Datele nu sunt stocate într-o bază de date și nu sunt utilizate în scopuri de marketing
-                                sau transmise către terți. Ele sunt transmise doar către reprezentantul firmei, care vă
-                                va contacta telefonic pentru a solicita, dacă este necesar, informații suplimentare în
-                                vederea întocmirii ofertei.
+                                Aceste date sunt folosite <strong>exclusiv pentru a te contacta și pentru a-ți oferi o
+                                    estimare corectă de preț</strong> pe baza detaliilor proiectului tău.
 
-                                Odată procesată solicitarea și oferită oferta, datele nu vor mai fi păstrate de către
-                                firmă. Aveți dreptul să solicitați oricând accesul la datele dumneavoastră, rectificarea
-                                acestora sau ștergerea lor, conform legislației în vigoare (Regulamentul (UE) 2016/679 –
-                                GDPR). Pentru astfel de solicitări (acces, rectificare, ștergere), ne puteți contacta
-                                oricând prin email la adresa <a
-                                    href="mailto:contact@tamplariearcus.ro">gdpr@tamplariearcus.ro</a>.
+                            <ul>
+                                <li>Datele NU sunt stocate într-o bază de date</li>
+                                <li>NU sunt utilizate în scopuri de marketing</li>
+                                <li>NU sunt transmise către terți</li>
+                            </ul>
+
+                            Informațiile ajung direct la un reprezentant Arc Lucmar, care te va contacta telefonic doar
+                            pentru clarificări sau detalii suplimentare. După finalizarea ofertei, datele tale nu vor
+                            mai fi păstrate de firmă.
+
+                            Conform Regulamentului (UE) 2016/679 – GDPR, ai dreptul oricând să soliciți accesul la
+                            datele tale, rectificarea sau ștergerea lor. Pentru astfel de solicitări, ne poți contacta
+                            prin email la: <a href="mailto:gdpr@tamplariearcus.ro">gdpr@tamplariearcus.ro</a>.
                             </p>
                         </li>
                     </ul>

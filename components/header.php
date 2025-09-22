@@ -16,15 +16,18 @@
       break;
     case 'portfolio.php':
       $headerBg = 'header-portfolio';
-      $headerP = 'Bine ați venit în portofoliul nostru! Aici veți descoperi proiectele noastre recente în domeniul ferestrelor și ușilor din PVC și aluminiu, de la concepte personalizate la montaj complet realizat de echipa noastră cu peste 19 ani de experiență. Fiecare proiect reflectă atenția noastră la detalii, colaborarea cu furnizori de încredere și angajamentul pentru soluții durabile și de calitate. Explorați exemplele de mai jos pentru a vedea cum transformăm ideile clienților în rezultate concrete și de încredere.';
+      $headerText = "Portofoliu proiecte ferestre și uși PVC și aluminiu – Arc Lucmar";
+      $headerP = 'Descoperă gama noastră de proiecte relevante în furnizarea și montarea de ferestre și uși PVC și aluminiu. Fiecare lucrare reflectă atenția noastră la detalii, colaborarea cu furnizori de încredere și angajamentul pentru soluții durabile, funcționale și estetice. Aruncă o privire în portofoliul nostru pentru a vedea felul în care Arc Lucmar poate să transforme ideile tale în realitate.';
       break;
     case 'contact.php':
       $headerBg = 'header-contact';
-      $headerP = 'Suntem aici pentru a vă răspunde rapid la orice întrebare și pentru a vă oferi consultanță personalizată pentru ferestrele și ușile dumneavoastră din PVC și aluminiu. Completați formularul de mai jos, sunați-ne sau scrieți-ne pe email și echipa noastră cu peste 19 ani de experiență vă va ajuta să găsiți cea mai bună soluție pentru căminul dumneavoastră. Așteptăm cu interes să colaborăm!';
+      $headerText = "Contactează Arc Lucmar – ferestre și uși PVC și aluminiu";
+      $headerP = 'Suntem aici pentru a vă răspunde rapid la orice întrebare și pentru a vă oferi consultanță personalizată pentru ferestrele și ușile dumneavoastră. Completați formularul de mai jos, sunați-ne sau scrieți-ne pe email și echipa noastră vă va ajuta să găsiți cea mai bună soluție pentru căminul dumneavoastră. Așteptăm cu interes să colaborăm!';
       break;
     case "cookies.php":
       $headerBg = 'header-cookies';
-      $headerP = 'Această pagină are scopul de a vă oferi informații clare și transparente cu privire la modul în care website-ul nostru utilizează fișierele de tip cookie.';
+      $headerText = "Politica de utilizare a cookie-urilor";
+      $headerP = 'Această pagină explică modul în care site-ul Arc Lucmar folosește fișierele de tip cookie pentru a îmbunătăți experiența utilizatorilor, pentru a analiza traficul și pentru a oferi conținut și servicii adaptate nevoilor tale. Scopul nostru este să îți oferim informații clare și transparente, astfel încât să știi exact ce date sunt colectate și cum sunt utilizate.';
   }
 ?>
 

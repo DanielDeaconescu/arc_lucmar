@@ -16,13 +16,13 @@
             $ctaClass = 'cta-services';
         break;
         case 'portfolio.php':
-            $ctaTitle = 'Ți-au plăcut proiectele noastre? Obține o ofertă pentru proiectul tău!';
-            $ctaP = 'Dacă proiectele noastre ți-au atras atenția, echipa Arc Construct este pregătită să transforme și ideile tale în realitate. Fie că ai nevoie de ferestre și uși din PVC sau aluminiu, montaj profesionist ori consultanță specializată, îți oferim soluții adaptate exact nevoilor tale. Ia legătura cu noi astăzi și hai să începem colaborarea!';
+            $ctaTitle = 'Ți-au plăcut proiectele noastre? Vino să transformăm și ideile tale în realitate!';
+            $ctaP = 'Dacă proiectele noastre ți-au atras atenția, echipa Arc Lucmar este gata să-ți pună la dispoziție ferestre și uși din PVC și aluminiu personalizate, montaj profesionist și soluții complete adaptate nevoilor locuinței tale. Contactează-ne acum și hai să începem o colaborare de succes!';
             $ctaClass = 'cta-services';
         break;
         case 'contact.php':
-            $ctaTitle = 'Contactați-ne — suntem aici să vă ajutăm!';
-            $ctaP = 'Completați formularul sau contactați-ne direct și vă oferim o evaluare rapidă a proiectului. Echipa Arc Lucmar, cu peste 19 ani de experiență în montaj și furnizare profile PVC și aluminiu, vă stă la dispoziție pentru măsurători, consultanță și ofertă fără obligații.';
+            $ctaTitle = 'Contactează echipa Arc Lucmar';
+            $ctaP = 'Ai nevoie de ferestre sau uși din PVC și aluminiu? Completează formularul, scrie-ne pe WhatsApp sau sună-ne direct pentru o evaluare rapidă și gratuită a proiectului tău. Cu peste 19 ani de experiență în consultanță, măsurători și montaj profesionist, echipa noastră îți stă la dispoziție pentru a-ți oferi soluții personalizate, durabile și adaptate nevoilor căminului tău.';
             $ctaClass = 'cta-contact';
     }
         
@@ -39,13 +39,14 @@
                 <p class="text-light fs-5">
                     <?php echo $ctaP; ?>
                 </p>
-                <button data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-secondary btn-lg">Obține
+                <button data-bs-toggle="modal" data-bs-target="#formModal"
+                    class="btn btn-secondary btn-lg mb-2 mb-md-0">Obține
                     ofertă</button>
-                <a href="tel:+40741297459" class="btn btn-primary btn-lg cta-middle-btn">
+                <a href="tel:+40741297459" class="btn btn-primary btn-lg cta-middle-btn mb-2 mb-md-0">
                     <i class="fa-solid fa-phone me-2"></i>
                     0741 297 459
                 </a>
-                <a href="tel:+40741297459" class="btn btn-whatsapp text-white btn-lg">
+                <a href="tel:+40741297459" class="btn btn-whatsapp text-white btn-lg mb-2 mb-md-0">
                     <i class="fa-brands fa-whatsapp"></i>
                     Mesaj WhatsApp
                 </a>

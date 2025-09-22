@@ -40,18 +40,16 @@
     <?php include "./components/navbar.php" ?>
 
     <?php 
-      $headerText = "Portofoliu";
       include "./components/header.php"
     ?>
 
     <!-- Projects -->
     <section id="projects" class="projects bg-light py-5 py-md-5 py-lg-6">
         <div class="container">
-            <h1 class="text-dark text-center mb-4">Proiecte Arc Lucmar</h1>
-            <p class="fs-5 text-center">Descoperiți o parte dintre proiectele noastre mai jos și aflați informațiile
-                tehnice
-                relevante despre
-                fiecare proiect.</p>
+            <h1 class="text-dark text-center mb-4">Proiecte realizate de Arc Lucmar – ferestre și uși PVC și aluminiu
+            </h1>
+            <p class="fs-5 text-center">Explorați o selecție de proiecte finalizate de Arc Lucmar cu imagini relevante
+                și detalii tehnice pentru fiecare proiect.</p>
             <!-- Landscape Projects -->
             <div class="row g-4">
                 <?php foreach ($landscapeProjects as $project): ?>
