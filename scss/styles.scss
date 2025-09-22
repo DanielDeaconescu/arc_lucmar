@@ -13,6 +13,11 @@ body {
   height: 80px;
 }
 
+.logo-item-light {
+  display: flex;
+  gap: 0.5rem;
+}
+
 // .navbar-collapse-custom {
 //   height: 100vh;
 // }
@@ -934,6 +939,25 @@ section {
 .li-styled {
   font-size: 20px;
 }
+
+// logo-item
+.logo-item-light {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar-logo-custom {
+  width: 50px;
+}
+
+.business-name {
+  font-size: 1.2rem;
+}
+
+.business-short-description {
+  font-size: 0.8rem;
+}
+
 
 // Making the navbar work on mobile
 .container-navbar-custom,

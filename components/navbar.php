@@ -7,15 +7,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom">
     <div class="container container-navbar-custom h-100">
         <a href="index.html" class="navbar-brand navbar-brand-custom d-flex align-items-center gap-2">
-            <img class="img-fluid navbar-logo-custom" src="./images/final_logo_light_remade.png" alt="">
-            <div class="business-info d-flex flex-column justify-content-center">
-                <div class="business-name">
-                    Arc Lucmar
-                </div>
-                <div class="business-short-description">
-                    Tâmplărie PVC și Aluminiu
-                </div>
-            </div>
+            <?php include "logo-item-light.php" ?>
 
         </a>
 
