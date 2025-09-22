@@ -19,9 +19,10 @@
 
 
                 <p class="fs-5 text-justify footer-about-paragraph">
-                    Arc Lucmar este o firmă locală din Galați, specializată în montajul și furnizarea de ferestre și uși
-                    din PVC și aluminiu. Cu o echipă cu peste 19 ani de experiență, ne dedicăm fiecărui proiect pentru a
-                    oferi soluții adaptate nevoilor fiecărui client.
+                    Arc Lucmar oferă servicii de furnizare și montaj de ferestre și uși din PVC și aluminiu în Galați și
+                    împrejurimi. Având o echipă cu peste 19 ani de experiență, ne dedicăm fiecărui proiect pentru a
+                    oferi
+                    soluții funcționale, durabile și estetice, adaptate nevoilor locuinței tale.
                 </p>
             </div>
             <div class="col-md-4 my-3 d-flex flex-column align-items-center">

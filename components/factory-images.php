@@ -1,10 +1,9 @@
 <section class="factory-images-section py-4 py-md-4 py-lg-5 py-xl-5">
     <div class="container">
-        <h3 class="text-dark mb-4 text-center">Imagini din fabrică</h3>
-        <p class="text-center fs-4 d-none d-sm-block">Procesul de extrudare al profilului Sigplast în imagini. Precizie,
-            tehnologie
-            modernă și atenție
-            la detalii.
+        <h3 class="text-dark mb-4 text-center">Imagini din fabrica Sigplast din Galați</h3>
+        <p class="text-center fs-4">
+            Descoperiți procesul de extrudare al profilului PVC Sigplast, realizat cu precizie, tehnologie modernă și
+            atenție la detalii, chiar în fabrica din Galați, România.
         </p>
         <div class="row">
             <div class="col-md-2 mt-3 mt-lg-0">

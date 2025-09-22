@@ -6,8 +6,8 @@
 
     switch($page){
         case 'index.php':
-            $ctaTitle = 'Transformă-ți casa cu ferestre și uși adaptate nevoilor tale!';
-            $ctaP = 'Echipa noastră cu peste 19 ani de experiență se ocupă de măsurători, furnizare și montaj profesional. Contactează-ne sau solicită rapid o ofertă personalizată!';
+            $ctaTitle = 'Transformă-ți casa cu ferestre și uși Sigplast, adaptate nevoilor tale!';
+            $ctaP = 'Echipa Arc Lucmar, cu peste 19 ani de experiență, se ocupă de măsurători precise, furnizare de profiluri PVC și aluminiu și un montaj impecabil (executat cu grijă și atenție la detalii) în Galați și împrejurimi. Contactează-ne acum sau solicită rapid o ofertă personalizată completând formularul!';
             $ctaClass = 'cta-home';
         break;
         case 'services.php':

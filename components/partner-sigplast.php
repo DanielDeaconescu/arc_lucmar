@@ -7,31 +7,25 @@
             <div class="col-md-9">
                 <h2 class="text-dark d-flex align-items-center gap-2">
                     <i class="fa-solid fa-award fa-award-custom fa-2x"></i>
-                    Partener Sigplast România
+                    Parteneriat local cu Sigplast România
                 </h2>
                 <h3 class="text-dark d-flex align-items-center gap-3">
-                    <div class="produced-100-romania">
-                        <i class="fa-solid fa-trophy fa-trophy-custom"></i>
-                        Profil produs 100% în România
-                    </div>
-                    <div class="factory-prices">
-                        <i class="fa-solid fa-sack-dollar fa-sack-dollar-custom"></i>
-                        Prețuri de fabrică
-                    </div>
+                    <i class="fa-solid fa-trophy fa-trophy-custom"></i>
+                    Profil PVC 100% românesc, produs la Galați
                 </h3>
                 <?php  if($currentPage == 'index.php'): ?>
                 <h6 class="text-dark d-flex align-items-center gap-2">
 
                 </h6>
-                <p class="fs-5">Pentru a vă oferi tâmplărie PVC de înaltă calitate, colaborăm îndeaproape cu
-                    funizorul
-                    local
-                    Sigplast.</p>
-                <p class="fs-5">Profilul PVC Sigplast este produs integral la fabria Sigplast, în Galați, România.
+                <p class="fs-5">
+                    Arc Lucmar este partener de încredere al companiei Sigplast, producător local de profil PVC cu
+                    fabrică în Galați. Datorită acestei colaborări de lungă durată, putem oferi ferestre și uși din PVC
+                    și aluminiu la prețuri foarte avantajoase, apropiate de cele de fabrică, păstrând în același timp
+                    standarde înalte de calitate.
                 </p>
                 <p>
                     <small>
-                        Pentru mai multe detalii, puteți vizita website-ul Sigplast România aici: <a
+                        Pentru mai multe detalii despre produsele Sigplast, vizitați site-ul oficial: <a
                             href="https://sigplast.ro/" target="_blank">Website Sigplast</a>
                     </small>
                 </p>
@@ -39,12 +33,12 @@
             </div>
 
             <div class="col-md-3 d-flex align-items-center d-none d-sm-flex">
-                <a class="sigplast-logo-link" href="https://sigplast.ro/" target="_blank">
-                    <div class="d-flex flex-column gap-2 align-items-center">
-                        <img class="img-fluid sigplast-partner-img" src="./images/logo-sigplast.png" alt="">
-                        <h6 class="text-dark">Fabrică profil PVC Galați, România</h6>
-                    </div>
-                </a>
+
+                <div class="d-flex flex-column gap-2 align-items-center">
+                    <img class="img-fluid sigplast-partner-img" src="./images/logo-sigplast.png" alt="">
+                    <h6 class="text-dark">Fabrică profil PVC Galați, România</h6>
+                </div>
+
             </div>
         </div>
 

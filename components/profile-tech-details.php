@@ -7,11 +7,14 @@
     <div class="container">
         <div class="row">
             <div class="text-section mb-5">
-                <h2 class="text-dark">Detalii tehnice PROFIL PVC SIGPLAST</h2>
-                <p class="fs-5">
-                    Profilul PVC Sigplast, produs 100% în România, vine în două variante (60 mm și 70 mm) și mai jos
-                    găsiți
-                    detaliile tehnice ale acestora:
+                <h2 class="text-dark">Detalii tehnice pentru profilurile PVC Sigplast 60 și 70</h2>
+                <p class="fs-5 text-justify">
+                    Profilul PVC Sigplast, fabricat 100% în România, oferă soluții durabile pentru ferestrele și ușile
+                    căminului tău.
+                    Disponibil în variantele de 60 mm și 70 mm adâncime de construcție, acest profil vă asigură izolație
+                    termică ridicată (permițând montarea unui pachet de sticlă dublu sau triplu), izolație fonică foarte
+                    bună și durabilitate prin compatibilitatea cu feronerii (sistem de închidere) moderne. Mai jos
+                    găsiți specificațiile tehnice complete pentru fiecare variantă.
                 </p>
             </div>
 

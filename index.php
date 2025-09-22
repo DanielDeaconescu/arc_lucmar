@@ -31,13 +31,13 @@
 
     <!-- Header -->
     <?php 
-    $headerText = "Ferestre și uși din PVC și Aluminiu în Galați";
+    
     include "./components/header.php" 
     ?>
 
     <?php include './components/partner-sigplast.php' ?>
 
-    <!-- De ce sa alegeti Arc Construct? -->
+    <!-- De ce sa alegeti Arc Lucmar? -->
     <section id="details" class="details position-relative py-4 py-md-4 py-lg-6 overflow-hidden">
         <div class="container position-relative z-3">
             <div class="row">
@@ -53,38 +53,42 @@
                             <li class="list-element-custom mb-2">
                                 <i class="fa-solid fa-award"></i>
                                 <strong>
-                                    Peste 19 ani de experiență în domeniu
+                                    Experiență de peste 19 ani în montajul de ferestre și uși din PVC și aluminiu
                                 </strong>
                             </li>
                             <li class="list-element-custom mb-2">
                                 <i class="fa-solid fa-handshake"></i>
                                 <strong>
-                                    Partener Sigplast și colaborare cu alți furnizori de încredere pentru a garanta
-                                    calitatea profilelor
+                                    Partener Sigplast și colaborare cu furnizori de încredere, pentru profile 100%
+                                    românești și cu un foarte bun raport calitate-preț
                                 </strong>
                             </li>
                             <li class="list-element-custom mb-2">
                                 <i class="fa-solid fa-clock"></i>
                                 <strong>
-                                    Soluții personalizate: fiecare proiect este adaptat după
-                                    nevoile și bugetul dumneavoastră.
+                                    Soluții personalizate adaptate nevoilor și bugetului fiecărui client
                                 </strong>
                             </li>
                             <li class="list-element-custom mb-2">
                                 <i class="fa-solid fa-screwdriver-wrench"></i>
                                 <strong>
-                                    Montaj impecabil
+                                    Montaj profesionist și realizat cu atenție la detalii, pentru rezultate durabile și
+                                    aspect impecabil
                                 </strong>
                             </li>
                             <li class="list-element-custom mb-2">
                                 <i class="fa-solid fa-clock"></i>
                                 <strong>
-                                    Termene de execuție rapide
+                                    Termene de execuție rapide, pentru ca proiectul tău să fie finalizat fără întârzieri
                                 </strong>
                             </li>
                         </ul>
                         <button data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-lg btn-primary">Cere
                             ofertă</button>
+                        <div>
+                            <small class="fst-italic">Completarea formularului dureză doar 1 minut.</small>
+                        </div>
+
                     </div>
                 </div>
             </div>

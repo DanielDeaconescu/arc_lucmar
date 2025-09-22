@@ -6,7 +6,8 @@
   switch ($page) {
     case 'index.php':
       $headerBg = 'header-home';
-      $headerP = 'Furnizor și montator de ferestre și uși din PVC și Aluminiu cu experiență de peste 19 ani în domeniu. Oferim servicii complete de la consultanță în privința alegerilor tehnice și până la montajul proiectului.';
+      $headerText = "Ferestre și uși din PVC la prețuri de fabrică, direct la tine acasă";
+      $headerP = 'Arc Lucmar, partener Sigplast, îți oferă profil 100% românesc și montaj impecabil realizat de o echipă cu peste 19 ani de experiență.';
       break;
     case 'services.php':
       $headerBg = 'header-services';
@@ -34,13 +35,13 @@
                     <h1 class="xl-md-text">
                         <?php echo $headerText ?? "Default Title"; ?>
                     </h1>
-                    <p class="lead mb-4 p-header">
+                    <p class="lead mb-4 p-header fs-3">
                         <?php echo $headerP; ?>
                     </p>
                     <?php 
                       if ($page != "cookies.php") {
                         echo '
-                          <button class="btn btn-primary btn-lg m-2" type="button" data-bs-toggle="modal"
+                          <button class="btn btn-primary fw-bold btn-lg m-2" type="button" data-bs-toggle="modal"
                         data-bs-target="#formModal">
                             Cere ofertă
                           </button>
@@ -51,7 +52,7 @@
                     <?php
                 if($page == "index.php") {
                   echo '
-                    <a href="services.php" class="btn btn-secondary btn-lg m-2">
+                    <a href="services.php" class="btn btn-outline-secondary fw-bold btn-lg m-2">
                       Vezi serviciile noastre
                     </a>
                   ';
