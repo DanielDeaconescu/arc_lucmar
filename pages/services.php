@@ -55,7 +55,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <!-- Custom style -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css?v=<?= filemtime('../css/styles.css') ?>" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -119,7 +119,7 @@
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js<?= filemtime('../js/script.js') ?>"></script>
 </body>
 
 </html>

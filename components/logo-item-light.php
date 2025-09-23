@@ -1,5 +1,5 @@
 <div class="logo-item-light">
-    <img class="img-fluid navbar-logo-custom" src="/images/final_logo_light_remade.png" alt="">
+    <img class="img-fluid navbar-logo-custom" src="/images/final_logo_light_remade.webp" alt="">
     <div class="business-info d-flex flex-column justify-content-center">
         <div class="business-name">
             Arc Lucmar

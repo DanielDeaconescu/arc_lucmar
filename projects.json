@@ -1,9 +1,9 @@
 [
   {
     "title": "Ușă de intrare",
-    "thumbnail": "./images/project1/thumb.jpg",
+    "thumbnail": "./images/project1/thumb.webp",
     "gallery": [
-      "./images/project1/img1.jpg"
+      "./images/project1/full_size.webp"
     ],
     "specs": [
       "Tâmplărie PVC Sigplast",
@@ -15,11 +15,11 @@
   },
   {
     "title": "Închidere balcon",
-    "thumbnail": "./images/project2/thumb.jpg",
+    "thumbnail": "./images/project2/thumb.webp",
     "gallery": [
-      "images/project2/img1.jpg",
-      "images/project2/img2.jpg",
-      "images/project2/img3.jpg"
+      "images/project2/img1.webp",
+      "images/project2/img2.webp",
+      "images/project2/img3.webp"
     ],
     "specs": [
       "Profil KMG alb",
@@ -30,10 +30,10 @@
   },
   {
     "title": "Plasă plisse",
-    "thumbnail": "./images/project3/thumb.jpg",
+    "thumbnail": "./images/project3/thumb.webp",
     "gallery": [
-      "images/project3/img1.jpg",
-      "images/project3/img2.jpg"
+      "images/project3/img1.webp",
+      "images/project3/img2.webp"
     ],
     "specs": [
       "Design modern și elegant",
@@ -43,11 +43,11 @@
   },
   {
     "title": "Închidere balcon",
-    "thumbnail": "./images/project4/thumb.jpg",
+    "thumbnail": "./images/project4/thumb.webp",
     "gallery": [
-      "./images/project4/img1.jpg",
-      "./images/project4/img2.jpg",
-      "./images/project4/img3.jpg"
+      "./images/project4/img1.webp",
+      "./images/project4/img2.webp",
+      "./images/project4/img3.webp"
     ],
     "specs": [
       "Profil Sigplast",
@@ -59,12 +59,12 @@
   },
   {
     "title": "Ușă de intrare",
-    "thumbnail": "./images/project5/thumb.jpg",
+    "thumbnail": "./images/project5/thumb.webp",
     "gallery": [
-      "./images/project5/img1.jpg",
-      "./images/project5/img2.jpg",
-      "./images/project5/img3.jpg",
-      "./images/project5/img4.jpg"
+      "./images/project5/img1.webp",
+      "./images/project5/img2.webp",
+      "./images/project5/img3.webp",
+      "./images/project5/img4.webp"
     ],
     "specs": [
       "Tâmplărie PVC Sigplast",
@@ -76,10 +76,10 @@
   },
   {
     "title": "Tâmplărie PVC Sigplast",
-    "thumbnail": "./images/project6/thumb.jpg",
+    "thumbnail": "./images/project6/thumb.webp",
     "gallery": [
-      "./images/project6/img1.jpg",
-      "./images/project6/img2.jpg"
+      "./images/project6/img1.webp",
+      "./images/project6/img2.webp"
     ],
     "specs": [
       "Profil Sigplast",
@@ -90,10 +90,10 @@
   },
   {
     "title": "Ușă de intrare",
-    "thumbnail": "./images/project7/thumb.jpg",
+    "thumbnail": "./images/project7/thumb.webp",
     "gallery": [
-      "./images/project7/img1.jpg",
-      "./images/project7/img2.jpg"
+      "./images/project7/img1.webp",
+      "./images/project7/img2.webp"
     ],
     "specs": [
       "Profil PVC Sigplast 6 camere",
@@ -105,11 +105,11 @@
   },
   {
     "title": "Închidere balcon",
-    "thumbnail": "./images/project8/thumb.jpg",
+    "thumbnail": "./images/project8/thumb.webp",
     "gallery": [
-      "./images/project8/img1.jpg",
-      "./images/project8/img2.jpg",
-      "./images/project8/img3.jpg"
+      "./images/project8/img1.webp",
+      "./images/project8/img2.webp",
+      "./images/project8/img3.webp"
     ],
     "specs": [
       "Tâmplărie PVC Sigplast",
@@ -120,9 +120,9 @@
   },
   {
     "title": "Ușă de interior",
-    "thumbnail": "./images/project9/thumb.jpg",
+    "thumbnail": "./images/project9/thumb.webp",
     "gallery": [
-      "./images/project9/img1.jpg"
+      "./images/project9/img1.webp"
     ],
     "specs": [
       "Profile PVC Sigplast",
@@ -133,10 +133,10 @@
   },
   {
     "title": "Ușă de intrare",
-    "thumbnail": "./images/project10/thumb.jpg",
+    "thumbnail": "./images/project10/thumb.webp",
     "gallery": [
-      "./images/project10/img1.jpg",
-      "./images/project10/img2.jpg"
+      "./images/project10/img1.webp",
+      "./images/project10/img2.webp"
     ],
     "specs": [
       "Profile PVC Sigplast",
@@ -147,10 +147,10 @@
   },
   {
     "title": "Uși culisante",
-    "thumbnail": "./images/project11/thumb.jpg",
+    "thumbnail": "./images/project11/thumb.webp",
     "gallery": [
-      "./images/project11/img1.jpg",
-      "./images/project11/img2.jpg"
+      "./images/project11/img1.webp",
+      "./images/project11/img2.webp"
     ],
     "specs": [
       "Uși culisante din aluminiu",
@@ -160,9 +160,9 @@
   },
   {
     "title": "Ușă de exterior",
-    "thumbnail": "./images/project12/thumb.jpg",
+    "thumbnail": "./images/project12/thumb.webp",
     "gallery": [
-      "./images/project12/img1.jpg"
+      "./images/project12/img1.webp"
     ],
     "specs": [
       "Ușă dublă PVC Sigplast",
@@ -174,11 +174,11 @@
   },
   {
     "title": "Tâmplărie Sigplast 4 camere",
-    "thumbnail": "./images/project13/thumb.jpg",
+    "thumbnail": "./images/project13/thumb.webp",
     "gallery": [
-      "./images/project13/img1.jpg",
-      "./images/project13/img2.jpg",
-      "./images/project13/img3.jpg"
+      "./images/project13/img1.webp",
+      "./images/project13/img2.webp",
+      "./images/project13/img3.webp"
     ],
     "specs": [
       "Tâmplărie Sigplast 4 camere",
@@ -188,9 +188,9 @@
   },
   {
     "title": "Tâmplărie Sigplast 4 camere",
-    "thumbnail": "./images/project14/thumb.jpg",
+    "thumbnail": "./images/project14/thumb.webp",
     "gallery": [
-      "./images/project14/img1.jpg"
+      "./images/project14/img1.webp"
     ],
     "specs": [
       "Profil Sigplst",
@@ -201,10 +201,10 @@
   },
   {
     "title": "Închidere balcon Salamander",
-    "thumbnail": "./images/project15/thumb.jpg",
+    "thumbnail": "./images/project15/thumb.webp",
     "gallery": [
-      "./images/project15/img1.jpg",
-      "./images/project15/img2.jpg"
+      "./images/project15/img1.webp",
+      "./images/project15/img2.webp"
     ],
     "specs": [
       "Profil Salamander",
@@ -217,11 +217,11 @@
   },
   {
     "title": "Tâmplărie PVC Sigplast",
-    "thumbnail": "./images/project16/thumb.jpg",
+    "thumbnail": "./images/project16/thumb.webp",
     "gallery": [
-      "./images/project16/img1.jpg",
-      "./images/project16/img2.jpg",
-      "./images/project16/img3.jpg"
+      "./images/project16/img1.webp",
+      "./images/project16/img2.webp",
+      "./images/project16/img3.webp"
     ],
     "specs": [
       "Tâmplărie PVC Sigplast",
@@ -232,10 +232,10 @@
   },
   {
     "title": "Tâmplărie PVC casă",
-    "thumbnail": "./images/project17/thumb.jpg",
+    "thumbnail": "./images/project17/thumb.webp",
     "gallery": [
-      "./images/project17/img1.jpg",
-      "./images/project17/img2.jpg"
+      "./images/project17/img1.webp",
+      "./images/project17/img2.webp"
     ],
     "specs": [
       "Tâmplărie PVC Sigplast",
@@ -246,15 +246,15 @@
   },
   {
     "title": "Seră de flori Tâmplărie PVC",
-    "thumbnail": "./images/project18/thumb.jpg",
+    "thumbnail": "./images/project18/thumb.webp",
     "gallery": [
-      "./images/project18/img1.jpg",
-      "./images/project18/img2.jpg",
-      "./images/project18/img3.jpg",
-      "./images/project18/img4.jpg",
-      "./images/project18/img5.jpg",
-      "./images/project18/img6.jpg",
-      "./images/project18/img7.jpg"
+      "./images/project18/img1.webp",
+      "./images/project18/img2.webp",
+      "./images/project18/img3.webp",
+      "./images/project18/img4.webp",
+      "./images/project18/img5.webp",
+      "./images/project18/img6.webp",
+      "./images/project18/img7.webp"
     ],
     "specs": [
       "Tâmplărie PVC Uniplast",
@@ -264,12 +264,12 @@
   },
   {
     "title": "Culisante PVC Plaspen",
-    "thumbnail": "./images/project19/thumb.jpg",
+    "thumbnail": "./images/project19/thumb.webp",
     "gallery": [
-      "./images/project19/img1.jpg",
-      "./images/project19/img2.jpg",
-      "./images/project19/img3.jpg",
-      "./images/project19/img4.jpg"
+      "./images/project19/img1.webp",
+      "./images/project19/img2.webp",
+      "./images/project19/img3.webp",
+      "./images/project19/img4.webp"
     ],
     "specs": [
       "Culisante PVC Plaspen",

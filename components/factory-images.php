@@ -7,38 +7,38 @@
         </p>
         <div class="row">
             <div class="col-md-2 mt-3 mt-lg-0">
-                <a href="./images/factory/factory3.jpg" data-lightbox="factory1">
-                    <img src="./images/factory/factory3.jpg" class="img-fluid landing-page-factory-image rounded"
+                <a href="./images/factory/factory3.webp" data-lightbox="factory1">
+                    <img src="./images/factory/factory3_small.webp" class="img-fluid landing-page-factory-image rounded"
                         alt="">
                 </a>
             </div>
             <div class="col-md-2 mt-3 mt-lg-0">
-                <a href="./images/factory/factory7.jpg" data-lightbox="factory1">
-                    <img src="./images/factory/factory7.jpg" class="img-fluid rounded landing-page-factory-image"
+                <a href="./images/factory/factory7.webp" data-lightbox="factory1">
+                    <img src="./images/factory/factory7_small.webp" class="img-fluid rounded landing-page-factory-image"
                         alt="">
                 </a>
             </div>
             <div class="col-md-2 mt-3 mt-lg-0">
-                <a href="./images/factory/factory8.jpg" data-lightbox="factory1">
-                    <img src="./images/factory/factory8.jpg" class="img-fluid rounded landing-page-factory-image"
+                <a href="./images/factory/factory8.webp" data-lightbox="factory1">
+                    <img src="./images/factory/factory8_small.webp" class="img-fluid rounded landing-page-factory-image"
                         alt="">
                 </a>
             </div>
             <div class="col-md-2 mt-3 mt-lg-0">
-                <a href="./images/factory/factory9.jpg" data-lightbox="factory1">
-                    <img src="./images/factory/factory9.jpg" class="img-fluid rounded landing-page-factory-image"
+                <a href="./images/factory/factory9.webp" data-lightbox="factory1">
+                    <img src="./images/factory/factory9_small.webp" class="img-fluid rounded landing-page-factory-image"
                         alt="">
                 </a>
             </div>
             <div class="col-md-2 mt-3 mt-lg-0">
-                <a href="./images/factory/factory10.jpg" data-lightbox="factory1">
-                    <img src="./images/factory/factory10.jpg" class="img-fluid rounded landing-page-factory-image"
-                        alt="">
+                <a href="./images/factory/factory10.webp" data-lightbox="factory1">
+                    <img src="./images/factory/factory10_small.webp"
+                        class="img-fluid rounded landing-page-factory-image" alt="">
                 </a>
             </div>
             <div class="col-md-2 mt-3 mt-lg-0">
-                <a href="./images/factory/factory1.jpg" data-lightbox="factory1">
-                    <img src="./images/factory/factory1.jpg" class="img-fluid rounded landing-page-factory-image"
+                <a href="./images/factory/factory1.webp" data-lightbox="factory1">
+                    <img src="./images/factory/factory1_small.webp" class="img-fluid rounded landing-page-factory-image"
                         alt="">
                 </a>
             </div>

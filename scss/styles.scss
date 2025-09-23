@@ -1,5 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../webfonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
+       url('.../webfonts/Montserrat-VariableFont_wght.woff2') format('truetype');
+  font-weight: 100 900; // Variable font weights
+  font-style: normal;
+  font-display: swap; // avoids invisible text
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../webfonts/Poppins-Regular.woff2') format('woff2'),
+       url('../webfonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../webfonts/Poppins-Bold.woff2') format('woff2'),
+       url('../webfonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -47,7 +73,7 @@ body {
 
 .header-home {
   padding: 5rem;
-  background-image: url("../images/header-home.jpg");
+  background-image: url("../images/header-home.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,7 +101,7 @@ body {
 
 .header-services {
   padding: 5rem;
-  background-image: url("../images/header-services.jpg");
+  background-image: url("../images/header-services.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,7 +119,7 @@ body {
 
 .header-portfolio {
   padding: 5rem;
-  background-image: url("../images/header-portfolio.jpg");
+  background-image: url("../images/header-portfolio.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,7 +137,7 @@ body {
 
 .header-contact {
   padding: 5rem;
-  background-image: url("../images/header-contact.jpg");
+  background-image: url("../images/header-contact.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,7 +154,7 @@ body {
 }
 
 .header-cookies {
-  background: url("../images/cookies-image.jpg");
+  background: url("../images/cookies-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -510,7 +536,7 @@ body {
 // Landing page start
 
 .header-landing {
-  background-image: url("../images/header-home.jpg");
+  background-image: url("../images/header-home.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

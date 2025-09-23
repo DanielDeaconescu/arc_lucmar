@@ -106,17 +106,17 @@
             <h3 class="text-dark mt-md-4 mb-md-5">Vedere secțiune profiluri</h3>
             <div class="col-md-6 d-flex justify-content-center">
                 <div class="d-flex flex-column align-items-center">
-                    <a class="link-section-60" href="./images/detail-section-60.png" data-lightbox="sigplst60">
+                    <a class="link-section-60" href="./images/detail-section-60.webp" data-lightbox="sigplst60">
                         <h5 class="text-dark">Secțiune profil Sigplast 60 mm</h5>
-                        <img class="img-fluid borderd-img" src="./images/sigplast60_section_view.png" alt="">
+                        <img class="img-fluid borderd-img" src="./images/sigplast60_section_view.webp" alt="">
                     </a>
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
                 <div class="d-flex flex-column align-items-center">
-                    <a class="link-section-70" href="./images/detail-section-70.png" data-lightbox="sigplst70">
+                    <a class="link-section-70" href="./images/detail-section-70.webp" data-lightbox="sigplst70">
                         <h5 class="text-dark">Secțiune profil Sigplst 70 mm</h5>
-                        <img class="img-fluid borderd-img" src="./images/sigplast70_section_view.png" alt="">
+                        <img class="img-fluid borderd-img" src="./images/sigplast70_section_view.webp" alt="">
                     </a>
                 </div>
             </div>

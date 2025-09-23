@@ -18,7 +18,7 @@
     <!-- Lightbox 2 -->
     <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
     <!-- Custom style -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=<?= filemtime('css/styles.css') ?>" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-container d-flex justify-content-center">
-                        <img src="images/image-factory.jpg" alt="" class="img-fluid img-factory" />
+                        <img src="images/image-factory.webp" alt="" class="img-fluid img-factory" />
                     </div>
                 </div>
                 <div class="col-lg-6 why-choose-us-list">
@@ -115,7 +115,7 @@
     <!-- Lightbox JS + jQuery -->
     <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=<?= filemtime('js/script.js') ?>"></script>
 </body>
 
 </html>
