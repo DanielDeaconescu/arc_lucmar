@@ -55,10 +55,10 @@
                 <?php foreach ($landscapeProjects as $project): ?>
                 <div class="col-md-4">
                     <!-- 3 per row -->
-                    <div class="card stretched-link card-custom" data-bs-toggle="modal"
+                    <div class="card card-custom" data-bs-toggle="modal"
                         data-bs-target="#projectModal<?= $project['id']; ?>">
                         <img src="<?= $project["thumbnail"]; ?>" class="card-img-top card-img-custom"
-                            alt="<?= $project['title']; ?>" />
+                            alt="<?= $project['title']; ?>" loading="lazy" />
                         <div class="card-body">
                             <h5 class="card-title text-dark montserrat-text text-center fs-4 card-title-custom">
                                 <?= $project['title'] ?>
@@ -77,10 +77,10 @@
                 <?php foreach ($portraitProjects as $project): ?>
                 <div class="col-md-4">
                     <!-- also 3 per row -->
-                    <div class="card stretched-link card-custom" data-bs-toggle="modal"
+                    <div class="card card-custom" data-bs-toggle="modal"
                         data-bs-target="#projectModal<?= $project['id']; ?>">
                         <img src="<?= $project['thumbnail']; ?>" class="card-img-top card-img-custom"
-                            alt="<?= $project['title']; ?>" />
+                            alt="<?= $project['title']; ?>" loading="lazy" />
                         <div class="card-body">
                             <h5 class="card-title text-dark montserrat-text text-center fs-4 card-title-custom">
                                 <?= $project['title'] ?>
@@ -123,7 +123,7 @@
                                                                 data-lightbox="<?= $project["id"]; ?>">
                                                                 <img src="<?php echo $image; ?>"
                                                                     class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
-                                                                    alt="test">
+                                                                    alt="test" loading="lazy">
                                                             </a>
                                                         </div>
                                                         <?php endif; ?>
@@ -140,7 +140,7 @@
                                                                 data-lightbox="<?= $project['id']; ?>">
                                                                 <img src="<?php echo $image; ?>"
                                                                     class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
-                                                                    alt="">
+                                                                    alt="" loading="lazy">
                                                             </a>
                                                         </div>
                                                         <?php endif; ?>
