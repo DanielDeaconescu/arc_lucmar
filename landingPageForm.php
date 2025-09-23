@@ -222,6 +222,8 @@
 
     <?php include "./components/cookiesPopup.php" ?>
 
+    <?php include "./components/call-button.php"; ?>
+
     <!-- Minimal footer -->
     <footer class="py-3 bg-dark">
         <div class="container">

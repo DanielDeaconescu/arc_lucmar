@@ -48,17 +48,20 @@ unset($_SESSION['rate_limit_exceeded']);
                     <?php include "../components/logo-item-dark.php" ?>
                 </div>
                 <h1 class="text-dark text-center">Prea multe solicitări!</h1>
-                <p class="text-center fs-5">Din motive de securitate, limităm numărul de solicitări trimise prin
+                <p class="text-center tooManyRequests-p">Din motive de securitate, limităm numărul de solicitări trimise
+                    prin
                     formular în
                     interval de 24 de ore.
                     Vă recomandăm se ne sunați direct la <a href="tel:+40741297459">0741 297 459</a> pentru urgențe sau
                     să
                     re-trimiteți formularul după 24 de ore. Mulțumim pentru înțelegere!
                 </p>
-                <a href="index.php" class="btn btn-primary">Înapoi la pagina principală</a>
+                <a href="/index.php" class="btn btn-primary">Înapoi la pagina principală</a>
             </div>
         </div>
     </section>
+
+
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
