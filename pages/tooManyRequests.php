@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+// Check if the user came from an attempt to submit too many forms
+
+if (!isset($_SESSION['rate_limit_exceeded']) || $_SESSION['rate_limit_exceeded'] !== true) {
+    header('Location: /index.php');
+    exit;
+}
+
+// Clear the session flag to prevent refreshing the page
+unset($_SESSION['rate_limit_exceeded']);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,13 +27,14 @@
         rel="stylesheet" />
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/font-awesome.css" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <!-- Custom style -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
     <title>Prea multe solicitări!</title>
 </head>
@@ -27,6 +44,9 @@
     <section id="too-many-requests-section" class="too-many-requests-section">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="logo">
+                    <?php include "../components/logo-item-dark.php" ?>
+                </div>
                 <h1 class="text-dark text-center">Prea multe solicitări!</h1>
                 <p class="text-center fs-5">Din motive de securitate, limităm numărul de solicitări trimise prin
                     formular în
@@ -40,9 +60,9 @@
         </div>
     </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

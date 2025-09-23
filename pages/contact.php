@@ -12,25 +12,25 @@
     <!-- Turnstile script -->
     <!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/font-awesome.css" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <!-- Custom style -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
     <title>Arc Lucmar | Contact</title>
 </head>
 
 <body>
-    <?php include "./components/navbar.php" ?>
-    <?php include "./components/formModal.php" ?>
+    <?php include "../components/navbar.php" ?>
+    <?php include "../components/formModal.php" ?>
 
     <!-- Header -->
     <?php 
       
-      include "./components/header.php"
+      include "../components/header.php"
     ?>
 
     <!-- Informatii de contact -->
@@ -103,21 +103,17 @@
             </div>
         </div>
     </section>
-    <?php include "./components/side-buttons.php" ?>
-    <?php include "./components/cookiesPopup.php" ?>
+    <?php include "../components/side-buttons.php" ?>
+    <?php include "../components/cookiesPopup.php" ?>
 
     <!-- TODO: Implement a Call To Action here -->
-    <?php include "./components/call-to-action.php"; ?>
+    <?php include "../components/call-to-action.php"; ?>
 
-    <?php include "./components/footer.php" ?>
+    <?php include "../components/footer.php" ?>
 
-    <button id="to-top" class="to-top-btn">
-        <img src="images/up-arrow.png" alt="" />
-    </button>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

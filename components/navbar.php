@@ -8,7 +8,6 @@
     <div class="container container-navbar-custom h-100">
         <a href="index.html" class="navbar-brand navbar-brand-custom d-flex align-items-center gap-2">
             <?php include "logo-item-light.php" ?>
-
         </a>
 
         <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDropdown"
@@ -18,19 +17,19 @@
         <div class="collapse navbar-collapse navbar-collapse-custom h-100" id="navbarNav">
             <ul class="navbar-nav ms-auto navbar-nav-custom h-100">
                 <li class="nav-item nav-item-custom h-100">
-                    <a href="index.php"
+                    <a href="/index.php"
                         class="nav-link nav-link-custom h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'index.php' ? 'active-custom' : '' ?>">Acasă</a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.php"
+                    <a href="/pages/services.php"
                         class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'services.php' ? 'active-custom' : '' ?>">Servicii</a>
                 </li>
                 <li class="nav-item">
-                    <a href="portfolio.php"
+                    <a href="/pages/portfolio.php"
                         class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'portfolio.php' ? 'active-custom' : '' ?>">Portofoliu</a>
                 </li>
                 <li class="nav-item h-100 d-flex align-items-center">
-                    <a href="contact.php"
+                    <a href="/pages/contact.php"
                         class="nav-link btn-contact-navbar btn btn-outline-secondary px-4 mx-4 <?= $current_page == 'contact.php' ? 'active-custom' : '' ?>">Contact</a>
                 </li>
             </ul>

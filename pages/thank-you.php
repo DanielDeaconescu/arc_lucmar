@@ -5,7 +5,7 @@ session_start();
 // Check if the user came from a successful form submission
 
 if (!isset($_SESSION['form_submitted']) || $_SESSION['form_submitted'] !== true) {
-    header('Location: index.php');
+    header('Location: /index.php');
     exit;
 }
 
@@ -27,13 +27,14 @@ unset($_SESSION['form_submitted']);
         rel="stylesheet" />
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/font-awesome.css" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <!-- Custom style -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
     <title>Cerere trimisă! | Mulțumim!</title>
 </head>
@@ -41,14 +42,20 @@ unset($_SESSION['form_submitted']);
 <body>
 
     <!-- De ce sa alegeti Arc Construct? -->
-    <section id="thank-you-section" class="thank-you">
-        <div class="logo"></div>
-        <h1 class="text-dark">Mulțumim pentru completarea formularului!</h1>
-        <p class="fs-5">Un specialist Arc Lucmar Termopane vă va contacta în cel mai scurt timp pentru mai multe
-            informații și
-            detalii.</p>
-        <a href="index.php" class="btn btn-secondary">Înapoi la pagina principală</a>
-    </section>
+
+    <div class="container">
+        <section id="thank-you-section" class="thank-you">
+            <div class="logo">
+                <?php include '../components/logo-item-dark.php' ?>
+            </div>
+            <h1 class="text-dark text-center">Mulțumim pentru completarea formularului!</h1>
+            <p class="fs-5 text-center">Un specialist Arc Lucmar Termopane vă va contacta în cel mai scurt timp pentru
+                mai multe
+                informații și
+                detalii.</p>
+            <a href="/index.php" class="btn btn-secondary">Înapoi la pagina principală</a>
+        </section>
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->

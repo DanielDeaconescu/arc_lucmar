@@ -19,28 +19,28 @@
         <!-- Turnstile script -->
         <!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
         <!-- Fontawesome -->
-        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="../css/font-awesome.css" />
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css" />
         <!-- Lightbox 2 -->
-        <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
+        <link href="../lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
         <!-- Custom style -->
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
         <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
         <title>Arc Lucmar | Acasă</title>
     </head>
 </head>
 
 <body>
-    <?php include "./components/formModal.php" ?>
-    <?php require_once __DIR__ . '/includes/simple_db.php'?>
-    <?php include "./components/navbar.php" ?>
+    <?php include "../components/formModal.php" ?>
+    <?php require_once __DIR__ . '../../includes/simple_db.php'?>
+    <?php include "../components/navbar.php" ?>
 
     <?php 
-      include "./components/header.php"
+      include "../components/header.php"
     ?>
 
     <!-- Projects -->
@@ -57,7 +57,7 @@
                     <!-- 3 per row -->
                     <div class="card card-custom" data-bs-toggle="modal"
                         data-bs-target="#projectModal<?= $project['id']; ?>">
-                        <img src="<?= $project["thumbnail"]; ?>" class="card-img-top card-img-custom"
+                        <img src="../<?= $project["thumbnail"]; ?>" class="card-img-top card-img-custom"
                             alt="<?= $project['title']; ?>" loading="lazy" />
                         <div class="card-body">
                             <h5 class="card-title text-dark montserrat-text text-center fs-4 card-title-custom">
@@ -79,7 +79,7 @@
                     <!-- also 3 per row -->
                     <div class="card card-custom" data-bs-toggle="modal"
                         data-bs-target="#projectModal<?= $project['id']; ?>">
-                        <img src="<?= $project['thumbnail']; ?>" class="card-img-top card-img-custom"
+                        <img src="../<?= $project['thumbnail']; ?>" class="card-img-top card-img-custom"
                             alt="<?= $project['title']; ?>" loading="lazy" />
                         <div class="card-body">
                             <h5 class="card-title text-dark montserrat-text text-center fs-4 card-title-custom">
@@ -119,9 +119,9 @@
 
                                                         <?php if (getOrientation($image) === 'landscape'): ?>
                                                         <div class="col-md-6 mb-3">
-                                                            <a href="<?= $image; ?>"
+                                                            <a href="../<?= $image; ?>"
                                                                 data-lightbox="<?= $project["id"]; ?>">
-                                                                <img src="<?php echo $image; ?>"
+                                                                <img src="../<?php echo $image; ?>"
                                                                     class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
                                                                     alt="test" loading="lazy">
                                                             </a>
@@ -136,9 +136,9 @@
                                                         <?php foreach ($project['gallery'] as $image): ?>
                                                         <?php if (getOrientation($image) === 'portrait'): ?>
                                                         <div class="col-md-6 mb-3">
-                                                            <a href="<?= $image; ?>"
+                                                            <a href="../<?= $image; ?>"
                                                                 data-lightbox="<?= $project['id']; ?>">
-                                                                <img src="<?php echo $image; ?>"
+                                                                <img src="../<?php echo $image; ?>"
                                                                     class="img-fluid rounded shadow-sm <?= count($project['gallery']) > 1 ? 'modal-img-multiple' : 'modal-img-singular'; ?>"
                                                                     alt="" loading="lazy">
                                                             </a>
@@ -173,18 +173,18 @@
             <?php endforeach; ?>
         </div>
     </section>
-    <?php include "./components/side-buttons.php" ?>
-    <?php include "./components/cookiesPopup.php" ?>
+    <?php include "../components/side-buttons.php" ?>
+    <?php include "../components/cookiesPopup.php" ?>
     <!-- CTA -->
-    <?php include "./components/call-to-action.php" ?>
+    <?php include "../components/call-to-action.php" ?>
 
-    <?php include "./components/footer.php" ?>
+    <?php include "../components/footer.php" ?>
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Lightbox JS + jQuery -->
-    <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="../lightbox/dist/js/lightbox-plus-jquery.js"></script>
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

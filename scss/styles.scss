@@ -467,7 +467,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 0.5rem;
   height: 100vh;
+}
+
+.thank-you-style{
+  width: 100px;
+}
+
+.thank-you-style-business-name {
+  font-size: 2.5rem;
+}
+
+.thank-you-style-business-short-description {
+  font-size: 1.5rem;
 }
 
 // Thank you page end
