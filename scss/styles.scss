@@ -67,6 +67,12 @@ body {
   font-size: 1rem;
 }
 
+@media (min-width: 992px) {
+  .btn-contact-navbar:hover {
+    background-color: #1f7d53;
+  }
+}
+
 // Navigation end
 
 // Header start
@@ -1105,6 +1111,8 @@ section {
   margin-top: 0.5rem !important;
   width: 100%;
 }
+
+
 
 // landing page start
 .header-landing {
