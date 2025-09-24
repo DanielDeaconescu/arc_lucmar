@@ -1,1 +1,169 @@
-"use strict";const form=document.getElementById("formLucmar"),formModal=document.getElementById("formModal");formModal&&formModal.addEventListener("hidden.bs.modal",function(){form.reset(),attachedImagesContainer.innerHTML=""});const showToast=(e,t=!1)=>{let a=document.getElementById("toast");a.className=t?"toast-error":"toast-success",a.textContent=e,a.classList.add("toast-visible"),setTimeout(()=>{a.classList.remove("toast-visible")},3e3)},validateForm=e=>{let t=[],a=[{name:"name",label:"Nume"},{name:"phone",label:"Telefon"},{name:"description",label:"Descriere"}];a.forEach(a=>{e.elements[a.name].value.trim()||t.push(`${a.label} este obligatoriu`)});let s=e.elements.image;if(s&&s.files.length>0){let n=["image/jpeg","image/png","image/gif","image/webp","image/avif","image/svg+xml"],o=Array.from(s.files);o.forEach(e=>{n.includes(e.type)||t.push(`Imagine invalida: ${e.name}. Formatele aceptate sunt: JPEG, PNG, GIF, WebP, AVIF si SVG.`)})}return t},addAttachmentsOneByOne=function(){form.elements.image,document.querySelector(".attach-file-name"),updateLabelText(0)};function updateLabelText(e){let t=document.querySelector(".attach-file-name");0===e?t.textContent="Adaugă imagini (maxim 5)":e>=1&&e<=4?t.textContent="Mai adaugă (maxim 5)":5===e&&(t.textContent="Limita de 5 imagini atinsă")}addAttachmentsOneByOne();const attachImageLabel=document.querySelector(".attach-image-label"),attachImgDeleteBtns=document.querySelectorAll(".attached-img-delete"),attachedImagesContainer=document.querySelector(".attached-images-container");if(attachImageLabel){let e=form.elements.image,t=[];function a(){attachedImagesContainer.innerHTML="",t.forEach((s,n)=>{let o=document.createElement("div");o.classList.add("image-item");let i=document.createElement("button");i.classList.add("delete-btn"),i.innerHTML='<i class="fa-solid fa-circle-xmark fa-circle-custom"></i>',i.addEventListener("click",()=>{t.splice(n,1),updateLabelText(t.length),a();let s=new DataTransfer;t.forEach(e=>s.items.add(e)),e.files=s.files}),o.appendChild(document.createTextNode(s.name)),o.appendChild(i),attachedImagesContainer.appendChild(o)});let s=new DataTransfer;t.forEach(e=>s.items.add(e)),e.files=s.files}attachImageLabel.addEventListener("change",()=>{let s=5-t.length;if(s<=0){showToast("Maximum 5 imagini!",!0),updateLabelText((t=[]).length),a(),e.value="";return}let n=Array.from(e.files).slice(0,s);t.push(...n),updateLabelText(t.length),a()})}const showSpinner=e=>{let t=document.querySelector(".spinner-border");e?t.classList.remove("d-none"):t.classList.add("d-none")};form&&form.addEventListener("submit",async e=>{e.preventDefault();let t=e.target;showSpinner(!0);let a=new FormData(t),s=document.querySelector('[name="cf-turnstile-response"]')?.value;if(!s){showToast("Please complete the CAPTCHA verification!",!0),showSpinner(!1);return}let n=validateForm(t);if(n.length>0){showToast(n.join(", "),!0),showSpinner(!1);return}a.append("cf-turnstile-response",s);try{let o=await fetch("contact-form.php",{method:"POST",body:a,redirect:"manual"});if("opaqueredirect"===o.type||302===o.status||301===o.status){t.reset(),window.location.href="tooManyRequests.php";return}let i=await o.json();if(!o.ok)throw Error(i.error||"Cererea a esuat!");showToast("Mesajul a fost trimis cu succes!"),t.reset(),showSpinner(!1),setTimeout(()=>{window.location.href="thank-you.php"},1500)}catch(r){r instanceof SyntaxError?showToast("Server returned an invalid response. Please try again.",!0):showToast(r.message||"Eroare la trimiterea mesajului!",!0),showSpinner(!1)}});const cookiesPopup=document.querySelector(".cookies-popup"),okBtnCookies=document.querySelector(".ok-cookies-button");function cardEffectAdd(){let e=document.querySelectorAll(".card-custom"),t=document.querySelectorAll(".card-overlay"),a=document.querySelectorAll(".card-title-custom"),s=document.querySelectorAll(".card-img-custom");e.forEach((e,n)=>{e.addEventListener("mouseover",function(){window.innerWidth>992&&(t[n].classList.add("show"),a[n].classList.add("text-white-custom"),s[n].classList.add("card-blur"))}),e.addEventListener("mouseout",function(){window.innerWidth>992&&(t[n].classList.remove("show"),a[n].classList.remove("text-white-custom"),s[n].classList.remove("card-blur"))})})}function sideButtonsEffectAdd(){let e=document.querySelector(".side-buttons-message-icon"),t=document.querySelector(".side-buttons-message-text"),a=document.querySelector(".side-buttons-whatsapp-icon"),s=document.querySelector(".side-buttons-whatsapp-text");e&&a&&(e.addEventListener("mouseover",function(){window.innerWidth>992&&t.classList.add("show")}),e.addEventListener("mouseout",function(){window.innerWidth>992&&t.classList.remove("show")}),a.addEventListener("mouseover",function(){window.innerWidth>992&&s.classList.add("show")}),a.addEventListener("mouseout",function(){window.innerWidth>992&&s.classList.remove("show")}))}localStorage.getItem("arclucmar_cookie")||cookiesPopup.classList.remove("d-none"),okBtnCookies&&okBtnCookies.addEventListener("click",function(){cookiesPopup.classList.add("d-none"),localStorage.setItem("arclucmar_cookie","true")}),cardEffectAdd(),sideButtonsEffectAdd(),window.addEventListener("resize",()=>{});const navbar=document.querySelector(".navbar-custom"),navbarCollapse=document.querySelector(".navbar-collapse");document.addEventListener("click",function(e){let t=e.target;navbar.contains(t)||navbarCollapse.classList.remove("show")});
+"use strict";
+const form = document.getElementById("formLucmar"),
+    formModal = document.getElementById("formModal");
+formModal &&
+    formModal.addEventListener("hidden.bs.modal", function () {
+        form.reset(), (attachedImagesContainer.innerHTML = "");
+    });
+const showToast = (e, t = !1) => {
+        let a = document.getElementById("toast");
+        (a.className = t ? "toast-error" : "toast-success"),
+            (a.textContent = e),
+            a.classList.add("toast-visible"),
+            setTimeout(() => {
+                a.classList.remove("toast-visible");
+            }, 3e3);
+    },
+    validateForm = (e) => {
+        let t = [],
+            a = [
+                { name: "name", label: "Nume" },
+                { name: "phone", label: "Telefon" },
+                { name: "description", label: "Descriere" },
+            ];
+        a.forEach((a) => {
+            e.elements[a.name].value.trim() || t.push(`${a.label} este obligatoriu`);
+        });
+        let s = e.elements.image;
+        if (s && s.files.length > 0) {
+            let n = ["image/jpeg", "image/png", "image/gif", "image/webp", "image/avif", "image/svg+xml"],
+                o = Array.from(s.files);
+            o.forEach((e) => {
+                n.includes(e.type) || t.push(`Imagine invalida: ${e.name}. Formatele aceptate sunt: JPEG, PNG, GIF, WebP, AVIF si SVG.`);
+            });
+        }
+        return t;
+    },
+    addAttachmentsOneByOne = function () {
+        form.elements.image, document.querySelector(".attach-file-name"), updateLabelText(0);
+    };
+function updateLabelText(e) {
+    let t = document.querySelector(".attach-file-name");
+    0 === e ? (t.textContent = "Adaugă imagini (maxim 5)") : e >= 1 && e <= 4 ? (t.textContent = "Mai adaugă (maxim 5)") : 5 === e && (t.textContent = "Limita de 5 imagini atinsă");
+}
+addAttachmentsOneByOne();
+const attachImageLabel = document.querySelector(".attach-image-label"),
+    attachImgDeleteBtns = document.querySelectorAll(".attached-img-delete"),
+    attachedImagesContainer = document.querySelector(".attached-images-container");
+if (attachImageLabel) {
+    let e = form.elements.image,
+        t = [];
+    function a() {
+        (attachedImagesContainer.innerHTML = ""),
+            t.forEach((s, n) => {
+                let o = document.createElement("div");
+                o.classList.add("image-item");
+                let i = document.createElement("button");
+                i.classList.add("delete-btn"),
+                    (i.innerHTML = '<i class="fa-solid fa-circle-xmark fa-circle-custom"></i>'),
+                    i.addEventListener("click", () => {
+                        t.splice(n, 1), updateLabelText(t.length), a();
+                        let s = new DataTransfer();
+                        t.forEach((e) => s.items.add(e)), (e.files = s.files);
+                    }),
+                    o.appendChild(document.createTextNode(s.name)),
+                    o.appendChild(i),
+                    attachedImagesContainer.appendChild(o);
+            });
+        let s = new DataTransfer();
+        t.forEach((e) => s.items.add(e)), (e.files = s.files);
+    }
+    attachImageLabel.addEventListener("change", () => {
+        let s = 5 - t.length;
+        if (s <= 0) {
+            showToast("Maximum 5 imagini!", !0), updateLabelText((t = []).length), a(), (e.value = "");
+            return;
+        }
+        let n = Array.from(e.files).slice(0, s);
+        t.push(...n), updateLabelText(t.length), a();
+    });
+}
+const showSpinner = (e) => {
+    let t = document.querySelector(".spinner-border");
+    e ? t.classList.remove("d-none") : t.classList.add("d-none");
+};
+form &&
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        let t = e.target;
+        showSpinner(!0);
+        let a = new FormData(t),
+            s = document.querySelector('[name="cf-turnstile-response"]')?.value;
+        if (!s) {
+            showToast("Please complete the CAPTCHA verification!", !0), showSpinner(!1);
+            return;
+        }
+        let n = validateForm(t);
+        if (n.length > 0) {
+            showToast(n.join(", "), !0), showSpinner(!1);
+            return;
+        }
+        a.append("cf-turnstile-response", s);
+        try {
+            let o = await fetch("contact-form.php", { method: "POST", body: a, redirect: "manual" });
+            if ("opaqueredirect" === o.type || 302 === o.status || 301 === o.status) {
+                t.reset(), (window.location.href = "tooManyRequests.php");
+                return;
+            }
+            let i = await o.json();
+            if (!o.ok) throw Error(i.error || "Cererea a esuat!");
+            showToast("Mesajul a fost trimis cu succes!"),
+                t.reset(),
+                showSpinner(!1),
+                setTimeout(() => {
+                    window.location.href = "thank-you.php";
+                }, 1500);
+        } catch (r) {
+            r instanceof SyntaxError ? showToast("Server returned an invalid response. Please try again.", !0) : showToast(r.message || "Eroare la trimiterea mesajului!", !0), showSpinner(!1);
+        }
+    });
+const cookiesPopup = document.querySelector(".cookies-popup"),
+    okBtnCookies = document.querySelector(".ok-cookies-button");
+function cardEffectAdd() {
+    let e = document.querySelectorAll(".card-custom"),
+        t = document.querySelectorAll(".card-overlay"),
+        a = document.querySelectorAll(".card-title-custom"),
+        s = document.querySelectorAll(".card-img-custom");
+    e.forEach((e, n) => {
+        e.addEventListener("mouseover", function () {
+            window.innerWidth > 992 && (t[n].classList.add("show"), a[n].classList.add("text-white-custom"), s[n].classList.add("card-blur"));
+        }),
+            e.addEventListener("mouseout", function () {
+                window.innerWidth > 992 && (t[n].classList.remove("show"), a[n].classList.remove("text-white-custom"), s[n].classList.remove("card-blur"));
+            });
+    });
+}
+function sideButtonsEffectAdd() {
+    let e = document.querySelector(".side-buttons-message-icon"),
+        t = document.querySelector(".side-buttons-message-text"),
+        a = document.querySelector(".side-buttons-whatsapp-icon"),
+        s = document.querySelector(".side-buttons-whatsapp-text");
+    e &&
+        a &&
+        (e.addEventListener("mouseover", function () {
+            window.innerWidth > 992 && t.classList.add("show");
+        }),
+        e.addEventListener("mouseout", function () {
+            window.innerWidth > 992 && t.classList.remove("show");
+        }),
+        a.addEventListener("mouseover", function () {
+            window.innerWidth > 992 && s.classList.add("show");
+        }),
+        a.addEventListener("mouseout", function () {
+            window.innerWidth > 992 && s.classList.remove("show");
+        }));
+}
+localStorage.getItem("arclucmar_cookie") || cookiesPopup.classList.remove("d-none"),
+    okBtnCookies &&
+        okBtnCookies.addEventListener("click", function () {
+            cookiesPopup.classList.add("d-none"), localStorage.setItem("arclucmar_cookie", "true");
+        }),
+    cardEffectAdd(),
+    sideButtonsEffectAdd(),
+    window.addEventListener("resize", () => {});
+const navbar = document.querySelector(".navbar-custom"),
+    navbarCollapse = document.querySelector(".navbar-collapse");
+document.addEventListener("click", function (e) {
+    let t = e.target;
+    navbar.contains(t) || navbarCollapse.classList.remove("show");
+});

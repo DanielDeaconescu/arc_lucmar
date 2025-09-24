@@ -103,6 +103,9 @@
     <!-- Cookies -->
     <?php include "./components/cookiesPopup.php" ?>
 
+    <!-- Back to top button -->
+    <?php include "./components/back-to-top-button.php" ?>
+
     <!-- Side-buttons -->
     <?php include "./components/side-buttons.php" ?>
 
