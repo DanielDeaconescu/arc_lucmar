@@ -363,7 +363,26 @@ document.addEventListener('click', function(e) {
 
 // Back to top button functionality
 
-console.log("hello world");
+
+function userScroll() {
+    const topBtn = document.querySelector('.back-to-top-button');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 1000) {
+            topBtn.classList.remove('d-none');
+        } else {
+            topBtn.classList.add('d-none');
+        }
+    })
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+document.addEventListener('DOMContentLoaded', userScroll);
+document.querySelector('.back-to-top-button').addEventListener('click', scrollToTop);
 
 
 
