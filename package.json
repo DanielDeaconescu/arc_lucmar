@@ -1,7 +1,7 @@
 {
-  "name": "arc_construct",
+  "name": "arc_lucmar",
   "version": "1.0.0",
-  "description": "Presentational website for ARC CONSTRUCT",
+  "description": "Presentational website for ARC LUCMAR",
   "main": "index.js",
   "scripts": {
     "sass:build": "sass --no-source-map scss:css",
