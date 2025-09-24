@@ -14,9 +14,6 @@
                     Profil PVC 100% românesc, produs la Galați
                 </h3>
                 <?php  if($currentPage == 'index.php'): ?>
-                <h6 class="text-dark d-flex align-items-center gap-2">
-
-                </h6>
                 <p class="fs-5">
                     Arc Lucmar este partener de încredere al companiei Sigplast, producător local de profil PVC cu
                     fabrică în Galați. Datorită acestei colaborări de lungă durată, putem oferi ferestre și uși din PVC
@@ -26,7 +23,7 @@
                 <p>
                     <small>
                         Pentru mai multe detalii despre produsele Sigplast, vizitați site-ul oficial: <a
-                            href="https://sigplast.ro/" target="_blank">Website Sigplast</a>
+                            href="https://sigplast.ro/" target="_blank" class="website-sigplast">Website Sigplast</a>
                     </small>
                 </p>
                 <?php endif; ?>

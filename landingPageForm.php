@@ -69,57 +69,61 @@
                     <!-- Process steps -->
                     <div class="list-group mt-3">
                         <h3 class="text-dark">Cum funcționează?</h3>
-                        <li class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h4 class="fs-4 mb-1 text-dark d-flex align-items-center gap-2">
-                                    <i class="bi bi-1-circle-fill fs-1"></i>
-                                    Solicită oferta ta gratuită
-                                </h4>
-                            </div>
-                            <p class="mb-1 text-justify info-paragraph">
-                                Completează formularul de mai jos sau apelează-ne direct. Vei discuta cu un specialist
-                                de-al nostru pentru a stabili detaliile și a programa o vizită la domiciliu.
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
+                        <ul>
+                            <li class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h4 class="fs-4 mb-1 text-dark d-flex align-items-center gap-2">
+                                        <i class="bi bi-1-circle-fill fs-1"></i>
+                                        Solicită oferta ta gratuită
+                                    </h4>
+                                </div>
+                                <p class="mb-1 text-justify info-paragraph">
+                                    Completează formularul de mai jos sau apelează-ne direct. Vei discuta cu un
+                                    specialist
+                                    de-al nostru pentru a stabili detaliile și a programa o vizită la domiciliu.
+                                </p>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
 
-                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
-                                    <i class="bi bi-2-circle-fill fs-1"></i>
-                                    Consultanță și măsurători gratuite la fața locului
-                                </h4>
-                            </div>
-                            <p class="mb-1 text-justify info-paragraph">
-                                Un specialist va veni la tine acasă, va evalua necesitățile
-                                proiectului și va efectua măsurători exacte. Pe baza acestora, vei primi o ofertă de
-                                preț detaliată și corectă, care nu presupune nicio obligativitate.
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
-                                    <i class="bi bi-3-circle-fill fs-1"></i>
-                                    Montaj profesionist și fără griji
-                                </h4>
-                            </div>
-                            <p class="mb-1 text-justify info-paragraph">
-                                Echipa noastră de montaj va instala tâmplăria cu precizie și grijă,
-                                respectându-ți casa și programul stabilit.
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
-                                    <i class="bi bi-4-circle-fill fs-1"></i>
-                                    Bucură-te de confortul noului tău cămin
-                                </h4>
-                            </div>
-                            <p class="mb-1 text-justify info-paragraph">
-                                Aproape fără efort din partea ta, te poți bucura imediat de un cămin mai eficient
-                                energetic, mai liniștit și mai sigur. Garantăm o execuție impecabilă a lucrării și
-                                asistență post-vânzare.
-                            </p>
-                        </li>
+                                    <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                        <i class="bi bi-2-circle-fill fs-1"></i>
+                                        Consultanță și măsurători gratuite la fața locului
+                                    </h4>
+                                </div>
+                                <p class="mb-1 text-justify info-paragraph">
+                                    Un specialist va veni la tine acasă, va evalua necesitățile
+                                    proiectului și va efectua măsurători exacte. Pe baza acestora, vei primi o ofertă de
+                                    preț detaliată și corectă, care nu presupune nicio obligativitate.
+                                </p>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                        <i class="bi bi-3-circle-fill fs-1"></i>
+                                        Montaj profesionist și fără griji
+                                    </h4>
+                                </div>
+                                <p class="mb-1 text-justify info-paragraph">
+                                    Echipa noastră de montaj va instala tâmplăria cu precizie și grijă,
+                                    respectându-ți casa și programul stabilit.
+                                </p>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
+                                        <i class="bi bi-4-circle-fill fs-1"></i>
+                                        Bucură-te de confortul noului tău cămin
+                                    </h4>
+                                </div>
+                                <p class="mb-1 text-justify info-paragraph">
+                                    Aproape fără efort din partea ta, te poți bucura imediat de un cămin mai eficient
+                                    energetic, mai liniștit și mai sigur. Garantăm o execuție impecabilă a lucrării și
+                                    asistență post-vânzare.
+                                </p>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
                 <div class="col-lg-6">

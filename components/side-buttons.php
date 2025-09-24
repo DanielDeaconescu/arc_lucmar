@@ -12,7 +12,7 @@
             Scrie-ne pe WhatsApp!
         </div>
         <div class="side-buttons-whatsapp-icon">
-            <a href="https://wa.me/40741297459">
+            <a href="https://wa.me/40741297459" aria-label="Link conversație WhatsApp">
                 <i class="fa-brands fa-square-whatsapp fa-whatsapp-custom"></i>
             </a>
         </div>

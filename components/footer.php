@@ -48,7 +48,8 @@
             <div class="col-md-4 my-3">
                 <div class="mb-4">
                     <h5 class="text-dark">Urmărește-ne pe Facebook</h5>
-                    <a href="#" class="text-decoration-none">
+                    <a href="www.facebook.com" class="text-decoration-none"
+                        aria-label="Linkul paginii de Facebook Arc Lucmar">
                         <i class="fab fa-facebook fa-3x text-dark mx-2"></i>
                     </a>
                 </div>
