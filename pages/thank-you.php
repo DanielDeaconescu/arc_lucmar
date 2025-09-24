@@ -53,7 +53,7 @@ unset($_SESSION['form_submitted']);
                 mai multe
                 informații și
                 detalii.</p>
-            <a href="/index.php" class="btn btn-secondary">Înapoi la pagina principală</a>
+            <a href="/" class="btn btn-secondary">Înapoi la pagina principală</a>
         </section>
     </div>
 

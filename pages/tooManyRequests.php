@@ -56,7 +56,7 @@ unset($_SESSION['rate_limit_exceeded']);
                     să
                     re-trimiteți formularul după 24 de ore. Mulțumim pentru înțelegere!
                 </p>
-                <a href="/index.php" class="btn btn-primary">Înapoi la pagina principală</a>
+                <a href="/" class="btn btn-primary">Înapoi la pagina principală</a>
             </div>
         </div>
     </section>

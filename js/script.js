@@ -219,17 +219,23 @@ if (form) {
     formData.append('cf-turnstile-response', turnstileToken);
 
     try {
-        const response = await fetch("contact-form.php", {
+        const response = await fetch("/contact-form", {
             method: "POST",
             body: formData,
             redirect: 'manual'
         });
 
         // Check if we got a redirect response
-        if (response.type === 'opaqueredirect' || response.status === 302 || response.status === 301) {
-            // Redirect to the tooManyRequests page
-            form.reset();
-            window.location.href = "tooManyRequests.php";
+        // if (response.type === 'opaqueredirect' || response.status === 302 || response.status === 301) {
+        //     // Redirect to the tooManyRequests page
+        //     form.reset();
+        //     window.location.href = "tooManyRequests.php";
+        //     return;
+        // }
+
+        if (response.status === 429) {
+            // Rate limit exceeded
+            window.location.href = "/tooManyRequests";
             return;
         }
 
@@ -245,7 +251,7 @@ if (form) {
         form.reset();
         showSpinner(false);
         setTimeout(() => {
-            window.location.href = "thank-you.php";
+            window.location.href = "/thank-you";
         }, 1500);
     } catch (error) {
         if (error instanceof SyntaxError) {
@@ -353,27 +359,34 @@ window.addEventListener("resize", () => {});
 const navbar = document.querySelector(".navbar-custom");
 const navbarCollapse = document.querySelector(".navbar-collapse");
 
-
-document.addEventListener('click', function(e) {
+if (navbar) {
+    document.addEventListener('click', function(e) {
     const clicked = e.target;
     if(!navbar.contains(clicked)) {
         navbarCollapse.classList.remove('show');
     }
 })
+}
+
 
 // Back to top button functionality
 
 
 function userScroll() {
     const topBtn = document.querySelector('.back-to-top-button');
-
-    window.addEventListener('scroll', () => {
+    if (topBtn)
+    {
+        window.addEventListener('scroll', () => {
         if (window.scrollY > 1000) {
             topBtn.classList.remove('d-none');
         } else {
             topBtn.classList.add('d-none');
         }
-    })
+        })
+    }
+        
+    
+    
 }
 
 function scrollToTop() {
@@ -382,7 +395,9 @@ function scrollToTop() {
 }
 
 document.addEventListener('DOMContentLoaded', userScroll);
-document.querySelector('.back-to-top-button').addEventListener('click', scrollToTop);
+if(document.querySelector('.back-to-top-button')) {
+    document.querySelector('.back-to-top-button').addEventListener('click', scrollToTop);
+}
 
 
 
