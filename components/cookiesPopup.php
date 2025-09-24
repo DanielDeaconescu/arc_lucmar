@@ -8,7 +8,7 @@
         </p>
         <div class="d-flex gap-2">
             <button type="button" class="btn btn-primary ok-cookies-button">Ok</button>
-            <a class="btn btn-secondary" href="cookies.php">Află mai multe</a>
+            <a class="btn btn-secondary" href="politica-cookie.php">Află mai multe</a>
         </div>
     </div>
 

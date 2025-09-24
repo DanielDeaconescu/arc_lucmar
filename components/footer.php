@@ -20,13 +20,13 @@
                 <h5 class="text-dark">Link-uri utile</h5>
                 <ul class="list-unstyled">
                     <li class="li-styled">
-                        <a class="text-decoration-none" href="cookies.php">
+                        <a class="text-decoration-none" href="politica-cookie.php">
                             <i class="fa-solid fa-check"></i>
                             Politica de cookies
                         </a>
                     </li>
                     <li class="li-styled">
-                        <a class="text-decoration-none" href="services.php">
+                        <a class="text-decoration-none" href="servicii-termopane.php">
                             <i class="fa-solid fa-check"></i>
                             Servicii
                         </a>

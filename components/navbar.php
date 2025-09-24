@@ -6,7 +6,7 @@
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom">
     <div class="container container-navbar-custom h-100">
-        <a href="index.html" class="navbar-brand navbar-brand-custom d-flex align-items-center gap-2">
+        <a href="/" class="navbar-brand navbar-brand-custom d-flex align-items-center gap-2">
             <?php include "logo-item-light.php" ?>
         </a>
 
@@ -17,16 +17,16 @@
         <div class="collapse navbar-collapse navbar-collapse-custom h-100" id="navbarNav">
             <ul class="navbar-nav ms-auto navbar-nav-custom h-100">
                 <li class="nav-item nav-item-custom h-100">
-                    <a href="/index.php"
+                    <a href="/"
                         class="nav-link nav-link-custom h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'index.php' ? 'active-custom' : '' ?>">Acasă</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/pages/services.php"
-                        class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'services.php' ? 'active-custom' : '' ?>">Servicii</a>
+                    <a href="/pages/servicii-termopane.php"
+                        class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'servicii-termopane.php' ? 'active-custom' : '' ?>">Servicii</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/pages/portfolio.php"
-                        class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'portfolio.php' ? 'active-custom' : '' ?>">Portofoliu</a>
+                    <a href="/pages/portofoliu.php"
+                        class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'portofoliu.php' ? 'active-custom' : '' ?>">Portofoliu</a>
                 </li>
                 <li class="nav-item h-100 d-flex align-items-center">
                     <a href="/pages/contact.php"

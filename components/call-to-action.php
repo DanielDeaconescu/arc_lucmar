@@ -10,12 +10,12 @@
             $ctaP = 'Echipa Arc Lucmar, cu peste 19 ani de experiență, se ocupă de măsurători precise, furnizare de profiluri PVC și aluminiu și un montaj impecabil (executat cu grijă și atenție la detalii) în Galați și împrejurimi. Contactează-ne acum sau solicită rapid o ofertă personalizată completând formularul!';
             $ctaClass = 'cta-home';
         break;
-        case 'services.php':
+        case 'servicii-termopane.php':
             $ctaTitle = 'Servicii complete pentru ferestre și uși personalizate!';
             $ctaP = 'Cu peste 19 ani de experiență în montajul ferestrelor și ușilor, echipa Arc Lucmar transformă fiecare proiect într-o soluție funcțională, sigură și durabilă. Beneficiază și tu de montaj profesionist și atenție la detalii, astfel încât ferestrele și ușile tale să aducă confort, siguranță și eficiență energetică locuinței tale!';
             $ctaClass = 'cta-services';
         break;
-        case 'portfolio.php':
+        case 'portofoliu.php':
             $ctaTitle = 'Ți-au plăcut proiectele noastre? Vino să transformăm și ideile tale în realitate!';
             $ctaP = 'Dacă proiectele noastre ți-au atras atenția, echipa Arc Lucmar este gata să-ți pună la dispoziție ferestre și uși din PVC și aluminiu personalizate, montaj profesionist și soluții complete adaptate nevoilor locuinței tale. Contactează-ne acum și hai să începem o colaborare de succes!';
             $ctaClass = 'cta-services';
