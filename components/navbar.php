@@ -21,15 +21,15 @@
                         class="nav-link nav-link-custom h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'index.php' ? 'active-custom' : '' ?>">Acasă</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/pages/servicii-termopane.php"
+                    <a href="/servicii-termopane"
                         class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'servicii-termopane.php' ? 'active-custom' : '' ?>">Servicii</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/pages/portofoliu.php"
+                    <a href="/portofoliu"
                         class="nav-link h-100 d-flex align-items-center jutify-content-center <?= $current_page == 'portofoliu.php' ? 'active-custom' : '' ?>">Portofoliu</a>
                 </li>
                 <li class="nav-item h-100 d-flex align-items-center">
-                    <a href="/pages/contact.php"
+                    <a href="/contact"
                         class="nav-link btn-contact-navbar btn btn-outline-secondary px-4 mx-4 <?= $current_page == 'contact.php' ? 'active-custom' : '' ?>">Contact</a>
                 </li>
             </ul>

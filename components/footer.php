@@ -20,19 +20,19 @@
                 <h5 class="text-dark">Link-uri utile</h5>
                 <ul class="list-unstyled">
                     <li class="li-styled">
-                        <a class="text-decoration-none" href="politica-cookie.php">
+                        <a class="text-decoration-none" href="/politica-cookie">
                             <i class="fa-solid fa-check"></i>
                             Politica de cookies
                         </a>
                     </li>
                     <li class="li-styled">
-                        <a class="text-decoration-none" href="servicii-termopane.php">
+                        <a class="text-decoration-none" href="/servicii-termopane">
                             <i class="fa-solid fa-check"></i>
                             Servicii
                         </a>
                     </li>
                     <li class="li-styled">
-                        <a class="text-decoration-none" href="contact.php">
+                        <a class="text-decoration-none" href="/contact">
                             <i class="fa-solid fa-check"></i>
                             Contact
                         </a>

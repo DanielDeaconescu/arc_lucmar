@@ -33,7 +33,9 @@
 RewriteEngine On
 RewriteBase /
 
+
 # Removing /pages/ and .php from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^oferta-termopane/?$ oferta-termopane.php [L]
 RewriteRule ^([^/]+)/?$ pages/$1.php [L]
