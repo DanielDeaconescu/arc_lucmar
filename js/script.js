@@ -361,6 +361,9 @@ document.addEventListener('click', function(e) {
     }
 })
 
+// Back to top button functionality
+
+console.log("hello world");
 
 
 
