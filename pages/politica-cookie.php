@@ -24,7 +24,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-    <title>Arc Lucmar | Cookies</title>
+    <title>Cookies termopane | Arc Lucmar</title>
 </head>
 
 <body>

@@ -62,7 +62,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-    <title>Arc Construct | Acasă</title>
+    <title>Servicii Termopane PVC și aluminiu | Arc Lucmar</title>
 </head>
 
 <body>

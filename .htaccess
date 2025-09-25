@@ -33,6 +33,9 @@
 RewriteEngine On
 RewriteBase /
 
+# Exclude sitemap.xml from rewrite
+RewriteRule ^sitemap\.xml$ - [L]
+
 # Removing /pages/ and .php from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
