@@ -1,4 +1,4 @@
-<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

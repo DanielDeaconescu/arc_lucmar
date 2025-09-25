@@ -33,6 +33,9 @@
 RewriteEngine On
 RewriteBase /
 
+# CSP Header
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://challenges.cloudflare.com https://captcha.turnstile.cloudflare.com https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'self' https://challenges.cloudflare.com https://captcha.turnstile.cloudflare.com https://www.google.com https://www.google.com/maps/embed https://maps.google.com; img-src 'self' data: https://maps.gstatic.com;"
+
 # Exclude sitemap.xml from rewrite
 RewriteRule ^sitemap\.xml$ - [L]
 
@@ -42,6 +45,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 # Exclude specific files from rewriting
 RewriteRule ^contact-form/?$ contact-form.php [L]
-
 RewriteRule ^oferta-termopane/?$ oferta-termopane.php [L]
 RewriteRule ^([^/]+)/?$ pages/$1.php [L]

@@ -9,16 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description"
             content="Portofoliu termopane Galați: proiecte finalizate cu ferestre și uși PVC și aluminiu Sigplast, montaj profesionist și calitate garantată.">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet" />
-        <!-- Montserrat -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
         <!-- Turnstile script -->
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
         <!-- Fontawesome -->
