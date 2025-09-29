@@ -24,6 +24,20 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
         <title>Portofoliu Termopane PVC și Aluminiu în Galați | Arc Lucmar</title>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17545117486">
+        </script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17545117486');
+        </script>
     </head>
 </head>
 
