@@ -56,7 +56,7 @@
                     <?php
                 if($page == "index.php") {
                   echo '
-                    <a href="services.php" class="btn btn-outline-secondary fw-bold btn-lg m-2">
+                    <a href="/servicii-termopane" class="btn btn-outline-secondary fw-bold btn-lg m-2">
                       Vezi serviciile noastre
                     </a>
                   ';

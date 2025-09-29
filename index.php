@@ -22,6 +22,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <title>Termopane PVC și Aluminiu în Galați | Arc Lucmar</title>
+
+    <!-- LocalBusiness schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Arc Lucmar",
+        "image": "https://tamplariearcus.ro/logo.png",
+        "url": "https://tamplariearcus.ro",
+        "telephone": "+40741297459",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Str. Principala 32 CORP C6",
+            "addressLocality": "Galați",
+            "postalCode": "827125",
+            "addressCountry": "RO"
+        },
+        "areaServed": ["Costi", "Galați", "Cișmele", "Smârdan", "Vânători"],
+        "description": "Furnizare și montare tâmplărie PVC și aluminiu în Galați și împrejurimi."
+    }
+    </script>
+
 </head>
 
 <body>

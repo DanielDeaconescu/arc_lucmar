@@ -39,6 +39,9 @@ Header set Content-Security-Policy "default-src 'self'; script-src 'self' https:
 # Exclude sitemap.xml from rewrite
 RewriteRule ^sitemap\.xml$ - [L]
 
+# Exclude logo.png from rewrite
+RewriteRule ^logo\.png$ - [L]
+
 # Removing /pages/ and .php from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
