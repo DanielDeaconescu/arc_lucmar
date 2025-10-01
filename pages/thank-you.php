@@ -5,7 +5,7 @@ session_start();
 // Check if the user came from a successful form submission
 
 if (!isset($_SESSION['form_submitted']) || $_SESSION['form_submitted'] !== true) {
-    header('Location: /index.php');
+    header('Location: /');
     exit;
 }
 

@@ -20,12 +20,6 @@
                     și aluminiu la prețuri foarte avantajoase, apropiate de cele de fabrică, păstrând în același timp
                     standarde înalte de calitate.
                 </p>
-                <p>
-                    <small>
-                        Pentru mai multe detalii despre produsele Sigplast, vizitați site-ul oficial: <a
-                            href="https://sigplast.ro/" target="_blank" class="website-sigplast">Website Sigplast</a>
-                    </small>
-                </p>
                 <?php endif; ?>
             </div>
 

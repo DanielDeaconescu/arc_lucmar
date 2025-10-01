@@ -34,7 +34,8 @@ RewriteEngine On
 RewriteBase /
 
 # CSP Header
-Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://challenges.cloudflare.com https://captcha.turnstile.cloudflare.com https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'self' https://challenges.cloudflare.com https://captcha.turnstile.cloudflare.com https://www.google.com https://www.google.com/maps/embed https://maps.google.com; img-src 'self' data: https://maps.gstatic.com;"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://captcha.turnstile.cloudflare.com https://maps.googleapis.com https://maps.gstatic.com; connect-src 'self' https://www.google.com https://stats.g.doubleclick.net https://www.google-analytics.com; img-src 'self' data: https://maps.gstatic.com https://www.google.com; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com https://captcha.turnstile.cloudflare.com https://www.google.com https://www.google.com/maps/embed https://maps.google.com;"
+
 
 # Exclude sitemap.xml from rewrite
 RewriteRule ^sitemap\.xml$ - [L]
