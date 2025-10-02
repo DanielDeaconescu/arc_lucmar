@@ -247,6 +247,12 @@ if (form) {
             throw new Error(result.error || "Cererea a esuat!");
         }
 
+        if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+            'send_to': 'AW-17545117486/6gRGCMaHmqUbEK7-lK5B'
+            });
+        }
+
         showToast("Mesajul a fost trimis cu succes!");
         form.reset();
         showSpinner(false);
