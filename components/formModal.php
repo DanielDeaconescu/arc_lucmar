@@ -16,7 +16,7 @@
                             scopuri de
                             marketing.
                         </p>
-                        <a href="cookies.php#gdprinfo" target="_blank">Află mai multe
+                        <a href="/politica-cookie#gdprinfo" target="_blank">Află mai multe
                             despre protecția
                             datelor
                         </a>
