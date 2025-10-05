@@ -26,7 +26,7 @@
             <div class="col-md-3 d-flex align-items-center d-none d-sm-flex">
 
                 <div class="d-flex flex-column gap-2 align-items-center">
-                    <img class="img-fluid sigplast-partner-img" src="./images/logo-sigplast.webp" alt="">
+                    <img class="img-fluid sigplast-partner-img" src="/images/logo-sigplast.webp" alt="">
                     <h6 class="text-dark">Fabrică profil PVC Galați, România</h6>
                 </div>
 

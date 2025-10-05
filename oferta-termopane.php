@@ -10,9 +10,9 @@
     <!-- Turnstile script -->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
     <!-- Bootstrap icons -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
@@ -20,11 +20,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom style -->
     <!-- Lightbox 2 -->
-    <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css?v=<?= filemtime('css/styles.css') ?>" />
+    <link href="/lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css?v=<?= filemtime('css/styles.css') ?>" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="icon" type="/image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="/image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <title>Oferte Termopane PVC și Aluminiu în Galați | Arc Lucmar</title>
 
     <!-- Google tag (gtag.js) -->
@@ -263,11 +263,11 @@
     </footer>
 
     <!-- Lightbox JS + jQuery -->
-    <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="/lightbox/dist/js/lightbox-plus-jquery.js"></script>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="js/script.js?v=<?= filemtime('js/script.js') ?>"></script>
+    <script src="/js/script.js?v=<?= filemtime('js/script.js') ?>"></script>
 </body>
 
 </html>
