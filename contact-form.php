@@ -112,10 +112,10 @@ $name = trim($_POST['name'] ?? '');
 $phone = trim($_POST['phone'] ?? '');
 $description = trim($_POST['description'] ?? '');
 
-if (empty($name) || empty($phone) || empty($description)) {
+if (empty($name) || empty($phone)) {
     header('Content-Type: application/json');
     http_response_code(400);
-    echo json_encode(['success' => false, 'error' => 'Nume, telefon si descriere sunt obligatorii!']);
+    echo json_encode(['success' => false, 'error' => 'Numele si numarul de telefon sunt obligatorii!']);
     exit;
 }
 

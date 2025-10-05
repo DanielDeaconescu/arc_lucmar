@@ -488,6 +488,11 @@ body {
   cursor: pointer;
 }
 
+.attach-file-name {
+  display: block;
+  text-align: center;
+}
+
 .image-input {
   display: none;
 }
@@ -558,7 +563,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .header-landing .text-content {
@@ -578,6 +583,10 @@ body {
 
 .formLandingPage {
   width: 350px;
+}
+
+.required {
+  color: red;
 }
 
 .why-choose-our-services {
@@ -601,7 +610,7 @@ body {
 }
 
 .landing-page-h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .landing-page-factory-image {
@@ -1136,21 +1145,35 @@ section {
   width: 100%;
 }
 
-
-
 // landing page start
+
+.process-steps-form {
+  padding-bottom: 0 !important;
+}
+
+.steps-container {
+  padding: 1rem 0;
+  background-color: #D9E9CF;
+}
+
 .header-landing {
-  height: 340px;
+  height: 220px;
+}
+
+.process-steps-list {
+  padding: 0 1.5rem !important;
 }
 
 .landing-page-h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .p-header-mobile {
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
+  font-size: 1.2rem !important;
+  line-height: 1.2;
 }
 
 .info-paragraph {
@@ -1163,11 +1186,12 @@ section {
 
 .send-button-phone {
   margin: auto;
-  width: 60%;
+  // width: 60%;
 }
 
 .formLandingPage {
   padding: 1rem;
+  margin: auto;
 }
 
 .cta-button-phone {

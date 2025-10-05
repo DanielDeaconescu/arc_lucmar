@@ -1,5 +1,5 @@
 <section class="factory-images-section py-4 py-md-4 py-lg-5 py-xl-5">
-    <div class="container">
+    <div class="container text-center">
         <h3 class="text-dark mb-4 text-center">Imagini din fabrica Sigplast din Galați</h3>
         <p class="text-center fs-4">
             Descoperiți procesul de extrudare al profilului PVC Sigplast, realizat cu precizie, tehnologie modernă și

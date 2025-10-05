@@ -39,10 +39,6 @@ const validateForm = (form) => {
         {
             name: "phone",
             label: "Telefon"
-        },
-        {
-            name: "description",
-            label: "Descriere"
         }
     ];
 
@@ -88,7 +84,7 @@ function updateLabelText(count) {
     const label = document.querySelector(".attach-file-name");
     
     if (count === 0) {
-        label.textContent = "Adaugă imagini (maxim 5)";
+        label.textContent = "Adaugă imagini (maxim 5) (opțional)";
     } else if (count >= 1 && count <= 4) {
         label.textContent = "Mai adaugă (maxim 5)";
     } else if (count === 5) {
@@ -258,7 +254,7 @@ if (form) {
         showSpinner(false);
         setTimeout(() => {
             window.location.href = "/thank-you";
-        }, 1500);
+        }, 1000);
     } catch (error) {
         if (error instanceof SyntaxError) {
             showToast('Server returned an invalid response. Please try again.', true);

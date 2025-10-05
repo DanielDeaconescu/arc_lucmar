@@ -54,15 +54,17 @@
                             Vrei o casă mai liniștită și facturi la energie mai mici?
                         </h1>
                         <p class="fs-5 lead mb-4 p-header-landing d-none d-sm-block">
-                            Înlocuiește vechile tale geamuri cu soluțiile noastre premium de termopane și bucură-te de
-                            confort și economii pe termen lung. Oferim consultanță gratuită și montaj profesionistă.
+                            Înlocuiește geamurile tale actuale cu soluțiile noastre de termopane care oferă un raport
+                            calitate-preț excelent și bucură-te de confort și economii pe termen lung. Oferim
+                            consultanță gratuită și montaj profesionist.
                         </p>
                         <p class="p-header-mobile d-sm-none fs-5">
-                            Înlocuiește vechile tale geamuri cu soluțiile noastre premium de termopane.
+                            Înlocuiește geamurile tale actuale cu termopanele noastre care oferă un excelent raport
+                            calitate-preț!
                         </p>
-                        <button type="button" class="btn btn-primary btn-lg d-block d-sm-none" data-bs-toggle="modal"
+                        <!-- <button type="button" class="btn btn-primary btn-lg d-block d-sm-none" data-bs-toggle="modal"
                             data-bs-target="#formModal">Obține ofertă
-                            gratuită</button>
+                            gratuită</button> -->
                     </div>
 
                 </div>
@@ -70,19 +72,18 @@
         </div>
     </header>
 
-    <?php include "./components/partner-sigplast.php" ?>
+
 
     <!-- Process steps + Form -->
     <section id="process-steps-form" class="process-steps-form py-2 py-sm-5">
         <div class="container position-relative z-3">
             <div class="row">
-                <div class="col-lg-6">
-
+                <div class="col-lg-6 order-2 order-md-1 steps-container">
                     <!-- Process steps -->
                     <div class="list-group mt-3">
-                        <h3 class="text-dark">Cum funcționează?</h3>
-                        <ul>
-                            <li class="list-group-item list-group-item-action">
+                        <h3 class="text-dark text-center text-sm-left">Cum funcționează?</h3>
+                        <ul class="process-steps-list">
+                            <li class="list-group-item list-group-item-action mb-3 mb-sm-0">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h4 class="fs-4 mb-1 text-dark d-flex align-items-center gap-2">
                                         <i class="bi bi-1-circle-fill fs-1"></i>
@@ -95,7 +96,7 @@
                                     de-al nostru pentru a stabili detaliile și a programa o vizită la domiciliu.
                                 </p>
                             </li>
-                            <li class="list-group-item list-group-item-action">
+                            <li class="list-group-item list-group-item-action mb-3 mb-sm-0">
                                 <div class="d-flex w-100 justify-content-between">
 
                                     <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
@@ -109,7 +110,7 @@
                                     preț detaliată și corectă, care nu presupune nicio obligativitate.
                                 </p>
                             </li>
-                            <li class="list-group-item list-group-item-action">
+                            <li class="list-group-item list-group-item-action mb-3 mb-sm-0">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
                                         <i class="bi bi-3-circle-fill fs-1"></i>
@@ -121,7 +122,7 @@
                                     respectându-ți casa și programul stabilit.
                                 </p>
                             </li>
-                            <li class="list-group-item list-group-item-action">
+                            <li class="list-group-item list-group-item-action mb-3 mb-sm-0">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h4 class="mb-1 text-dark d-flex align-items-center gap-2">
                                         <i class="bi bi-4-circle-fill fs-1"></i>
@@ -138,23 +139,31 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-1 order-md-2">
                     <!-- Form -->
                     <div class="mt-3 form-container">
-                        <h3 class="text-dark text-center">Solicită oferta ta gratuită</h3>
+                        <h3 class="text-dark text-center">
+                            Solicită oferta ta gratuită
+                        </h3>
+                        <div class="text-center">
+                            <small class="text-dark">Durează mai puțin de 1 minut</small>
+                        </div>
                         <form id="formLucmar" method="post" class="formLandingPage">
                             <div class="mb-3">
-                                <label for="name" class="form-label label-phone">Nume:</label>
+                                <label for="name" class="form-label label-phone">
+                                    Nume<span class="required">*</span>:
+                                </label>
                                 <input type="text" class="form-control" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="phone" class="form-label label-phone">Numar de telefon:</label>
+                                <label for="phone" class="form-label label-phone">Numar de telefon<span
+                                        class="required">*</span>:</label>
                                 <input type="text" class="form-control" name="phone">
                             </div>
                             <div class="mb-3">
                                 <label for="image" class="form-label attach-image-label label-phone">
                                     <span class="attach-file-name">
-                                        Adaugă imagini (maxim 5)
+                                        Adaugă imagini (maxim 5) (opțional)
                                     </span>
                                     <input type="file" multiple id="image" class="form-control image-input"
                                         name="image[]">
@@ -185,6 +194,8 @@
             </div>
         </div>
     </section>
+
+    <?php include "./components/partner-sigplast.php" ?>
 
     <?php include "./components/factory-images.php" ?>
 
@@ -220,7 +231,7 @@
             <div class="col-12">
                 <h3 class="text-center text-light">Ești gata pentru o casă mai eficientă energetic?</h3>
                 <p class="text-center fs-3 color-grey">Contactează-ne și descoperă <strong>ofertele lunii
-                        Septembrie!</strong></p>
+                        Octombrie!</strong></p>
                 <div class="buttons text-center d-flex cta-buttons-container justify-content-center gap-3">
                     <div class="">
                         <a href="tel:+40741297459" class="btn btn-primary btn-lg cta-button-phone">Apelează-ne acum!</a>
