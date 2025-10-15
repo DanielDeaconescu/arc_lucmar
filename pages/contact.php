@@ -71,7 +71,7 @@
                                     <a href="mailto:contact@arclucmar.ro"
                                         class="text-decoration-none fs-4 text-dark d-flex align-items-center fw-bold contact-info-link gap-2">
                                         <i class="fa-solid fa-envelope fa-2x"></i>
-                                        contact@arclucmar.ro
+                                        contact@tamplariearcus.ro
                                     </a>
                                 </li>
                                 <li class="list-group-item d-flex">
